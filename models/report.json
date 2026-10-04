@@ -440,5 +440,477 @@
   "en_jeu": null,
   "notes": "",
   "ecart_avant_recalage": 0.07
+ },
+ "22a_carton_ouvert": {
+  "titre": "Carton ouvert",
+  "categorie": "03_dechets",
+  "fichier": "models/03_dechets/22a_carton_ouvert.fbx",
+  "dims_studs": [
+   2.1,
+   1.9,
+   1.7
+  ],
+  "triangles": 484,
+  "pieces": [
+   "Carton"
+  ],
+  "en_jeu": null,
+  "notes": "Variante de 22",
+  "ecart_avant_recalage": 0.209
+ },
+ "22b_carton_aplati": {
+  "titre": "Carton aplati",
+  "categorie": "03_dechets",
+  "fichier": "models/03_dechets/22b_carton_aplati.fbx",
+  "dims_studs": [
+   2.1,
+   1.9,
+   1.7
+  ],
+  "triangles": 164,
+  "pieces": [
+   "Carton"
+  ],
+  "en_jeu": null,
+  "notes": "Variante de 22 : appuyé contre un mur (dos côté +Z)",
+  "ecart_avant_recalage": 0.236
+ },
+ "23_matelas": {
+  "titre": "Matelas sale taché",
+  "categorie": "03_dechets",
+  "fichier": "models/03_dechets/23_matelas.fbx",
+  "dims_studs": [
+   4.5,
+   0.8,
+   7
+  ],
+  "triangles": 544,
+  "pieces": [
+   "Matelas"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.139
+ },
+ "24_pneu": {
+  "titre": "Pneu usé",
+  "categorie": "03_dechets",
+  "fichier": "models/03_dechets/24_pneu.fbx",
+  "dims_studs": [
+   2.6,
+   0.9,
+   2.6
+  ],
+  "triangles": 1152,
+  "pieces": [
+   "Pneu"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.049
+ },
+ "25_caddie": {
+  "titre": "Caddie de supermarché rouillé",
+  "categorie": "03_dechets",
+  "fichier": "models/03_dechets/25_caddie.fbx",
+  "dims_studs": [
+   2.6,
+   3,
+   3.4
+  ],
+  "triangles": 1060,
+  "pieces": [
+   "Caddie"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.028
+ },
+ "26_tente_fortune": {
+  "titre": "Tente de fortune avec bâche",
+  "categorie": "03_dechets",
+  "fichier": "models/03_dechets/26_tente_fortune.fbx",
+  "dims_studs": [
+   7,
+   5,
+   7
+  ],
+  "triangles": 592,
+  "pieces": [
+   "Structure",
+   "Bache"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.028
+ },
+ "27_sac_couchage": {
+  "titre": "Sac de couchage / couverture en boule",
+  "categorie": "03_dechets",
+  "fichier": "models/03_dechets/27_sac_couchage.fbx",
+  "dims_studs": [
+   2,
+   0.6,
+   5
+  ],
+  "triangles": 240,
+  "pieces": [
+   "SacCouchage"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.125
+ },
+ "28_bouteille": {
+  "titre": "Bouteille vide",
+  "categorie": "03_dechets",
+  "fichier": "models/03_dechets/28_bouteille.fbx",
+  "dims_studs": [
+   0.35,
+   1,
+   0.35
+  ],
+  "triangles": 200,
+  "pieces": [
+   "Bouteille"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.028
+ },
+ "29_canette": {
+  "titre": "Canette écrasée",
+  "categorie": "03_dechets",
+  "fichier": "models/03_dechets/29_canette.fbx",
+  "dims_studs": [
+   0.35,
+   0.6,
+   0.35
+  ],
+  "triangles": 204,
+  "pieces": [
+   "Canette"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.097
+ },
+ "30_gobelet": {
+  "titre": "Gobelet",
+  "categorie": "03_dechets",
+  "fichier": "models/03_dechets/30_gobelet.fbx",
+  "dims_studs": [
+   0.3,
+   0.4,
+   0.3
+  ],
+  "triangles": 256,
+  "pieces": [
+   "Gobelet"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.037
+ },
+ "31_journal": {
+  "titre": "Journal froissé",
+  "categorie": "03_dechets",
+  "fichier": "models/03_dechets/31_journal.fbx",
+  "dims_studs": [
+   0.9,
+   0.1,
+   0.9
+  ],
+  "triangles": 60,
+  "pieces": [
+   "Journal"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.586
+ },
+ "32_pigeon": {
+  "titre": "Pigeon",
+  "categorie": "03_dechets",
+  "fichier": "models/03_dechets/32_pigeon.fbx",
+  "dims_studs": [
+   0.6,
+   0.8,
+   1
+  ],
+  "triangles": 576,
+  "pieces": [
+   "Pigeon"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.137
+ },
+ "33_rat": {
+  "titre": "Rat avec sa queue",
+  "categorie": "03_dechets",
+  "fichier": "models/03_dechets/33_rat.fbx",
+  "dims_studs": [
+   0.5,
+   0.4,
+   1.6
+  ],
+  "triangles": 588,
+  "pieces": [
+   "Rat"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.029
+ },
+ "34_etal_marche": {
+  "titre": "Étal de marché",
+  "categorie": "04_marche",
+  "fichier": "models/04_marche/34_etal_marche.fbx",
+  "dims_studs": [
+   13,
+   9,
+   5
+  ],
+  "triangles": 4448,
+  "pieces": [
+   "Comptoir",
+   "Structure",
+   "Auvent",
+   "Panneau"
+  ],
+  "en_jeu": 5,
+  "notes": "",
+  "ecart_avant_recalage": 0.007
+ },
+ "35_cagette_vide": {
+  "titre": "Cagette en bois vide",
+  "categorie": "04_marche",
+  "fichier": "models/04_marche/35_cagette_vide.fbx",
+  "dims_studs": [
+   2.4,
+   1.6,
+   2.4
+  ],
+  "triangles": 736,
+  "pieces": [
+   "Cagette"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.026
+ },
+ "36_cagette_fleurs": {
+  "titre": "Cagette de fleurs pleine",
+  "categorie": "04_marche",
+  "fichier": "models/04_marche/36_cagette_fleurs.fbx",
+  "dims_studs": [
+   2.4,
+   2,
+   2.4
+  ],
+  "triangles": 2638,
+  "pieces": [
+   "Cagette",
+   "Fleurs"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.018
+ },
+ "37_cone_chantier": {
+  "titre": "Cône de chantier",
+  "categorie": "05_chantier",
+  "fichier": "models/05_chantier/37_cone_chantier.fbx",
+  "dims_studs": [
+   1.2,
+   2,
+   1.2
+  ],
+  "triangles": 196,
+  "pieces": [
+   "Cone"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.004
+ },
+ "38_fut_raye": {
+  "titre": "Fût rayé rouge et blanc",
+  "categorie": "05_chantier",
+  "fichier": "models/05_chantier/38_fut_raye.fbx",
+  "dims_studs": [
+   2,
+   3,
+   2
+  ],
+  "triangles": 1096,
+  "pieces": [
+   "Fut",
+   "Lampe"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.032
+ },
+ "39_toilettes_chantier": {
+  "titre": "Toilettes de chantier",
+  "categorie": "05_chantier",
+  "fichier": "models/05_chantier/39_toilettes_chantier.fbx",
+  "dims_studs": [
+   3.4,
+   7,
+   3.4
+  ],
+  "triangles": 1256,
+  "pieces": [
+   "Cabine",
+   "Porte"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.023
+ },
+ "40_bungalow_chantier": {
+  "titre": "Bungalow de chantier",
+  "categorie": "05_chantier",
+  "fichier": "models/05_chantier/40_bungalow_chantier.fbx",
+  "dims_studs": [
+   14,
+   7,
+   6
+  ],
+  "triangles": 2884,
+  "pieces": [
+   "Bungalow",
+   "Vitres",
+   "Porte",
+   "Lampe"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.018
+ },
+ "41_palette": {
+  "titre": "Palette",
+  "categorie": "05_chantier",
+  "fichier": "models/05_chantier/41_palette.fbx",
+  "dims_studs": [
+   4,
+   0.5,
+   4
+  ],
+  "triangles": 912,
+  "pieces": [
+   "Palette"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.02
+ },
+ "42_gros_tuyau": {
+  "titre": "Gros tuyau béton/acier",
+  "categorie": "05_chantier",
+  "fichier": "models/05_chantier/42_gros_tuyau.fbx",
+  "dims_studs": [
+   16,
+   1,
+   1
+  ],
+  "triangles": 524,
+  "pieces": [
+   "Tuyau"
+  ],
+  "en_jeu": null,
+  "notes": "⌀1 × 16, couché selon X",
+  "ecart_avant_recalage": 0.016
+ },
+ "43_tas_briques": {
+  "titre": "Tas de briques",
+  "categorie": "05_chantier",
+  "fichier": "models/05_chantier/43_tas_briques.fbx",
+  "dims_studs": [
+   3,
+   1.5,
+   2
+  ],
+  "triangles": 1892,
+  "pieces": [
+   "Briques"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.045
+ },
+ "44_tour_eclairage": {
+  "titre": "Tour d'éclairage mobile",
+  "categorie": "05_chantier",
+  "fichier": "models/05_chantier/44_tour_eclairage.fbx",
+  "dims_studs": [
+   3,
+   12,
+   3
+  ],
+  "triangles": 1464,
+  "pieces": [
+   "Remorque",
+   "Mat",
+   "Projecteurs",
+   "Boitiers"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.051
+ },
+ "45_camion_toupie": {
+  "titre": "Camion toupie béton",
+  "categorie": "05_chantier",
+  "fichier": "models/05_chantier/45_camion_toupie.fbx",
+  "dims_studs": [
+   7,
+   9,
+   22
+  ],
+  "triangles": 3344,
+  "pieces": [
+   "Chassis",
+   "Cabine",
+   "Vitres",
+   "Toupie",
+   "Goulotte",
+   "Phares",
+   "FeuxArriere",
+   "Roue_AvG",
+   "Roue_AvD",
+   "Roue_Av2G",
+   "Roue_Av2D",
+   "Roue_Ar1G",
+   "Roue_Ar1D",
+   "Roue_Ar2G",
+   "Roue_Ar2D"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.172
+ },
+ "46_grue_tour": {
+  "titre": "Grue à tour",
+  "categorie": "05_chantier",
+  "fichier": "models/05_chantier/46_grue_tour.fbx",
+  "dims_studs": [
+   74,
+   85,
+   4
+  ],
+  "triangles": 3998,
+  "pieces": [
+   "Mat",
+   "PartieTournante",
+   "Chariot",
+   "Crochet"
+  ],
+  "en_jeu": null,
+  "notes": "La plus grosse pièce",
+  "ecart_avant_recalage": 0.001
  }
 }
