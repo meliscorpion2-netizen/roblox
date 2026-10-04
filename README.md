@@ -1,7 +1,7 @@
 # Props Roblox – quartier délabré
 
-99 objets low-poly (107 fichiers `.fbx` avec les variantes) pour un jeu Roblox satirique dans un quartier pauvre :
-mobilier urbain, véhicules, déchets, marché, chantier, décors de boutiques et objets de la quête « x2 Luck Key ». Style « simulateur » cartoon,
+112 objets low-poly (120 fichiers `.fbx` avec les variantes) pour un jeu Roblox satirique dans un quartier pauvre :
+mobilier urbain, véhicules, déchets, marché, chantier, décors de boutiques objets de la quête « x2 Luck Key » et symboles de la machine à sous (100–112). Style « simulateur » cartoon,
 formes arrondies, arêtes biseautées, couleurs vives mais salies, sans texture photo ni texte.
 
 Tous les modèles sont générés par script avec Blender (module Python `bpy`), donc reproductibles et modifiables.
@@ -17,6 +17,7 @@ Tous les modèles sont générés par script avec Blender (module Python `bpy`),
 | Couleurs | Une seule texture partagée, `models/palette.png` (512 × 256, 128 cases unies avec un léger dégradé de crasse vers le bas), intégrée à chaque `.fbx`. |
 | Pièces séparées | Tout ce qui bouge ou s'allume est une pièce nommée : `Couvercle`, `Porte…`, `Ampoule`, `Flammes`, `Vitre(s)`, `Ecran`, `Neon`, `Lumiere`, `Phares`, `Roue_AvG`… Les pièces mobiles ont leur origine sur la charnière ou l'axe. |
 | Quête (96–99) | Les pièces `Lueur` des fragments sont des halos qui enveloppent l'objet : les passer en `Material = Neon`, `Transparency ≈ 0,6`. La clé finie et le point d'interrogation sont en couleurs propres, sans dégradé de crasse. Seul texte du pack : « x2 » gravé sur la tige de la clé, demandé explicitement. |
+| Machine à sous (100–112) | Couleurs propres. `Yeux` du loup, `Gemme` (blanche, à recolorer en néon Mini/Minor/Major/Grand) et `Contour` du Bonus Token sont des pièces séparées à passer en Neon. |
 | Enseignes | Aucun texte : panneaux, ardoises, menus et le panneau « EN PANNE » sont des surfaces vierges à habiller en jeu. |
 
 ## Import dans Roblox Studio
@@ -57,7 +58,20 @@ python3 tools/readme_table.py       # met à jour le tableau ci-dessous
 | 07 | Abribus | 12 × 9,3 × 3,3 | 1176 | Structure, Toit, Vitres, Banc, PanneauHoraires | [07_abribus.fbx](models/01_rue/07_abribus.fbx) |
 | 08 | Plaque d'égout | 2,6 × 0,1 × 2,6 | 812 | Plaque | [08_plaque_egout.fbx](models/01_rue/08_plaque_egout.fbx) |
 | 09 | Armoire électrique | 2,6 × 4 × 1,4 | 828 | Caisson, PorteGauche, PorteDroite | [09_armoire_electrique.fbx](models/01_rue/09_armoire_electrique.fbx) |
+| 100 | Casque de chantier | 1,6 × 1 × 1,8 | 576 | Casque | [100_casque_chantier.fbx](models/08_slot/100_casque_chantier.fbx) |
+| 101 | Marteau | 0,6 × 1,8 × 0,3 | 264 | Manche, Tete | [101_marteau.fbx](models/08_slot/101_marteau.fbx) |
+| 102 | Scie égoïne | 2 × 0,8 × 0,1 | 212 | Lame, Poignee | [102_scie_egoine.fbx](models/08_slot/102_scie_egoine.fbx) |
+| 103 | Brique rouge | 1,2 × 0,6 × 0,6 | 140 | Brique | [103_brique_rouge.fbx](models/08_slot/103_brique_rouge.fbx) |
+| 104 | Planche de bois | 2 × 0,3 × 0,6 | 136 | Planche | [104_planche_bois.fbx](models/08_slot/104_planche_bois.fbx) |
+| 105 | Botte de paille | 1,4 × 1 × 1 | 292 | Paille, Lien | [105_botte_paille.fbx](models/08_slot/105_botte_paille.fbx) |
+| 106 | Plan de maison | 1,6 × 0,4 × 1,2 | 244 | Plan | [106_plan_maison.fbx](models/08_slot/106_plan_maison.fbx) |
+| 107 | Petite maison en briques | 2 × 2 × 2 | 280 | Murs, Toit, Porte | [107_maison_briques.fbx](models/08_slot/107_maison_briques.fbx) |
+| 108 | Grande maison (manoir) | 3 × 3 × 2,4 | 772 | Murs, Toit, Fenetres, Porte | [108_manoir.fbx](models/08_slot/108_manoir.fbx) |
+| 109 | Cochon constructeur | 1,6 × 2,4 × 1,2 | 1764 | Corps, Casque, Outils | [109_cochon_constructeur.fbx](models/08_slot/109_cochon_constructeur.fbx) |
 | 10 | Poteau électrique en bois | 6 × 24 × 1 | 776 | Poteau | [10_poteau_electrique.fbx](models/01_rue/10_poteau_electrique.fbx) |
+| 110 | Loup en salopette | 1,8 × 2,6 × 1,2 | 1252 | Corps, Yeux | [110_loup_salopette.fbx](models/08_slot/110_loup_salopette.fbx) |
+| 111 | Gemme taillée | 1 × 1 × 1 | 64 | Gemme | [111_gemme.fbx](models/08_slot/111_gemme.fbx) |
+| 112 | Bonus Token | 1,6 × 1,6 × 0,3 | 1016 | Piece, Gravure, Contour | [112_bonus_token.fbx](models/08_slot/112_bonus_token.fbx) |
 | 11 | Transformateur sur poteau | 1,8 × 2,6 × 1,8 | 1020 | Transformateur | [11_transformateur.fbx](models/01_rue/11_transformateur.fbx) |
 | 12 | Haut-parleur pavillon | 1,6 × 1,3 × 1,3 | 444 | HautParleur | [12_haut_parleur.fbx](models/01_rue/12_haut_parleur.fbx) |
 | 13 | Sacs de sable empilés | 2,4 × 1 × 1,4 | 308 | Sacs | [13_sacs_sable.fbx](models/01_rue/13_sacs_sable.fbx) |

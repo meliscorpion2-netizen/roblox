@@ -201,6 +201,186 @@
   "notes": "",
   "ecart_avant_recalage": 0.008
  },
+ "100_casque_chantier": {
+  "titre": "Casque de chantier",
+  "categorie": "08_slot",
+  "fichier": "models/08_slot/100_casque_chantier.fbx",
+  "dims_studs": [
+   1.6,
+   1.0,
+   1.8
+  ],
+  "triangles": 576,
+  "pieces": [
+   "Casque"
+  ],
+  "en_jeu": null,
+  "notes": "Symbole scatter",
+  "ecart_avant_recalage": 0.227
+ },
+ "101_marteau": {
+  "titre": "Marteau",
+  "categorie": "08_slot",
+  "fichier": "models/08_slot/101_marteau.fbx",
+  "dims_studs": [
+   0.6,
+   1.8,
+   0.3
+  ],
+  "triangles": 264,
+  "pieces": [
+   "Manche",
+   "Tete"
+  ],
+  "en_jeu": null,
+  "notes": "Petit symbole",
+  "ecart_avant_recalage": 0.221
+ },
+ "102_scie_egoine": {
+  "titre": "Scie égoïne",
+  "categorie": "08_slot",
+  "fichier": "models/08_slot/102_scie_egoine.fbx",
+  "dims_studs": [
+   2.0,
+   0.8,
+   0.1
+  ],
+  "triangles": 212,
+  "pieces": [
+   "Lame",
+   "Poignee"
+  ],
+  "en_jeu": null,
+  "notes": "Petit symbole",
+  "ecart_avant_recalage": 0.167
+ },
+ "103_brique_rouge": {
+  "titre": "Brique rouge",
+  "categorie": "08_slot",
+  "fichier": "models/08_slot/103_brique_rouge.fbx",
+  "dims_studs": [
+   1.2,
+   0.6,
+   0.6
+  ],
+  "triangles": 140,
+  "pieces": [
+   "Brique"
+  ],
+  "en_jeu": null,
+  "notes": "Petit symbole",
+  "ecart_avant_recalage": 0.028
+ },
+ "104_planche_bois": {
+  "titre": "Planche de bois",
+  "categorie": "08_slot",
+  "fichier": "models/08_slot/104_planche_bois.fbx",
+  "dims_studs": [
+   2.0,
+   0.3,
+   0.6
+  ],
+  "triangles": 136,
+  "pieces": [
+   "Planche"
+  ],
+  "en_jeu": null,
+  "notes": "Petit symbole",
+  "ecart_avant_recalage": 0.062
+ },
+ "105_botte_paille": {
+  "titre": "Botte de paille",
+  "categorie": "08_slot",
+  "fichier": "models/08_slot/105_botte_paille.fbx",
+  "dims_studs": [
+   1.4,
+   1.0,
+   1.0
+  ],
+  "triangles": 292,
+  "pieces": [
+   "Paille",
+   "Lien"
+  ],
+  "en_jeu": null,
+  "notes": "Petit symbole",
+  "ecart_avant_recalage": 0.114
+ },
+ "106_plan_maison": {
+  "titre": "Plan de maison",
+  "categorie": "08_slot",
+  "fichier": "models/08_slot/106_plan_maison.fbx",
+  "dims_studs": [
+   1.6,
+   0.4,
+   1.2
+  ],
+  "triangles": 244,
+  "pieces": [
+   "Plan"
+  ],
+  "en_jeu": null,
+  "notes": "Symbole moyen",
+  "ecart_avant_recalage": 0.028
+ },
+ "107_maison_briques": {
+  "titre": "Petite maison en briques",
+  "categorie": "08_slot",
+  "fichier": "models/08_slot/107_maison_briques.fbx",
+  "dims_studs": [
+   2.0,
+   2.0,
+   2.0
+  ],
+  "triangles": 280,
+  "pieces": [
+   "Murs",
+   "Toit",
+   "Porte"
+  ],
+  "en_jeu": null,
+  "notes": "Symbole moyen, sert aussi pendant la construction",
+  "ecart_avant_recalage": 0.0
+ },
+ "108_manoir": {
+  "titre": "Grande maison (manoir)",
+  "categorie": "08_slot",
+  "fichier": "models/08_slot/108_manoir.fbx",
+  "dims_studs": [
+   3.0,
+   3.0,
+   2.4
+  ],
+  "triangles": 772,
+  "pieces": [
+   "Murs",
+   "Toit",
+   "Fenetres",
+   "Porte"
+  ],
+  "en_jeu": null,
+  "notes": "Symbole fort",
+  "ecart_avant_recalage": 0.059
+ },
+ "109_cochon_constructeur": {
+  "titre": "Cochon constructeur",
+  "categorie": "08_slot",
+  "fichier": "models/08_slot/109_cochon_constructeur.fbx",
+  "dims_studs": [
+   1.6,
+   2.4,
+   1.2
+  ],
+  "triangles": 1764,
+  "pieces": [
+   "Corps",
+   "Casque",
+   "Outils"
+  ],
+  "en_jeu": null,
+  "notes": "Symbole le plus fort",
+  "ecart_avant_recalage": 0.068
+ },
  "10_poteau_electrique": {
   "titre": "Poteau électrique en bois",
   "categorie": "01_rue",
@@ -217,6 +397,60 @@
   "en_jeu": 47,
   "notes": "",
   "ecart_avant_recalage": 0.053
+ },
+ "110_loup_salopette": {
+  "titre": "Loup en salopette",
+  "categorie": "08_slot",
+  "fichier": "models/08_slot/110_loup_salopette.fbx",
+  "dims_studs": [
+   1.8,
+   2.6,
+   1.2
+  ],
+  "triangles": 1252,
+  "pieces": [
+   "Corps",
+   "Yeux"
+  ],
+  "en_jeu": null,
+  "notes": "Symbole wild ; Yeux en néon",
+  "ecart_avant_recalage": 0.161
+ },
+ "111_gemme": {
+  "titre": "Gemme taillée",
+  "categorie": "08_slot",
+  "fichier": "models/08_slot/111_gemme.fbx",
+  "dims_studs": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "triangles": 64,
+  "pieces": [
+   "Gemme"
+  ],
+  "en_jeu": null,
+  "notes": "Symbole jackpot ; recolorée en néon Mini/Minor/Major/Grand",
+  "ecart_avant_recalage": 0.087
+ },
+ "112_bonus_token": {
+  "titre": "Bonus Token",
+  "categorie": "08_slot",
+  "fichier": "models/08_slot/112_bonus_token.fbx",
+  "dims_studs": [
+   1.6,
+   1.6,
+   0.3
+  ],
+  "triangles": 1016,
+  "pieces": [
+   "Piece",
+   "Gravure",
+   "Contour"
+  ],
+  "en_jeu": null,
+  "notes": "Contour à faire briller",
+  "ecart_avant_recalage": 0.06
  },
  "11_transformateur": {
   "titre": "Transformateur sur poteau",
