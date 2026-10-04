@@ -72,6 +72,7 @@ python3 tools/readme_table.py       # met à jour le tableau ci-dessous
 | 110 | Loup en salopette | 1,8 × 2,6 × 1,2 | 1252 | Corps, Yeux | [110_loup_salopette.fbx](models/08_slot/110_loup_salopette.fbx) |
 | 111 | Gemme taillée | 1 × 1 × 1 | 64 | Gemme | [111_gemme.fbx](models/08_slot/111_gemme.fbx) |
 | 112 | Bonus Token | 1,6 × 1,6 × 0,3 | 1016 | Piece, Gravure, Contour | [112_bonus_token.fbx](models/08_slot/112_bonus_token.fbx) |
+| 113 | Borne de machine à sous « Huff n' Puff » | 5,6 × 8,9 × 3 | 1534 | Meuble, Ecran, Jackpots, Fronton, Lumieres, Boutons, Levier, BoulLevier | [113_borne_huff_n_puff.fbx](models/08_slot/113_borne_huff_n_puff.fbx) |
 | 11 | Transformateur sur poteau | 1,8 × 2,6 × 1,8 | 1020 | Transformateur | [11_transformateur.fbx](models/01_rue/11_transformateur.fbx) |
 | 12 | Haut-parleur pavillon | 1,6 × 1,3 × 1,3 | 444 | HautParleur | [12_haut_parleur.fbx](models/01_rue/12_haut_parleur.fbx) |
 | 13 | Sacs de sable empilés | 2,4 × 1 × 1,4 | 308 | Sacs | [13_sacs_sable.fbx](models/01_rue/13_sacs_sable.fbx) |

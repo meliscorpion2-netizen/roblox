@@ -452,6 +452,30 @@
   "notes": "Contour à faire briller",
   "ecart_avant_recalage": 0.06
  },
+ "113_borne_huff_n_puff": {
+  "titre": "Borne de machine à sous « Huff n' Puff »",
+  "categorie": "08_slot",
+  "fichier": "models/08_slot/113_borne_huff_n_puff.fbx",
+  "dims_studs": [
+   5.6,
+   8.9,
+   3.0
+  ],
+  "triangles": 1534,
+  "pieces": [
+   "Meuble",
+   "Ecran",
+   "Jackpots",
+   "Fronton",
+   "Lumieres",
+   "Boutons",
+   "Levier",
+   "BoulLevier"
+  ],
+  "en_jeu": null,
+  "notes": "Écran vertical incurvé, bandes LED vertes ; visuels du jeu à appliquer sur Ecran en jeu",
+  "ecart_avant_recalage": 0.07
+ },
  "11_transformateur": {
   "titre": "Transformateur sur poteau",
   "categorie": "01_rue",

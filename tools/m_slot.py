@@ -255,3 +255,65 @@ MODELS = [
     ("108_manoir", manoir), ("109_cochon_constructeur", cochon), ("110_loup_salopette", loup), ("111_gemme", gemme),
     ("112_bonus_token", token),
 ]
+
+
+def borne():
+    m = M("borne_huff_n_puff", (5.6, 8.9, 3.0), "Borne de machine à sous « Huff n' Puff »",
+          "Écran vertical incurvé, bandes LED vertes ; visuels du jeu à appliquer sur Ecran en jeu")
+    Z0, Z1 = 2.9, 8.5
+    def bend(z):  # profil en C : bas et haut avancent, milieu en retrait
+        t = (z - (Z0 + Z1) / 2) / ((Z1 - Z0) / 2)
+        return -0.45 * t * t + 0.12 * t
+    def slab(p, w, y0, y1, za, zb, c, x=-0.2, n=10):
+        """Panneau incurvé épais (face avant y0, arrière y1) suivant le profil bend(z)."""
+        vs, fs = [], []
+        for i in range(n + 1):
+            z = za + (zb - za) * i / n
+            o = bend(z)
+            for (xx, yy) in ((x - w / 2, y0), (x + w / 2, y0), (x + w / 2, y1), (x - w / 2, y1)):
+                vs.append((xx, yy + o, z))
+        for i in range(n):
+            for k in range(4):
+                a, b2 = i * 4 + k, i * 4 + (k + 1) % 4
+                fs.append((a, b2, b2 + 4, a + 4))
+        fs += [(0, 1, 2, 3), tuple(n * 4 + k for k in range(4))]
+        p.raw(vs, fs, c)
+    b = m.part("Meuble")
+    b.boxb(4.2, 2.6, 0.35, -0.2, 0.15, 0, c="plastic_black", bev=0.1)  # socle
+    b.box(3.4, 2.2, 2.3, at=(-0.2, 0.25, 1.5), taper=(1.0, 0.75), c="iron", bev=0.12)  # piétement
+    b.box(4.0, 2.2, 0.4, at=(-0.2, -0.25, 2.55), rot=(-10, 0, 0), c="plastic_black", bev=0.12)  # pupitre
+    slab(b, 3.7, -0.05, 0.85, Z0 - 0.15, Z1 + 0.1, "plastic_black")  # corps incurvé
+    b.box(3.9, 1.1, 0.35, at=(-0.2, 0.25 + bend(Z1), Z1 + 0.2), c="plastic_black", bev=0.12)  # chapeau
+    b.boxb(0.35, 0.4, 0.5, -0.2, -0.9, 1.9, c="gunmetal", bev=0.04)  # lecteur de tickets
+    b.boxb(0.5, 0.5, 0.9, 1.95, 0.4, 3.4, c="gunmetal", bev=0.06)  # support levier
+    e = m.part("Ecran")
+    slab(e, 3.3, -0.1, -0.03, Z0 + 0.05, Z1 - 0.05, "screen")
+    e.box(2.6, 0.05, 0.9, at=(-0.2, -1.0, 2.82), rot=(-10, 0, 0), c="light_amber", bev=0)  # écran tactile du pupitre
+    j = m.part("Jackpots")
+    for i, c in enumerate(("light_green", "neon_blue", "neon_pink", "light_red")):
+        z = 6.75
+        j.box(0.72, 0.06, 0.3, at=(-1.38 + i * 0.79, -0.13 + bend(z), z), c=c, bev=0.02)
+    f = m.part("Fronton")
+    f.box(3.9, 0.15, 0.3, at=(-0.2, -0.25 + bend(Z1), Z1 + 0.25), c="gunmetal", bev=0.05)
+    l = m.part("Lumieres")
+    for s in (-1, 1):
+        x0 = -0.2 + s * 1.85
+        pts = [(x0, -0.15 + bend(z), z) for z in [Z1 + 0.3 - i * (Z1 - Z0) / 8 for i in range(9)]]
+        pts += [(x0 + s * 0.3, -0.5, 2.5), (x0 + s * 0.45, -0.55, 1.6), (x0 + s * 0.5, -0.4, 0.7), (x0 + s * 0.45, -0.1, 0.35)]
+        l.pipe(pts, 0.09, c="light_green", sides=6)
+    l.box(3.5, 0.1, 0.1, at=(-0.2, -0.15 + bend(Z1), Z1 + 0.42), c="light_green", bev=0.02)
+    l.pipe([(-2.2, -1.32, 2.42), (-0.2, -1.4, 2.42), (1.8, -1.32, 2.42)], 0.06, c="light_green", sides=5)  # bord du pupitre
+    l.boxb(4.0, 2.4, 0.06, -0.2, 0.15, 0.36, c="light_green", bev=0)
+    bt = m.part("Boutons")
+    for x in (-1.3, 0.9):
+        bt.cyl(0.18, 0.08, at=(x, -1.15, 2.72), rot=(-10, 0, 0), c="neon_blue", segs=10, bev=0.02)
+    bt.cyl(0.24, 0.1, at=(1.45, -1.05, 2.75), rot=(-10, 0, 0), c="light_green", segs=12, bev=0.03)
+    lv = m.part("Levier", pivot=(2.3, 0.4, 3.85))
+    lv.cyl(0.16, 0.2, at=(2.2, 0.4, 3.85), rot=(0, 90, 0), c="chrome", segs=10, bev=0.03)
+    lv.rod((2.4, 0.4, 3.85), (2.4, 0.2, 5.5), 0.065, c="chrome", sides=8)
+    bl = m.part("BoulLevier")
+    bl.sphere(0.22, at=(2.4, 0.18, 5.7), c="red", segs=10, rings=7)
+    return m
+
+
+MODELS.append(("113_borne_huff_n_puff", borne))
