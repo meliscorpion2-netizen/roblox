@@ -1,0 +1,444 @@
+{
+ "01_lampadaire": {
+  "titre": "Lampadaire",
+  "categorie": "01_rue",
+  "fichier": "models/01_rue/01_lampadaire.fbx",
+  "dims_studs": [
+   1.4,
+   14.5,
+   2.6
+  ],
+  "triangles": 720,
+  "pieces": [
+   "Poteau",
+   "TeteLampe",
+   "Ampoule"
+  ],
+  "en_jeu": 52,
+  "notes": "",
+  "ecart_avant_recalage": 0.082
+ },
+ "02_feu_tricolore": {
+  "titre": "Feu tricolore",
+  "categorie": "01_rue",
+  "fichier": "models/01_rue/02_feu_tricolore.fbx",
+  "dims_studs": [
+   1.4,
+   11,
+   1.2
+  ],
+  "triangles": 1124,
+  "pieces": [
+   "Poteau",
+   "Boitier",
+   "Feu_Rouge",
+   "Feu_Orange",
+   "Feu_Vert"
+  ],
+  "en_jeu": 12,
+  "notes": "",
+  "ecart_avant_recalage": 0.139
+ },
+ "03_corbeille": {
+  "titre": "Corbeille de rue",
+  "categorie": "01_rue",
+  "fichier": "models/01_rue/03_corbeille.fbx",
+  "dims_studs": [
+   1.8,
+   2.6,
+   1.8
+  ],
+  "triangles": 716,
+  "pieces": [
+   "Corbeille"
+  ],
+  "en_jeu": 24,
+  "notes": "",
+  "ecart_avant_recalage": 0.023
+ },
+ "04_benne": {
+  "titre": "Benne à ordures",
+  "categorie": "01_rue",
+  "fichier": "models/01_rue/04_benne.fbx",
+  "dims_studs": [
+   6,
+   4,
+   3.4
+  ],
+  "triangles": 1570,
+  "pieces": [
+   "Benne",
+   "Couvercle"
+  ],
+  "en_jeu": 40,
+  "notes": "",
+  "ecart_avant_recalage": 0.035
+ },
+ "05a_sac_poubelle": {
+  "titre": "Sac poubelle A",
+  "categorie": "01_rue",
+  "fichier": "models/01_rue/05a_sac_poubelle.fbx",
+  "dims_studs": [
+   1.5,
+   1.3,
+   1.4
+  ],
+  "triangles": 268,
+  "pieces": [
+   "Sac"
+  ],
+  "en_jeu": 200,
+  "notes": "3 variantes (A/B/C)",
+  "ecart_avant_recalage": 0.216
+ },
+ "05b_sac_poubelle": {
+  "titre": "Sac poubelle B",
+  "categorie": "01_rue",
+  "fichier": "models/01_rue/05b_sac_poubelle.fbx",
+  "dims_studs": [
+   1.5,
+   1.3,
+   1.4
+  ],
+  "triangles": 268,
+  "pieces": [
+   "Sac"
+  ],
+  "en_jeu": 200,
+  "notes": "3 variantes (A/B/C)",
+  "ecart_avant_recalage": 0.144
+ },
+ "05c_sac_poubelle": {
+  "titre": "Sac poubelle C",
+  "categorie": "01_rue",
+  "fichier": "models/01_rue/05c_sac_poubelle.fbx",
+  "dims_studs": [
+   1.5,
+   1.3,
+   1.4
+  ],
+  "triangles": 404,
+  "pieces": [
+   "Sac"
+  ],
+  "en_jeu": 200,
+  "notes": "3 variantes (A/B/C)",
+  "ecart_avant_recalage": 0.149
+ },
+ "06_baril_feu": {
+  "titre": "Baril de feu",
+  "categorie": "01_rue",
+  "fichier": "models/01_rue/06_baril_feu.fbx",
+  "dims_studs": [
+   2.2,
+   3.2,
+   2.2
+  ],
+  "triangles": 1296,
+  "pieces": [
+   "Fut",
+   "Braises",
+   "Flammes"
+  ],
+  "en_jeu": 5,
+  "notes": "",
+  "ecart_avant_recalage": 0.062
+ },
+ "07_abribus": {
+  "titre": "Abribus",
+  "categorie": "01_rue",
+  "fichier": "models/01_rue/07_abribus.fbx",
+  "dims_studs": [
+   12,
+   9.3,
+   3.3
+  ],
+  "triangles": 1176,
+  "pieces": [
+   "Structure",
+   "Toit",
+   "Vitres",
+   "Banc",
+   "PanneauHoraires"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.016
+ },
+ "08_plaque_egout": {
+  "titre": "Plaque d'égout",
+  "categorie": "01_rue",
+  "fichier": "models/01_rue/08_plaque_egout.fbx",
+  "dims_studs": [
+   2.6,
+   0.1,
+   2.6
+  ],
+  "triangles": 812,
+  "pieces": [
+   "Plaque"
+  ],
+  "en_jeu": 15,
+  "notes": "",
+  "ecart_avant_recalage": 0.012
+ },
+ "09_armoire_electrique": {
+  "titre": "Armoire électrique",
+  "categorie": "01_rue",
+  "fichier": "models/01_rue/09_armoire_electrique.fbx",
+  "dims_studs": [
+   2.6,
+   4,
+   1.4
+  ],
+  "triangles": 828,
+  "pieces": [
+   "Caisson",
+   "PorteGauche",
+   "PorteDroite"
+  ],
+  "en_jeu": 8,
+  "notes": "",
+  "ecart_avant_recalage": 0.008
+ },
+ "10_poteau_electrique": {
+  "titre": "Poteau électrique en bois",
+  "categorie": "01_rue",
+  "fichier": "models/01_rue/10_poteau_electrique.fbx",
+  "dims_studs": [
+   6,
+   24,
+   1
+  ],
+  "triangles": 776,
+  "pieces": [
+   "Poteau"
+  ],
+  "en_jeu": 47,
+  "notes": "",
+  "ecart_avant_recalage": 0.053
+ },
+ "11_transformateur": {
+  "titre": "Transformateur sur poteau",
+  "categorie": "01_rue",
+  "fichier": "models/01_rue/11_transformateur.fbx",
+  "dims_studs": [
+   1.8,
+   2.6,
+   1.8
+  ],
+  "triangles": 1020,
+  "pieces": [
+   "Transformateur"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.153
+ },
+ "12_haut_parleur": {
+  "titre": "Haut-parleur pavillon",
+  "categorie": "01_rue",
+  "fichier": "models/01_rue/12_haut_parleur.fbx",
+  "dims_studs": [
+   1.6,
+   1.3,
+   1.3
+  ],
+  "triangles": 444,
+  "pieces": [
+   "HautParleur"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.102
+ },
+ "13_sacs_sable": {
+  "titre": "Sacs de sable empilés",
+  "categorie": "01_rue",
+  "fichier": "models/01_rue/13_sacs_sable.fbx",
+  "dims_studs": [
+   2.4,
+   1,
+   1.4
+  ],
+  "triangles": 308,
+  "pieces": [
+   "Sacs"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.031
+ },
+ "14_cloture_grillagee": {
+  "titre": "Clôture grillagée avec barbelés",
+  "categorie": "01_rue",
+  "fichier": "models/01_rue/14_cloture_grillagee.fbx",
+  "dims_studs": [
+   8,
+   6,
+   0.3
+  ],
+  "triangles": 1434,
+  "pieces": [
+   "Poteaux",
+   "Grillage",
+   "Barbele"
+  ],
+  "en_jeu": null,
+  "notes": "Module de 8 studs",
+  "ecart_avant_recalage": 0.07
+ },
+ "15_panneau_signalisation": {
+  "titre": "Panneau de signalisation",
+  "categorie": "01_rue",
+  "fichier": "models/01_rue/15_panneau_signalisation.fbx",
+  "dims_studs": [
+   2,
+   7,
+   0.3
+  ],
+  "triangles": 476,
+  "pieces": [
+   "Poteau",
+   "Panneau"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.094
+ },
+ "16_passerelle": {
+  "titre": "Passerelle métallique",
+  "categorie": "01_rue",
+  "fichier": "models/01_rue/16_passerelle.fbx",
+  "dims_studs": [
+   8,
+   1,
+   3
+  ],
+  "triangles": 1196,
+  "pieces": [
+   "Passerelle"
+  ],
+  "en_jeu": null,
+  "notes": "Module de 8 studs",
+  "ecart_avant_recalage": 0.0
+ },
+ "17_vieille_voiture": {
+  "titre": "Vieille voiture cabossée",
+  "categorie": "02_vehicules",
+  "fichier": "models/02_vehicules/17_vieille_voiture.fbx",
+  "dims_studs": [
+   5.2,
+   4.6,
+   10.1
+  ],
+  "triangles": 1960,
+  "pieces": [
+   "Carrosserie",
+   "Vitres",
+   "Phares",
+   "FeuxArriere",
+   "Roue_AvG",
+   "Roue_AvD",
+   "Roue_ArG",
+   "Roue_ArD"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.016
+ },
+ "18_camionnette": {
+  "titre": "Camionnette utilitaire",
+  "categorie": "02_vehicules",
+  "fichier": "models/02_vehicules/18_camionnette.fbx",
+  "dims_studs": [
+   5.6,
+   6.2,
+   11.3
+  ],
+  "triangles": 2212,
+  "pieces": [
+   "Carrosserie",
+   "Vitres",
+   "Phares",
+   "FeuxArriere",
+   "Roue_AvG",
+   "Roue_AvD",
+   "Roue_ArG",
+   "Roue_ArD"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.057
+ },
+ "19_citadine": {
+  "titre": "Petite citadine",
+  "categorie": "02_vehicules",
+  "fichier": "models/02_vehicules/19_citadine.fbx",
+  "dims_studs": [
+   5.0,
+   4.2,
+   8.3
+  ],
+  "triangles": 1740,
+  "pieces": [
+   "Carrosserie",
+   "Vitres",
+   "Phares",
+   "FeuxArriere",
+   "Roue_AvG",
+   "Roue_AvD",
+   "Roue_ArG",
+   "Roue_ArD"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.017
+ },
+ "20_camion_porteur": {
+  "titre": "Camion porteur avec caisse",
+  "categorie": "02_vehicules",
+  "fichier": "models/02_vehicules/20_camion_porteur.fbx",
+  "dims_studs": [
+   6.9,
+   8.8,
+   20.4
+  ],
+  "triangles": 3104,
+  "pieces": [
+   "Chassis",
+   "Cabine",
+   "Vitres",
+   "Caisse",
+   "PorteArriere",
+   "Phares",
+   "FeuxArriere",
+   "Roue_AvG",
+   "Roue_AvD",
+   "Roue_Ar1G",
+   "Roue_Ar1D",
+   "Roue_Ar2G",
+   "Roue_Ar2D"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.006
+ },
+ "21_epave_brulee": {
+  "titre": "Épave de voiture brûlée",
+  "categorie": "02_vehicules",
+  "fichier": "models/02_vehicules/21_epave_brulee.fbx",
+  "dims_studs": [
+   4.8,
+   4.6,
+   10.1
+  ],
+  "triangles": 976,
+  "pieces": [
+   "Epave"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.07
+ }
+}
