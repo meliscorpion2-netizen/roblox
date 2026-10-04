@@ -1,7 +1,7 @@
 # Props Roblox – quartier délabré
 
-95 objets low-poly (100 fichiers `.fbx` avec les variantes) pour un jeu Roblox satirique dans un quartier pauvre :
-mobilier urbain, véhicules, déchets, marché, chantier et décors de boutiques. Style « simulateur » cartoon,
+99 objets low-poly (107 fichiers `.fbx` avec les variantes) pour un jeu Roblox satirique dans un quartier pauvre :
+mobilier urbain, véhicules, déchets, marché, chantier, décors de boutiques et objets de la quête « x2 Luck Key ». Style « simulateur » cartoon,
 formes arrondies, arêtes biseautées, couleurs vives mais salies, sans texture photo ni texte.
 
 Tous les modèles sont générés par script avec Blender (module Python `bpy`), donc reproductibles et modifiables.
@@ -16,6 +16,7 @@ Tous les modèles sont générés par script avec Blender (module Python `bpy`),
 | Triangles | Tous sous 5 000 (le plus lourd : l'étal de marché, 4 448). |
 | Couleurs | Une seule texture partagée, `models/palette.png` (512 × 256, 128 cases unies avec un léger dégradé de crasse vers le bas), intégrée à chaque `.fbx`. |
 | Pièces séparées | Tout ce qui bouge ou s'allume est une pièce nommée : `Couvercle`, `Porte…`, `Ampoule`, `Flammes`, `Vitre(s)`, `Ecran`, `Neon`, `Lumiere`, `Phares`, `Roue_AvG`… Les pièces mobiles ont leur origine sur la charnière ou l'axe. |
+| Quête (96–99) | Les pièces `Lueur` des fragments sont des halos qui enveloppent l'objet : les passer en `Material = Neon`, `Transparency ≈ 0,6`. La clé finie et le point d'interrogation sont en couleurs propres, sans dégradé de crasse. Seul texte du pack : « x2 » gravé sur la tige de la clé, demandé explicitement. |
 | Enseignes | Aucun texte : panneaux, ardoises, menus et le panneau « EN PANNE » sont des surfaces vierges à habiller en jeu. |
 
 ## Import dans Roblox Studio
@@ -145,4 +146,11 @@ python3 tools/readme_table.py       # met à jour le tableau ci-dessous
 | 93 | Portant à vêtements | 1 × 4,5 × 5 | 2056 | Portant, Vetements | [93_portant_vetements.fbx](models/06_magasins/93_portant_vetements.fbx) |
 | 94 | Seau en métal avec bouquet | 1,2 × 2,2 × 1,2 | 1044 | Seau, Bouquet | [94_seau_bouquet.fbx](models/06_magasins/94_seau_bouquet.fbx) |
 | 95 | Comptoir à barreaux | 8 × 6,4 × 1,6 | 1048 | Comptoir, Barreaux, Guichet | [95_comptoir_barreaux.fbx](models/06_magasins/95_comptoir_barreaux.fbx) |
+| 96 | Repas pour le SDF | 1,2 × 1,4 × 0,8 | 620 | Sac, Sandwich | [96_repas_sdf.fbx](models/07_quete/96_repas_sdf.fbx) |
+| 97a | Fragment 1 : tête de clé | 1 × 1 × 0,2 | 688 | Fragment, Lueur | [97a_fragment_tete.fbx](models/07_quete/97a_fragment_tete.fbx) |
+| 97b | Fragment 2 : tige de clé rouillée | 0,3 × 1,6 × 0,3 | 384 | Fragment, Lueur | [97b_fragment_tige.fbx](models/07_quete/97b_fragment_tige.fbx) |
+| 97c | Fragment 3 : panneton | 0,8 × 0,6 × 0,2 | 200 | Fragment, Lueur | [97c_fragment_panneton.fbx](models/07_quete/97c_fragment_panneton.fbx) |
+| 97d | Fragment 4 : trèfle en cristal | 0,9 × 0,9 × 0,3 | 600 | Fragment, Lueur | [97d_fragment_trefle.fbx](models/07_quete/97d_fragment_trefle.fbx) |
+| 98 | « x2 Luck Key » | 1,2 × 3 × 0,4 | 1360 | Anneau, Tige, Panneton, Trefle | [98_x2_luck_key.fbx](models/07_quete/98_x2_luck_key.fbx) |
+| 99 | Point d'interrogation flottant | 1,2 × 2,2 × 0,4 | 772 | Interrogation, Point | [99_point_interrogation.fbx](models/07_quete/99_point_interrogation.fbx) |
 <!-- /table -->

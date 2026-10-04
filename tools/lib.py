@@ -360,6 +360,7 @@ class Model:
         self.parts = {}
         self.rng = random.Random(hash(name) & 0xFFFF)
         self.fit = True
+        self.grime = True  # False : couleurs propres (objets de quête, récompenses)
 
     def part(self, name, pivot=None):
         if name not in self.parts:
@@ -416,7 +417,7 @@ class Model:
             for poly, col in zip(me.polygons, p.cols):
                 for li in poly.loop_indices:
                     z = me.vertices[me.loops[li].vertex_index].co.z
-                    t = max(0.0, min(1.0, z / G))
+                    t = max(0.0, min(1.0, z / G)) if self.grime else 0.92
                     uvl.data[li].uv = swatch_uv(col, t)
             bm = bmesh.new()
             bm.from_mesh(me)

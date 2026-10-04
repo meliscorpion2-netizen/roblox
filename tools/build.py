@@ -51,6 +51,31 @@ def setup_render():
     return cam, sun
 
 
+def glow_material():
+    mat = bpy.data.materials.get("ApercuLueur")
+    if mat:
+        return mat
+    mat = bpy.data.materials.new("ApercuLueur")
+    mat.use_nodes = True
+    nt = mat.node_tree
+    nt.nodes.clear()
+    out = nt.nodes.new("ShaderNodeOutputMaterial")
+    mix = nt.nodes.new("ShaderNodeMixShader")
+    mix.inputs[0].default_value = 0.2
+    tr = nt.nodes.new("ShaderNodeBsdfTransparent")
+    em = nt.nodes.new("ShaderNodeEmission")
+    tex = nt.nodes.new("ShaderNodeTexImage")
+    tex.image = bpy.data.materials["Palette"].node_tree.nodes["Image Texture"].image
+    tex.interpolation = "Closest"
+    em.inputs["Strength"].default_value = 1.3
+    nt.links.new(tex.outputs["Color"], em.inputs["Color"])
+    nt.links.new(tr.outputs[0], mix.inputs[1])
+    nt.links.new(em.outputs[0], mix.inputs[2])
+    nt.links.new(mix.outputs[0], out.inputs["Surface"])
+    mat.blend_method = "BLEND"
+    return mat
+
+
 def render(model, objs, cam, sun, path):
     sc = bpy.context.scene
     for o in (cam, sun):
@@ -78,6 +103,10 @@ def render(model, objs, cam, sun, path):
     cx, cy = (max(xs) + min(xs)) / 2, (max(ys) + min(ys)) / 2
     cam.location = cam.matrix_world @ Vector((cx, cy, 0))
     cam.data.clip_end = dist * 3
+    # aperçu : les halos « Lueur » rendus translucides et lumineux, comme en jeu (Neon + Transparency)
+    for o in objs:
+        if o.name.startswith("Lueur"):
+            o.data.materials[0] = glow_material()
     sc.render.filepath = path
     bpy.ops.render.render(write_still=True)
 

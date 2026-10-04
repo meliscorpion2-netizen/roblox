@@ -1835,5 +1835,133 @@
   "en_jeu": null,
   "notes": "Guichet coulissant séparé",
   "ecart_avant_recalage": 0.0
+ },
+ "96_repas_sdf": {
+  "titre": "Repas pour le SDF",
+  "categorie": "07_quete",
+  "fichier": "models/07_quete/96_repas_sdf.fbx",
+  "dims_studs": [
+   1.2,
+   1.4,
+   0.8
+  ],
+  "triangles": 620,
+  "pieces": [
+   "Sac",
+   "Sandwich"
+  ],
+  "en_jeu": null,
+  "notes": "Objet acheté puis donné",
+  "ecart_avant_recalage": 0.099
+ },
+ "97a_fragment_tete": {
+  "titre": "Fragment 1 : tête de clé",
+  "categorie": "07_quete",
+  "fichier": "models/07_quete/97a_fragment_tete.fbx",
+  "dims_studs": [
+   1.0,
+   1.0,
+   0.2
+  ],
+  "triangles": 688,
+  "pieces": [
+   "Fragment",
+   "Lueur"
+  ],
+  "en_jeu": null,
+  "notes": "À ramasser",
+  "ecart_avant_recalage": 0.158
+ },
+ "97b_fragment_tige": {
+  "titre": "Fragment 2 : tige de clé rouillée",
+  "categorie": "07_quete",
+  "fichier": "models/07_quete/97b_fragment_tige.fbx",
+  "dims_studs": [
+   0.3,
+   1.6,
+   0.3
+  ],
+  "triangles": 384,
+  "pieces": [
+   "Fragment",
+   "Lueur"
+  ],
+  "en_jeu": null,
+  "notes": "À ramasser",
+  "ecart_avant_recalage": 0.051
+ },
+ "97c_fragment_panneton": {
+  "titre": "Fragment 3 : panneton",
+  "categorie": "07_quete",
+  "fichier": "models/07_quete/97c_fragment_panneton.fbx",
+  "dims_studs": [
+   0.8,
+   0.6,
+   0.2
+  ],
+  "triangles": 200,
+  "pieces": [
+   "Fragment",
+   "Lueur"
+  ],
+  "en_jeu": null,
+  "notes": "À ramasser",
+  "ecart_avant_recalage": 0.098
+ },
+ "97d_fragment_trefle": {
+  "titre": "Fragment 4 : trèfle en cristal",
+  "categorie": "07_quete",
+  "fichier": "models/07_quete/97d_fragment_trefle.fbx",
+  "dims_studs": [
+   0.9,
+   0.9,
+   0.3
+  ],
+  "triangles": 600,
+  "pieces": [
+   "Fragment",
+   "Lueur"
+  ],
+  "en_jeu": null,
+  "notes": "À ramasser",
+  "ecart_avant_recalage": 0.044
+ },
+ "98_x2_luck_key": {
+  "titre": "« x2 Luck Key »",
+  "categorie": "07_quete",
+  "fichier": "models/07_quete/98_x2_luck_key.fbx",
+  "dims_studs": [
+   1.2,
+   3.0,
+   0.4
+  ],
+  "triangles": 1360,
+  "pieces": [
+   "Anneau",
+   "Tige",
+   "Panneton",
+   "Trefle"
+  ],
+  "en_jeu": null,
+  "notes": "Résultat du craft ; « x2 » gravé sur la tige",
+  "ecart_avant_recalage": 0.053
+ },
+ "99_point_interrogation": {
+  "titre": "Point d'interrogation flottant",
+  "categorie": "07_quete",
+  "fichier": "models/07_quete/99_point_interrogation.fbx",
+  "dims_studs": [
+   1.2,
+   2.2,
+   0.4
+  ],
+  "triangles": 772,
+  "pieces": [
+   "Interrogation",
+   "Point"
+  ],
+  "en_jeu": null,
+  "notes": "Au-dessus du SDF ; pivot au bas du point",
+  "ecart_avant_recalage": 0.019
  }
 }
