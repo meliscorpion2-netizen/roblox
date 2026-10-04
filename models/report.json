@@ -912,5 +912,928 @@
   "en_jeu": null,
   "notes": "La plus grosse pièce",
   "ecart_avant_recalage": 0.001
+ },
+ "47a_comptoir_boutique_5": {
+  "titre": "Comptoir de boutique 5",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/47a_comptoir_boutique_5.fbx",
+  "dims_studs": [
+   5,
+   3.4,
+   1.6
+  ],
+  "triangles": 528,
+  "pieces": [
+   "Comptoir"
+  ],
+  "en_jeu": null,
+  "notes": "Face client vers -Z ; côté vendeur ouvert avec étagère",
+  "ecart_avant_recalage": 0.023
+ },
+ "47b_comptoir_boutique_10": {
+  "titre": "Comptoir de boutique 10",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/47b_comptoir_boutique_10.fbx",
+  "dims_studs": [
+   10,
+   3.4,
+   1.6
+  ],
+  "triangles": 616,
+  "pieces": [
+   "Comptoir"
+  ],
+  "en_jeu": null,
+  "notes": "Face client vers -Z ; côté vendeur ouvert avec étagère",
+  "ecart_avant_recalage": 0.023
+ },
+ "48_caisse_enregistreuse": {
+  "titre": "Caisse enregistreuse",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/48_caisse_enregistreuse.fbx",
+  "dims_studs": [
+   1.2,
+   1,
+   1
+  ],
+  "triangles": 816,
+  "pieces": [
+   "Caisse",
+   "Ecran",
+   "Tiroir"
+  ],
+  "en_jeu": null,
+  "notes": "Clavier et tiroir côté -Z (vendeur)",
+  "ecart_avant_recalage": 0.0
+ },
+ "49a_etagere_metal_4": {
+  "titre": "Étagère métal remplie 4",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/49a_etagere_metal_4.fbx",
+  "dims_studs": [
+   4,
+   5,
+   1.2
+  ],
+  "triangles": 2248,
+  "pieces": [
+   "Etagere"
+  ],
+  "en_jeu": null,
+  "notes": "4 niveaux",
+  "ecart_avant_recalage": 0.013
+ },
+ "49b_etagere_metal_8": {
+  "titre": "Étagère métal remplie 8",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/49b_etagere_metal_8.fbx",
+  "dims_studs": [
+   8,
+   5,
+   1.2
+  ],
+  "triangles": 4032,
+  "pieces": [
+   "Etagere"
+  ],
+  "en_jeu": null,
+  "notes": "4 niveaux",
+  "ecart_avant_recalage": 0.013
+ },
+ "50_frigo_vitre": {
+  "titre": "Frigo vitré à canettes",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/50_frigo_vitre.fbx",
+  "dims_studs": [
+   2.6,
+   6,
+   1.6
+  ],
+  "triangles": 1884,
+  "pieces": [
+   "Caisson",
+   "Porte",
+   "Vitre",
+   "Lumiere"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.059
+ },
+ "51_plafonnier_neon": {
+  "titre": "Plafonnier néon",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/51_plafonnier_neon.fbx",
+  "dims_studs": [
+   3,
+   0.2,
+   0.8
+  ],
+  "triangles": 284,
+  "pieces": [
+   "Boitier",
+   "Neon"
+  ],
+  "en_jeu": null,
+  "notes": "Base = face plafond inversée : poser le dessus contre le plafond",
+  "ecart_avant_recalage": 0.07
+ },
+ "52_tabouret_bar": {
+  "titre": "Tabouret de bar",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/52_tabouret_bar.fbx",
+  "dims_studs": [
+   1.2,
+   2.5,
+   1.2
+  ],
+  "triangles": 384,
+  "pieces": [
+   "Tabouret"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.021
+ },
+ "53_chaise_bois": {
+  "titre": "Chaise en bois",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/53_chaise_bois.fbx",
+  "dims_studs": [
+   1.5,
+   3.6,
+   1.5
+  ],
+  "triangles": 516,
+  "pieces": [
+   "Chaise"
+  ],
+  "en_jeu": null,
+  "notes": "Assise à 1,7 stud",
+  "ecart_avant_recalage": 0.0
+ },
+ "54_table_bistrot": {
+  "titre": "Table bistrot ronde",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/54_table_bistrot.fbx",
+  "dims_studs": [
+   2.6,
+   2.8,
+   2.6
+  ],
+  "triangles": 436,
+  "pieces": [
+   "Table"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.02
+ },
+ "55_table_haute_murale": {
+  "titre": "Table haute murale",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/55_table_haute_murale.fbx",
+  "dims_studs": [
+   1.2,
+   3.3,
+   5
+  ],
+  "triangles": 440,
+  "pieces": [
+   "Table"
+  ],
+  "en_jeu": null,
+  "notes": "Longueur selon Z ; côté mur vers +X",
+  "ecart_avant_recalage": 0.006
+ },
+ "56_plante_pot": {
+  "titre": "Plante en pot",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/56_plante_pot.fbx",
+  "dims_studs": [
+   2.2,
+   3.3,
+   2.2
+  ],
+  "triangles": 412,
+  "pieces": [
+   "Pot",
+   "Feuilles"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.232
+ },
+ "57_comptoir_bar": {
+  "titre": "Comptoir de bar en bois",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/57_comptoir_bar.fbx",
+  "dims_studs": [
+   10,
+   3.4,
+   1.6
+  ],
+  "triangles": 552,
+  "pieces": [
+   "Comptoir",
+   "ReposePieds"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.088
+ },
+ "58_etagere_bouteilles": {
+  "titre": "Étagère murale à bouteilles",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/58_etagere_bouteilles.fbx",
+  "dims_studs": [
+   12,
+   2,
+   0.8
+  ],
+  "triangles": 2488,
+  "pieces": [
+   "Etagere",
+   "Bouteilles"
+  ],
+  "en_jeu": null,
+  "notes": "2 niveaux garnis, fixation au mur côté +Z",
+  "ecart_avant_recalage": 0.024
+ },
+ "59_miroir_bar": {
+  "titre": "Miroir de bar",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/59_miroir_bar.fbx",
+  "dims_studs": [
+   12,
+   1.6,
+   0.1
+  ],
+  "triangles": 356,
+  "pieces": [
+   "Cadre",
+   "Miroir"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.167
+ },
+ "60_cible_flechettes": {
+  "titre": "Cible de fléchettes",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/60_cible_flechettes.fbx",
+  "dims_studs": [
+   1.8,
+   1.8,
+   0.2
+  ],
+  "triangles": 880,
+  "pieces": [
+   "Cible",
+   "Flechettes"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.262
+ },
+ "61_tv_courses": {
+  "titre": "TV murale des courses",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/61_tv_courses.fbx",
+  "dims_studs": [
+   4,
+   2.4,
+   0.3
+  ],
+  "triangles": 144,
+  "pieces": [
+   "TV",
+   "Ecran"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.13
+ },
+ "62_billard": {
+  "titre": "Billard avec queue et boules",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/62_billard.fbx",
+  "dims_studs": [
+   4,
+   3,
+   7
+  ],
+  "triangles": 2192,
+  "pieces": [
+   "Table",
+   "Boules",
+   "Queue"
+  ],
+  "en_jeu": null,
+  "notes": "Longueur selon Z",
+  "ecart_avant_recalage": 0.002
+ },
+ "63_jukebox": {
+  "titre": "Jukebox rétro",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/63_jukebox.fbx",
+  "dims_studs": [
+   2.5,
+   4.5,
+   1.5
+  ],
+  "triangles": 1108,
+  "pieces": [
+   "Caisson",
+   "Vitre",
+   "Neon"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.026
+ },
+ "64_machine_cafe": {
+  "titre": "Machine à café pro",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/64_machine_cafe.fbx",
+  "dims_studs": [
+   2,
+   1.6,
+   1
+  ],
+  "triangles": 708,
+  "pieces": [
+   "Machine",
+   "Voyants"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.134
+ },
+ "65_vitrine_patisseries": {
+  "titre": "Vitrine à pâtisseries avec croissants",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/65_vitrine_patisseries.fbx",
+  "dims_studs": [
+   2.6,
+   1.2,
+   1
+  ],
+  "triangles": 1008,
+  "pieces": [
+   "Vitrine",
+   "Vitre"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.057
+ },
+ "66_ardoise_menu": {
+  "titre": "Ardoise menu",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/66_ardoise_menu.fbx",
+  "dims_studs": [
+   7,
+   2.6,
+   0.2
+  ],
+  "triangles": 248,
+  "pieces": [
+   "Cadre",
+   "Ardoise"
+  ],
+  "en_jeu": null,
+  "notes": "Cadre seul, texte ajouté en jeu",
+  "ecart_avant_recalage": 0.048
+ },
+ "67_comptoir_inox": {
+  "titre": "Comptoir inox avec vitre anti-postillons",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/67_comptoir_inox.fbx",
+  "dims_studs": [
+   9,
+   4.7,
+   1.6
+  ],
+  "triangles": 544,
+  "pieces": [
+   "Comptoir",
+   "Vitre"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.004
+ },
+ "68_bacs_garnitures": {
+  "titre": "Bacs à garnitures",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/68_bacs_garnitures.fbx",
+  "dims_studs": [
+   4.4,
+   0.3,
+   0.8
+  ],
+  "triangles": 1268,
+  "pieces": [
+   "Bacs",
+   "Garnitures"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.075
+ },
+ "69_broche_kebab": {
+  "titre": "Broche à kebab",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/69_broche_kebab.fbx",
+  "dims_studs": [
+   1.6,
+   3.6,
+   1.6
+  ],
+  "triangles": 620,
+  "pieces": [
+   "Socle",
+   "Viande",
+   "Grill"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.039
+ },
+ "70_friteuse_pro": {
+  "titre": "Friteuse pro",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/70_friteuse_pro.fbx",
+  "dims_studs": [
+   1.8,
+   3.2,
+   1.2
+  ],
+  "triangles": 396,
+  "pieces": [
+   "Friteuse",
+   "Huile",
+   "Paniers"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.036
+ },
+ "71_four_pizza": {
+  "titre": "Four à pizza en briques",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/71_four_pizza.fbx",
+  "dims_studs": [
+   3.2,
+   3.6,
+   2
+  ],
+  "triangles": 684,
+  "pieces": [
+   "Four",
+   "Feu"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.072
+ },
+ "72_panneau_menu_lumineux": {
+  "titre": "Panneau menu lumineux",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/72_panneau_menu_lumineux.fbx",
+  "dims_studs": [
+   9,
+   2.6,
+   0.2
+  ],
+  "triangles": 148,
+  "pieces": [
+   "Cadre",
+   "Ecran"
+  ],
+  "en_jeu": null,
+  "notes": "Cadre + écran lumineux, texte ajouté en jeu",
+  "ecart_avant_recalage": 0.167
+ },
+ "73_comptoir_reception": {
+  "titre": "Comptoir de réception",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/73_comptoir_reception.fbx",
+  "dims_studs": [
+   9,
+   3.4,
+   1.6
+  ],
+  "triangles": 564,
+  "pieces": [
+   "Comptoir",
+   "Dessus"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.009
+ },
+ "74_sonnette_reception": {
+  "titre": "Sonnette de réception",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/74_sonnette_reception.fbx",
+  "dims_studs": [
+   0.5,
+   0.3,
+   0.5
+  ],
+  "triangles": 248,
+  "pieces": [
+   "Sonnette",
+   "Bouton"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.035
+ },
+ "75_tableau_cles": {
+  "titre": "Tableau à clés",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/75_tableau_cles.fbx",
+  "dims_studs": [
+   4,
+   3,
+   0.2
+  ],
+  "triangles": 1940,
+  "pieces": [
+   "Tableau",
+   "Cles"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.147
+ },
+ "76_canape_velours": {
+  "titre": "Canapé 3 places velours",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/76_canape_velours.fbx",
+  "dims_studs": [
+   2.4,
+   2.6,
+   6
+  ],
+  "triangles": 620,
+  "pieces": [
+   "Canape"
+  ],
+  "en_jeu": null,
+  "notes": "Longueur selon Z ; assise tournée vers -X",
+  "ecart_avant_recalage": 0.079
+ },
+ "77_table_basse": {
+  "titre": "Table basse",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/77_table_basse.fbx",
+  "dims_studs": [
+   2,
+   1.4,
+   3
+  ],
+  "triangles": 340,
+  "pieces": [
+   "Table"
+  ],
+  "en_jeu": null,
+  "notes": "Longueur selon Z",
+  "ecart_avant_recalage": 0.054
+ },
+ "78_porte_ascenseur": {
+  "titre": "Porte d'ascenseur",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/78_porte_ascenseur.fbx",
+  "dims_studs": [
+   4,
+   6.5,
+   0.3
+  ],
+  "triangles": 548,
+  "pieces": [
+   "Encadrement",
+   "Indicateur",
+   "BoutonAppel",
+   "PorteGauche",
+   "PorteDroite",
+   "PanneauEnPanne"
+  ],
+  "en_jeu": null,
+  "notes": "Panneau EN PANNE séparé (vierge)",
+  "ecart_avant_recalage": 0.167
+ },
+ "79_valise": {
+  "titre": "Valise",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/79_valise.fbx",
+  "dims_studs": [
+   1.5,
+   2,
+   0.8
+  ],
+  "triangles": 448,
+  "pieces": [
+   "Valise"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.096
+ },
+ "80_lustre": {
+  "titre": "Lustre",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/80_lustre.fbx",
+  "dims_studs": [
+   3,
+   2,
+   3
+  ],
+  "triangles": 836,
+  "pieces": [
+   "Lustre",
+   "Ampoules"
+  ],
+  "en_jeu": null,
+  "notes": "Accroché au plafond par le haut",
+  "ecart_avant_recalage": 0.204
+ },
+ "81_presentoir_magazines": {
+  "titre": "Présentoir mural à magazines",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/81_presentoir_magazines.fbx",
+  "dims_studs": [
+   3,
+   3.5,
+   0.6
+  ],
+  "triangles": 692,
+  "pieces": [
+   "Presentoir",
+   "Magazines"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.007
+ },
+ "82_croix_pharmacie": {
+  "titre": "Croix de pharmacie lumineuse",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/82_croix_pharmacie.fbx",
+  "dims_studs": [
+   2,
+   2,
+   0.3
+  ],
+  "triangles": 164,
+  "pieces": [
+   "Support",
+   "Croix"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.017
+ },
+ "83_tableau_acuite": {
+  "titre": "Tableau d'acuité visuelle",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/83_tableau_acuite.fbx",
+  "dims_studs": [
+   2,
+   3,
+   0.1
+  ],
+  "triangles": 216,
+  "pieces": [
+   "Cadre",
+   "Tableau"
+  ],
+  "en_jeu": null,
+  "notes": "Cadre seul, lettres ajoutées en jeu",
+  "ecart_avant_recalage": 0.0
+ },
+ "84_fauteuil_barbier": {
+  "titre": "Fauteuil de barbier",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/84_fauteuil_barbier.fbx",
+  "dims_studs": [
+   1.8,
+   4,
+   1.8
+  ],
+  "triangles": 664,
+  "pieces": [
+   "Pied",
+   "Siege"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.176
+ },
+ "85_miroir_mural": {
+  "titre": "Miroir mural avec cadre",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/85_miroir_mural.fbx",
+  "dims_studs": [
+   2.4,
+   3,
+   0.1
+  ],
+  "triangles": 248,
+  "pieces": [
+   "Cadre",
+   "Miroir"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.048
+ },
+ "86_enseigne_barbier": {
+  "titre": "Enseigne poteau de barbier",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/86_enseigne_barbier.fbx",
+  "dims_studs": [
+   0.8,
+   3,
+   0.8
+  ],
+  "triangles": 1276,
+  "pieces": [
+   "Support",
+   "Cylindre",
+   "Rayures"
+  ],
+  "en_jeu": null,
+  "notes": "Rayures en pièce séparée (rotation)",
+  "ecart_avant_recalage": 0.09
+ },
+ "87_lave_linge": {
+  "titre": "Lave-linge à hublot",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/87_lave_linge.fbx",
+  "dims_studs": [
+   2.2,
+   2.6,
+   2.2
+  ],
+  "triangles": 680,
+  "pieces": [
+   "Machine",
+   "Voyant",
+   "Hublot",
+   "VitreHublot"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.024
+ },
+ "88_banc_attente": {
+  "titre": "Banc d'attente",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/88_banc_attente.fbx",
+  "dims_studs": [
+   1.2,
+   1.6,
+   5
+  ],
+  "triangles": 584,
+  "pieces": [
+   "Banc"
+  ],
+  "en_jeu": null,
+  "notes": "Longueur selon Z",
+  "ecart_avant_recalage": 0.089
+ },
+ "89_banc_muscu": {
+  "titre": "Banc de musculation",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/89_banc_muscu.fbx",
+  "dims_studs": [
+   4.5,
+   3.6,
+   4
+  ],
+  "triangles": 1232,
+  "pieces": [
+   "Banc",
+   "Barre",
+   "Disques"
+  ],
+  "en_jeu": null,
+  "notes": "Barre et disques séparés",
+  "ecart_avant_recalage": 0.018
+ },
+ "90_tapis_course": {
+  "titre": "Tapis de course",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/90_tapis_course.fbx",
+  "dims_studs": [
+   2,
+   4.6,
+   5
+  ],
+  "triangles": 392,
+  "pieces": [
+   "Chassis",
+   "Ecran",
+   "Tapis"
+  ],
+  "en_jeu": null,
+  "notes": "Console vers -Z",
+  "ecart_avant_recalage": 0.047
+ },
+ "91_etabli_bois": {
+  "titre": "Établi en bois",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/91_etabli_bois.fbx",
+  "dims_studs": [
+   1.6,
+   3,
+   4
+  ],
+  "triangles": 688,
+  "pieces": [
+   "Etabli",
+   "Outils"
+  ],
+  "en_jeu": null,
+  "notes": "Longueur selon Z ; côté travail vers -X",
+  "ecart_avant_recalage": 0.086
+ },
+ "92_panneau_perfore": {
+  "titre": "Panneau perforé avec outils",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/92_panneau_perfore.fbx",
+  "dims_studs": [
+   8,
+   3,
+   0.3
+  ],
+  "triangles": 1848,
+  "pieces": [
+   "Panneau",
+   "Outils"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.2
+ },
+ "93_portant_vetements": {
+  "titre": "Portant à vêtements",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/93_portant_vetements.fbx",
+  "dims_studs": [
+   1,
+   4.5,
+   5
+  ],
+  "triangles": 2056,
+  "pieces": [
+   "Portant",
+   "Vetements"
+  ],
+  "en_jeu": null,
+  "notes": "Rail selon Z",
+  "ecart_avant_recalage": 0.086
+ },
+ "94_seau_bouquet": {
+  "titre": "Seau en métal avec bouquet",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/94_seau_bouquet.fbx",
+  "dims_studs": [
+   1.2,
+   2.2,
+   1.2
+  ],
+  "triangles": 1044,
+  "pieces": [
+   "Seau",
+   "Bouquet"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.081
+ },
+ "95_comptoir_barreaux": {
+  "titre": "Comptoir à barreaux",
+  "categorie": "06_magasins",
+  "fichier": "models/06_magasins/95_comptoir_barreaux.fbx",
+  "dims_studs": [
+   8,
+   6.4,
+   1.6
+  ],
+  "triangles": 1048,
+  "pieces": [
+   "Comptoir",
+   "Barreaux",
+   "Guichet"
+  ],
+  "en_jeu": null,
+  "notes": "Guichet coulissant séparé",
+  "ecart_avant_recalage": 0.0
  }
 }
