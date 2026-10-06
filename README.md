@@ -1,7 +1,7 @@
 # Props Roblox – quartier délabré
 
-112 objets low-poly (120 fichiers `.fbx` avec les variantes) pour un jeu Roblox satirique dans un quartier pauvre :
-mobilier urbain, véhicules, déchets, marché, chantier, décors de boutiques objets de la quête « x2 Luck Key » et symboles de la machine à sous (100–112). Style « simulateur » cartoon,
+120 objets low-poly (128 fichiers `.fbx` avec les variantes) pour un jeu Roblox satirique dans un quartier pauvre :
+mobilier urbain, véhicules, déchets, marché, chantier, décors de boutiques objets de la quête « x2 Luck Key » et symboles et borne de la machine à sous (100–113), quête du pirate et entrée des égouts (114–120). Style « simulateur » cartoon,
 formes arrondies, arêtes biseautées, couleurs vives mais salies, sans texture photo ni texte.
 
 Tous les modèles sont générés par script avec Blender (module Python `bpy`), donc reproductibles et modifiables.
@@ -18,6 +18,7 @@ Tous les modèles sont générés par script avec Blender (module Python `bpy`),
 | Pièces séparées | Tout ce qui bouge ou s'allume est une pièce nommée : `Couvercle`, `Porte…`, `Ampoule`, `Flammes`, `Vitre(s)`, `Ecran`, `Neon`, `Lumiere`, `Phares`, `Roue_AvG`… Les pièces mobiles ont leur origine sur la charnière ou l'axe. |
 | Quête (96–99) | Les pièces `Lueur` des fragments sont des halos qui enveloppent l'objet : les passer en `Material = Neon`, `Transparency ≈ 0,6`. La clé finie et le point d'interrogation sont en couleurs propres, sans dégradé de crasse. Seul texte du pack : « x2 » gravé sur la tige de la clé, demandé explicitement. |
 | Machine à sous (100–112) | Couleurs propres. `Yeux` du loup, `Gemme` (blanche, à recolorer en néon Mini/Minor/Major/Grand) et `Contour` du Bonus Token sont des pièces séparées à passer en Neon. |
+| Pirate (114–120) | `Lueur` de la planche flottée et de la moisissure : halos à passer en Neon transparent. Clé x5 en couleurs propres, « x5 » gravé à la demande. Égout ouvert (120) : la chaussée est à 3 studs au-dessus de la base ; il faut un trou dans la route (Negate) pour voir le puits. |
 | Enseignes | Aucun texte : panneaux, ardoises, menus et le panneau « EN PANNE » sont des surfaces vierges à habiller en jeu. |
 
 ## Import dans Roblox Studio
@@ -73,7 +74,14 @@ python3 tools/readme_table.py       # met à jour le tableau ci-dessous
 | 111 | Gemme taillée | 1 × 1 × 1 | 64 | Gemme | [111_gemme.fbx](models/08_slot/111_gemme.fbx) |
 | 112 | Bonus Token | 1,6 × 1,6 × 0,3 | 1016 | Piece, Gravure, Contour | [112_bonus_token.fbx](models/08_slot/112_bonus_token.fbx) |
 | 113 | Borne de machine à sous « Huff n' Puff » | 5,6 × 8,9 × 3 | 1534 | Meuble, Ecran, Jackpots, Fronton, Lumieres, Boutons, Levier, BoulLevier | [113_borne_huff_n_puff.fbx](models/08_slot/113_borne_huff_n_puff.fbx) |
+| 114 | Pirate déboussolé | 2 × 5,5 × 1,5 | 2840 | Corps, Chapeau, Boussole | [114_pirate_deboussole.fbx](models/09_pirate/114_pirate_deboussole.fbx) |
+| 115 | Planche flottée | 2,4 × 0,3 × 0,6 | 310 | Planche, Lueur | [115_planche_flottee.fbx](models/09_pirate/115_planche_flottee.fbx) |
+| 116 | Plaque de moisissure murale | 2 × 2 × 0,2 | 796 | Moisissure, Lueur | [116_plaque_moisissure.fbx](models/09_pirate/116_plaque_moisissure.fbx) |
+| 117 | Rouleau de corde | 1,2 × 0,6 × 1,2 | 1152 | Corde | [117_rouleau_corde.fbx](models/09_pirate/117_rouleau_corde.fbx) |
+| 118 | Radeau de fortune | 8 × 6 × 6 | 2560 | Planches, Cordes, Mat, Voile | [118_radeau.fbx](models/09_pirate/118_radeau.fbx) |
+| 119 | Clé dorée « x5 » | 1,2 × 3 × 0,4 | 1376 | Anneau, Tige, Panneton, Ancre | [119_cle_x5_ancre.fbx](models/09_pirate/119_cle_x5_ancre.fbx) |
 | 11 | Transformateur sur poteau | 1,8 × 2,6 × 1,8 | 1020 | Transformateur | [11_transformateur.fbx](models/01_rue/11_transformateur.fbx) |
+| 120 | Plaque d'égout ouverte avec échelle | 5,2 × 4,4 × 2,8 | 1940 | Cadre, Plaque, Echelle | [120_egout_ouvert.fbx](models/09_pirate/120_egout_ouvert.fbx) |
 | 12 | Haut-parleur pavillon | 1,6 × 1,3 × 1,3 | 444 | HautParleur | [12_haut_parleur.fbx](models/01_rue/12_haut_parleur.fbx) |
 | 13 | Sacs de sable empilés | 2,4 × 1 × 1,4 | 308 | Sacs | [13_sacs_sable.fbx](models/01_rue/13_sacs_sable.fbx) |
 | 14 | Clôture grillagée avec barbelés | 8 × 6 × 0,3 | 1434 | Poteaux, Grillage, Barbele | [14_cloture_grillagee.fbx](models/01_rue/14_cloture_grillagee.fbx) |

@@ -476,6 +476,118 @@
   "notes": "Écran vertical incurvé, bandes LED vertes ; visuels du jeu à appliquer sur Ecran en jeu",
   "ecart_avant_recalage": 0.07
  },
+ "114_pirate_deboussole": {
+  "titre": "Pirate déboussolé",
+  "categorie": "09_pirate",
+  "fichier": "models/09_pirate/114_pirate_deboussole.fbx",
+  "dims_studs": [
+   2,
+   5.5,
+   1.5
+  ],
+  "triangles": 2840,
+  "pieces": [
+   "Corps",
+   "Chapeau",
+   "Boussole"
+  ],
+  "en_jeu": null,
+  "notes": "Personnage tourné vers -Z ; jambe de bois",
+  "ecart_avant_recalage": 0.026
+ },
+ "115_planche_flottee": {
+  "titre": "Planche flottée",
+  "categorie": "09_pirate",
+  "fichier": "models/09_pirate/115_planche_flottee.fbx",
+  "dims_studs": [
+   2.4,
+   0.3,
+   0.6
+  ],
+  "triangles": 310,
+  "pieces": [
+   "Planche",
+   "Lueur"
+  ],
+  "en_jeu": null,
+  "notes": "À ramasser",
+  "ecart_avant_recalage": 0.025
+ },
+ "116_plaque_moisissure": {
+  "titre": "Plaque de moisissure murale",
+  "categorie": "09_pirate",
+  "fichier": "models/09_pirate/116_plaque_moisissure.fbx",
+  "dims_studs": [
+   2,
+   2,
+   0.2
+  ],
+  "triangles": 796,
+  "pieces": [
+   "Moisissure",
+   "Lueur"
+  ],
+  "en_jeu": null,
+  "notes": "À plat sur un mur, face visible vers -Z",
+  "ecart_avant_recalage": 0.124
+ },
+ "117_rouleau_corde": {
+  "titre": "Rouleau de corde",
+  "categorie": "09_pirate",
+  "fichier": "models/09_pirate/117_rouleau_corde.fbx",
+  "dims_studs": [
+   1.2,
+   0.6,
+   1.2
+  ],
+  "triangles": 1152,
+  "pieces": [
+   "Corde"
+  ],
+  "en_jeu": null,
+  "notes": "Objet d'inventaire",
+  "ecart_avant_recalage": 0.134
+ },
+ "118_radeau": {
+  "titre": "Radeau de fortune",
+  "categorie": "09_pirate",
+  "fichier": "models/09_pirate/118_radeau.fbx",
+  "dims_studs": [
+   8,
+   6,
+   6
+  ],
+  "triangles": 2560,
+  "pieces": [
+   "Planches",
+   "Cordes",
+   "Mat",
+   "Voile"
+  ],
+  "en_jeu": null,
+  "notes": "Planches et rondins liés à la corde",
+  "ecart_avant_recalage": 0.01
+ },
+ "119_cle_x5_ancre": {
+  "titre": "Clé dorée « x5 »",
+  "categorie": "09_pirate",
+  "fichier": "models/09_pirate/119_cle_x5_ancre.fbx",
+  "dims_studs": [
+   1.2,
+   3.0,
+   0.4
+  ],
+  "triangles": 1376,
+  "pieces": [
+   "Anneau",
+   "Tige",
+   "Panneton",
+   "Ancre"
+  ],
+  "en_jeu": null,
+  "notes": "Ancre dans l'anneau ; « x5 » gravé sur la tige",
+  "ecart_avant_recalage": 0.053
+ },
  "11_transformateur": {
   "titre": "Transformateur sur poteau",
   "categorie": "01_rue",
@@ -492,6 +604,25 @@
   "en_jeu": null,
   "notes": "",
   "ecart_avant_recalage": 0.153
+ },
+ "120_egout_ouvert": {
+  "titre": "Plaque d'égout ouverte avec échelle",
+  "categorie": "09_pirate",
+  "fichier": "models/09_pirate/120_egout_ouvert.fbx",
+  "dims_studs": [
+   5.2,
+   4.4,
+   2.8
+  ],
+  "triangles": 1940,
+  "pieces": [
+   "Cadre",
+   "Plaque",
+   "Echelle"
+  ],
+  "en_jeu": null,
+  "notes": "Entrée des égouts ; chaussée à 3 studs au-dessus de la base (puits de 3 studs)",
+  "ecart_avant_recalage": 0.012
  },
  "12_haut_parleur": {
   "titre": "Haut-parleur pavillon",
