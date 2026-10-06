@@ -299,39 +299,24 @@ def cle_x5():
 # ---------------------------------------------------------------------------
 
 def egout_ouvert():
-    G = 3.0  # niveau de la chaussée au-dessus de la base
-    m = Model("egout_ouvert", (5.2, 4.4, 2.8), CAT, "Plaque d'égout ouverte avec échelle", None,
-              "Entrée des égouts ; chaussée à 3 studs au-dessus de la base (puits de 3 studs)")
-    c = m.part("Cadre")
-    c.lathe([(1.15, 0.0), (1.3, 0.0), (1.3, G), (1.15, G), (1.15, 0.0)], segs=16, c="brick_dark", cap0=False, cap1=False)
-    for z in (0.8, 1.6, 2.4):
-        c.torus(1.15, 0.025, at=(0, 0, z), c="concrete_dark", segs=16, sides=3)  # joints de briques
-    c.cyl(1.16, 0.05, c="soot", segs=16, bev=0)
-    c.cyl(1.15, 0.03, at=(0, 0, 0.25), c="olive", segs=16, bev=0)  # eau croupie
-    c.box(0.3, 0.2, 0.15, at=(-0.4, -0.3, 0.3), rot=(0, 20, 30), c="red", bev=0.02)  # canette qui flotte
-    c.lathe([(1.12, G - 0.02), (1.4, G - 0.02), (1.4, G + 0.06), (1.32, G + 0.1), (1.12, G + 0.1), (1.12, G - 0.02)], segs=18,
-            c="iron", cap0=False, cap1=False)
-    c.decal(0.6, 0.3, (0.0, -1.14, G - 0.4), c="mud", seed=40)
-    pq = m.part("Plaque")
-    px = 2.62
-    pq.cyl(1.22, 0.07, at=(px, -0.05, G), c="iron", segs=20, bev=0.02)
+    m = Model("egout_ouvert", (3, 1, 3), CAT, "Plaque d'égout ouverte avec échelle", None,
+              "Posée sur la chaussée ; trou noir (faux puits) à utiliser comme zone de téléportation")
+    p = m.part("Plaque")
+    p.lathe([(1.18, 0.0), (1.45, 0.0), (1.45, 0.06), (1.38, 0.1), (1.18, 0.1), (1.18, 0.0)], segs=20, c="iron", cap0=False, cap1=False)
+    p.cyl(1.19, 0.03, c="eye", segs=20, bev=0)  # trou noir
+    p.decal(0.5, 0.3, (-0.9, -0.85, 0.06), c="rust", rot=(90, 0, -40), t=0.01, seed=40)
+    cx = 0.95  # plaque à moitié poussée, posée de travers sur le bord du cadre
+    p.cyl(1.2, 0.07, at=(cx, -0.05, 0.1), rot=(0, -2.5, 0), c="iron", segs=20, bev=0.02)
     for r in (0.35, 0.75):
-        pq.torus(r, 0.04, at=(px, -0.05, G + 0.07), c="iron", segs=16, sides=4, sz=0.7)
+        p.torus(r, 0.04, at=(cx, -0.05, 0.18), c="iron", segs=16, sides=4, sz=0.7)
     for a in (15, 60, 105, 150):
-        pq.box(2.1, 0.08, 0.04, at=(px, -0.05, G + 0.08), rot=(0, 0, a), c="iron", bev=0.01)
-    pq.decal(0.6, 0.35, (px + 0.4, -0.5, G + 0.085), c="rust", rot=(90, 0, 30), t=0.01, seed=41)
+        p.box(2.1, 0.08, 0.04, at=(cx, -0.05, 0.19), rot=(0, 0, a), c="iron", bev=0.01)
+    p.decal(0.5, 0.3, (cx + 0.4, -0.45, 0.2), c="rust", rot=(90, 0, 30), t=0.01, seed=41)
     e = m.part("Echelle")
-    for x in (-0.38, 0.38):
-        e.pipe([(x, 0.98, 0.05), (x, 0.98, G + 0.6), (x, 0.9, G + 1.1), (x, 0.7, G + 1.3), (x, 0.52, G + 1.18)], 0.05, c="galva", sides=6)
-        for z in (0.8, 2.0, G - 0.2):
-            e.boxb(0.08, 0.2, 0.08, x, 1.1, z, c="metal_dark", bev=0.01)  # pattes de fixation
-    k = 0
-    z = 0.35
-    while z < G + 0.5:
-        e.rod((-0.38, 0.98, z), (0.38, 0.98, z), 0.035, c=("rust" if k in (2, 5) else "galva"), sides=4)
-        z += 0.36
-        k += 1
-    e.decal(0.2, 0.3, (0.38, 0.92, 1.4), c="rust", seed=42)
+    for x in (-0.36, 0.36):
+        e.pipe([(x - 0.35, 1.0, 0.02), (x - 0.35, 1.0, 0.65), (x - 0.35, 0.88, 0.95), (x - 0.35, 0.65, 0.98)], 0.05, c="galva", sides=6)
+    for z in (0.12, 0.45):
+        e.rod((-0.71, 1.0, z), (0.01, 1.0, z), 0.035, c=("rust" if z < 0.2 else "galva"), sides=4)
     return m
 
 

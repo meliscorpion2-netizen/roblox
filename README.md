@@ -18,7 +18,7 @@ Tous les modèles sont générés par script avec Blender (module Python `bpy`),
 | Pièces séparées | Tout ce qui bouge ou s'allume est une pièce nommée : `Couvercle`, `Porte…`, `Ampoule`, `Flammes`, `Vitre(s)`, `Ecran`, `Neon`, `Lumiere`, `Phares`, `Roue_AvG`… Les pièces mobiles ont leur origine sur la charnière ou l'axe. |
 | Quête (96–99) | Les pièces `Lueur` des fragments sont des halos qui enveloppent l'objet : les passer en `Material = Neon`, `Transparency ≈ 0,6`. La clé finie et le point d'interrogation sont en couleurs propres, sans dégradé de crasse. Seul texte du pack : « x2 » gravé sur la tige de la clé, demandé explicitement. |
 | Machine à sous (100–112) | Couleurs propres. `Yeux` du loup, `Gemme` (blanche, à recolorer en néon Mini/Minor/Major/Grand) et `Contour` du Bonus Token sont des pièces séparées à passer en Neon. |
-| Pirate (114–120) | `Lueur` de la planche flottée et de la moisissure : halos à passer en Neon transparent. Clé x5 en couleurs propres, « x5 » gravé à la demande. Égout ouvert (120) : la chaussée est à 3 studs au-dessus de la base ; il faut un trou dans la route (Negate) pour voir le puits. |
+| Pirate (114–120) | `Lueur` de la planche flottée et de la moisissure : halos à passer en Neon transparent. Clé x5 en couleurs propres, « x5 » gravé à la demande. Égout ouvert (120) : posé à plat sur la chaussée, trou noir à utiliser comme zone de téléportation. |
 | Enseignes | Aucun texte : panneaux, ardoises, menus et le panneau « EN PANNE » sont des surfaces vierges à habiller en jeu. |
 
 ## Import dans Roblox Studio
@@ -81,7 +81,7 @@ python3 tools/readme_table.py       # met à jour le tableau ci-dessous
 | 118 | Radeau de fortune | 8 × 6 × 6 | 2560 | Planches, Cordes, Mat, Voile | [118_radeau.fbx](models/09_pirate/118_radeau.fbx) |
 | 119 | Clé dorée « x5 » | 1,2 × 3 × 0,4 | 1376 | Anneau, Tige, Panneton, Ancre | [119_cle_x5_ancre.fbx](models/09_pirate/119_cle_x5_ancre.fbx) |
 | 11 | Transformateur sur poteau | 1,8 × 2,6 × 1,8 | 1020 | Transformateur | [11_transformateur.fbx](models/01_rue/11_transformateur.fbx) |
-| 120 | Plaque d'égout ouverte avec échelle | 5,2 × 4,4 × 2,8 | 1940 | Cadre, Plaque, Echelle | [120_egout_ouvert.fbx](models/09_pirate/120_egout_ouvert.fbx) |
+| 120 | Plaque d'égout ouverte avec échelle | 3 × 1 × 3 | 1048 | Plaque, Echelle | [120_egout_ouvert.fbx](models/09_pirate/120_egout_ouvert.fbx) |
 | 12 | Haut-parleur pavillon | 1,6 × 1,3 × 1,3 | 444 | HautParleur | [12_haut_parleur.fbx](models/01_rue/12_haut_parleur.fbx) |
 | 13 | Sacs de sable empilés | 2,4 × 1 × 1,4 | 308 | Sacs | [13_sacs_sable.fbx](models/01_rue/13_sacs_sable.fbx) |
 | 14 | Clôture grillagée avec barbelés | 8 × 6 × 0,3 | 1434 | Poteaux, Grillage, Barbele | [14_cloture_grillagee.fbx](models/01_rue/14_cloture_grillagee.fbx) |

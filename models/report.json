@@ -610,19 +610,18 @@
   "categorie": "09_pirate",
   "fichier": "models/09_pirate/120_egout_ouvert.fbx",
   "dims_studs": [
-   5.2,
-   4.4,
-   2.8
+   3,
+   1,
+   3
   ],
-  "triangles": 1940,
+  "triangles": 1048,
   "pieces": [
-   "Cadre",
    "Plaque",
    "Echelle"
   ],
   "en_jeu": null,
-  "notes": "Entrée des égouts ; chaussée à 3 studs au-dessus de la base (puits de 3 studs)",
-  "ecart_avant_recalage": 0.012
+  "notes": "Posée sur la chaussée ; trou noir (faux puits) à utiliser comme zone de téléportation",
+  "ecart_avant_recalage": 0.159
  },
  "12_haut_parleur": {
   "titre": "Haut-parleur pavillon",
