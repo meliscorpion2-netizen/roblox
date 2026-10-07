@@ -89,5 +89,26 @@
       "Wings": 256
     },
     "triangles": 3812
+  },
+  "CyberSpinMachine": {
+    "parts": {
+      "Cabinet": 836,
+      "Screen": 774,
+      "Lever": 392,
+      "Topper": 808,
+      "Base": 126,
+      "NeonStrips": 522
+    },
+    "triangles": 3458
+  },
+  "CrystalKingdomMachine": {
+    "parts": {
+      "Cabinet": 1118,
+      "Screen": 512,
+      "Lever": 480,
+      "Topper": 664,
+      "Base": 244
+    },
+    "triangles": 3018
   }
 }
