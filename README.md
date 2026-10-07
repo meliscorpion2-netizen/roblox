@@ -1,6 +1,6 @@
 # Props Roblox – quartier délabré
 
-120 objets low-poly (128 fichiers `.fbx` avec les variantes) pour un jeu Roblox satirique dans un quartier pauvre :
+166 objets low-poly (174 fichiers `.fbx` avec les variantes) pour un jeu Roblox satirique dans un quartier pauvre :
 mobilier urbain, véhicules, déchets, marché, chantier, décors de boutiques objets de la quête « x2 Luck Key » et symboles et borne de la machine à sous (100–113), quête du pirate et entrée des égouts (114–120). Style « simulateur » cartoon,
 formes arrondies, arêtes biseautées, couleurs vives mais salies, sans texture photo ni texte.
 
@@ -19,6 +19,7 @@ Tous les modèles sont générés par script avec Blender (module Python `bpy`),
 | Quête (96–99) | Les pièces `Lueur` des fragments sont des halos qui enveloppent l'objet : les passer en `Material = Neon`, `Transparency ≈ 0,6`. La clé finie et le point d'interrogation sont en couleurs propres, sans dégradé de crasse. Seul texte du pack : « x2 » gravé sur la tige de la clé, demandé explicitement. |
 | Machine à sous (100–112) | Couleurs propres. `Yeux` du loup, `Gemme` (blanche, à recolorer en néon Mini/Minor/Major/Grand) et `Contour` du Bonus Token sont des pièces séparées à passer en Neon. |
 | Pirate (114–120) | `Lueur` de la planche flottée et de la moisissure : halos à passer en Neon transparent. Clé x5 en couleurs propres, « x5 » gravé à la demande. Égout ouvert (120) : posé à plat sur la chaussée, trou noir à utiliser comme zone de téléportation. |
+| Deauville (121–166) | Pack chic et propre (`models/10_deauville/`) : façades blanches, colombages vert sapin, ardoise bleu-gris, rayures marine et blanc ; aucune crasse, aucun logo. Enseignes, cabine et colonne Morris vierges. |
 | Enseignes | Aucun texte : panneaux, ardoises, menus et le panneau « EN PANNE » sont des surfaces vierges à habiller en jeu. |
 
 ## Import dans Roblox Studio
@@ -82,10 +83,56 @@ python3 tools/readme_table.py       # met à jour le tableau ci-dessous
 | 119 | Clé dorée « x5 » | 1,2 × 3 × 0,4 | 1376 | Anneau, Tige, Panneton, Ancre | [119_cle_x5_ancre.fbx](models/09_pirate/119_cle_x5_ancre.fbx) |
 | 11 | Transformateur sur poteau | 1,8 × 2,6 × 1,8 | 1020 | Transformateur | [11_transformateur.fbx](models/01_rue/11_transformateur.fbx) |
 | 120 | Plaque d'égout ouverte avec échelle | 3 × 1 × 3 | 1048 | Plaque, Echelle | [120_egout_ouvert.fbx](models/09_pirate/120_egout_ouvert.fbx) |
+| 121 | Casino | 60 × 24 × 30 | 4456 | Facade, Vitres, Coupoles, Entree | [121_casino.fbx](models/10_deauville/121_casino.fbx) |
+| 122 | Hôtel Normandy | 70 × 30 × 30 | 4004 | Murs, Colombages, Toits, Vitres | [122_hotel_normandy.fbx](models/10_deauville/122_hotel_normandy.fbx) |
+| 123 | Hôtel Royal | 70 × 28 × 25 | 4724 | Murs, Toits, Vitres, Balcons | [123_hotel_royal.fbx](models/10_deauville/123_hotel_royal.fbx) |
+| 124 | Bains Pompéiens | 40 × 8 × 12 | 4960 | Colonnes, Mosaiques, Toit | [124_bains_pompeiens.fbx](models/10_deauville/124_bains_pompeiens.fbx) |
+| 125 | Bar du Soleil | 16 × 7 × 10 | 1230 | Pavillon, Terrasse, Enseigne | [125_bar_du_soleil.fbx](models/10_deauville/125_bar_du_soleil.fbx) |
+| 126 | Gare de Trouville-Deauville | 40 × 16 × 14 | 1608 | Batiment, Horloge, Vitres | [126_gare_trouville_deauville.fbx](models/10_deauville/126_gare_trouville_deauville.fbx) |
+| 127 | Marché couvert à colombages | 30 × 10 × 18 | 4404 | Halle, Toit, Etals | [127_marche_couvert.fbx](models/10_deauville/127_marche_couvert.fbx) |
+| 128 | Villa Strassburger | 26 × 20 × 20 | 2058 | Murs, Colombages, Tourelle, Toits | [128_villa_strassburger.fbx](models/10_deauville/128_villa_strassburger.fbx) |
+| 129 | Église Notre-Dame-des-Victoires | 20 × 30 × 30 | 1072 | Nef, Clocher, Vitraux | [129_eglise_notre_dame.fbx](models/10_deauville/129_eglise_notre_dame.fbx) |
 | 12 | Haut-parleur pavillon | 1,6 × 1,3 × 1,3 | 444 | HautParleur | [12_haut_parleur.fbx](models/01_rue/12_haut_parleur.fbx) |
+| 130 | Tribune de l'hippodrome | 50 × 14 × 14 | 2764 | Tribune, Toit, Gradins | [130_tribune_hippodrome.fbx](models/10_deauville/130_tribune_hippodrome.fbx) |
+| 131 | Villa anglo-normande A | 16 × 16 × 14 | 1802 | Murs, Colombages, Toit, Vitres | [131_villa_anglo_normande_a.fbx](models/10_deauville/131_villa_anglo_normande_a.fbx) |
+| 132 | Villa anglo-normande B | 16 × 18 × 14 | 956 | Murs, Tourelle, Toit, Vitres | [132_villa_anglo_normande_b.fbx](models/10_deauville/132_villa_anglo_normande_b.fbx) |
+| 133 | Immeuble à boutique de luxe | 14 × 18 × 12 | 1710 | Murs, Vitrine, Auvent, Enseigne | [133_immeuble_boutique_luxe.fbx](models/10_deauville/133_immeuble_boutique_luxe.fbx) |
+| 134 | Résidence balnéaire | 14 × 20 × 12 | 1218 | Murs, Balcons, Vitres | [134_residence_balneaire.fbx](models/10_deauville/134_residence_balneaire.fbx) |
+| 135 | Café-brasserie avec terrasse | 14 × 10 × 12 | 1146 | Murs, Auvent, Vitres, Enseigne | [135_cafe_brasserie.fbx](models/10_deauville/135_cafe_brasserie.fbx) |
+| 136 | Module des Planches | 8 × 0,4 × 4 | 836 | Planches | [136_module_planches.fbx](models/10_deauville/136_module_planches.fbx) |
+| 137 | Cabine de plage | 3 × 4,5 × 3 | 244 | Cabine, Nom | [137_cabine_plage.fbx](models/10_deauville/137_cabine_plage.fbx) |
+| 138 | Parasol de Deauville ouvert | 6 × 6 × 6 | 172 | Mat, Toile | [138_parasol_ouvert.fbx](models/10_deauville/138_parasol_ouvert.fbx) |
+| 139 | Parasol de Deauville fermé | 1 × 6 × 1 | 220 | Mat, Toile | [139_parasol_ferme.fbx](models/10_deauville/139_parasol_ferme.fbx) |
 | 13 | Sacs de sable empilés | 2,4 × 1 × 1,4 | 308 | Sacs | [13_sacs_sable.fbx](models/01_rue/13_sacs_sable.fbx) |
+| 140 | Transat | 2 × 1,5 × 5 | 138 | Transat | [140_transat.fbx](models/10_deauville/140_transat.fbx) |
+| 141 | Douche de plage | 1,5 × 7 × 1,5 | 232 | Douche | [141_douche_plage.fbx](models/10_deauville/141_douche_plage.fbx) |
+| 142 | Poste de secours sur pilotis | 6 × 10 × 6 | 460 | Poste, Drapeau | [142_poste_secours.fbx](models/10_deauville/142_poste_secours.fbx) |
+| 143 | Château de sable | 3 × 2 × 3 | 1232 | Chateau | [143_chateau_sable.fbx](models/10_deauville/143_chateau_sable.fbx) |
+| 144 | Serviette et ballon de plage | 3 × 0,6 × 5 | 468 | Serviette, Ballon | [144_serviette_ballon.fbx](models/10_deauville/144_serviette_ballon.fbx) |
+| 145 | Mouette posée | 1 × 1 × 1,5 | 412 | Mouette | [145_mouette.fbx](models/10_deauville/145_mouette.fbx) |
+| 146 | Yacht à moteur | 10 × 8 × 30 | 524 | Coque, Cabine, Vitres | [146_yacht_moteur.fbx](models/10_deauville/146_yacht_moteur.fbx) |
+| 147 | Voilier | 8 × 24 × 20 | 248 | Coque, Mat, Voiles | [147_voilier.fbx](models/10_deauville/147_voilier.fbx) |
+| 148 | Ponton modulaire | 8 × 1 × 4 | 920 | Ponton | [148_ponton_modulaire.fbx](models/10_deauville/148_ponton_modulaire.fbx) |
+| 149 | Phare de jetée | 4 × 18 × 4 | 720 | Tour, Lanterne | [149_phare_jetee.fbx](models/10_deauville/149_phare_jetee.fbx) |
 | 14 | Clôture grillagée avec barbelés | 8 × 6 × 0,3 | 1434 | Poteaux, Grillage, Barbele | [14_cloture_grillagee.fbx](models/01_rue/14_cloture_grillagee.fbx) |
+| 150 | Cheval de course avec jockey | 2 × 6 × 7 | 1038 | Cheval, Jockey | [150_cheval_jockey.fbx](models/10_deauville/150_cheval_jockey.fbx) |
+| 151 | Barrière de piste blanche | 8 × 3 × 0,3 | 216 | Barriere | [151_barriere_piste.fbx](models/10_deauville/151_barriere_piste.fbx) |
+| 152 | Lampadaire Belle Époque | 1,4 × 14 × 1,4 | 412 | Poteau, Lanterne | [152_lampadaire_belle_epoque.fbx](models/10_deauville/152_lampadaire_belle_epoque.fbx) |
+| 153 | Banc en bois et fonte | 5 × 3 × 2 | 452 | Banc | [153_banc_bois_fonte.fbx](models/10_deauville/153_banc_bois_fonte.fbx) |
+| 154 | Jardinière d'hortensias | 4 × 2,5 × 2 | 886 | Bac, Fleurs | [154_jardiniere_hortensias.fbx](models/10_deauville/154_jardiniere_hortensias.fbx) |
+| 155 | Pommier normand | 8 × 10 × 8 | 1372 | Tronc, Feuillage, Pommes | [155_pommier_normand.fbx](models/10_deauville/155_pommier_normand.fbx) |
+| 156 | Topiaire (buis en boule) | 2,5 × 4 × 2,5 | 372 | Pot, Buis | [156_topiaire_buis.fbx](models/10_deauville/156_topiaire_buis.fbx) |
+| 157 | Fontaine | 8 × 6 × 8 | 732 | Bassin, Fontaine, Eau | [157_fontaine.fbx](models/10_deauville/157_fontaine.fbx) |
+| 158 | Colonne Morris | 3 × 9 × 3 | 388 | Colonne, Affiches | [158_colonne_morris.fbx](models/10_deauville/158_colonne_morris.fbx) |
+| 159 | Parasol et table de terrasse | 4 × 6 × 4 | 336 | Table, Parasol | [159_table_parasol_terrasse.fbx](models/10_deauville/159_table_parasol_terrasse.fbx) |
 | 15 | Panneau de signalisation | 2 × 7 × 0,3 | 476 | Poteau, Panneau | [15_panneau_signalisation.fbx](models/01_rue/15_panneau_signalisation.fbx) |
+| 160 | Chaise de terrasse en rotin | 1,5 × 3 × 1,5 | 252 | Chaise | [160_chaise_rotin.fbx](models/10_deauville/160_chaise_rotin.fbx) |
+| 161 | Cabriolet rétro de luxe | 5 × 4 × 10 | 1688 | Carrosserie, Vitres, Roues | [161_cabriolet_retro.fbx](models/10_deauville/161_cabriolet_retro.fbx) |
+| 162 | Berline de luxe | 5 × 4,5 × 11 | 1304 | Carrosserie, Vitres, Roues | [162_berline_luxe.fbx](models/10_deauville/162_berline_luxe.fbx) |
+| 163 | Table de roulette | 6 × 3,5 × 10 | 1320 | Table, Roue, Tapis | [163_table_roulette.fbx](models/10_deauville/163_table_roulette.fbx) |
+| 164 | Table de blackjack | 8 × 3,5 × 5 | 528 | Table, Tapis | [164_table_blackjack.fbx](models/10_deauville/164_table_blackjack.fbx) |
+| 165 | Lustre en cristal | 5 × 4 × 5 | 1460 | Lustre, Ampoules | [165_lustre_cristal.fbx](models/10_deauville/165_lustre_cristal.fbx) |
+| 166 | Bar chic en marbre | 12 × 4 × 2 | 1176 | Comptoir, Etageres | [166_bar_marbre.fbx](models/10_deauville/166_bar_marbre.fbx) |
 | 16 | Passerelle métallique | 8 × 1 × 3 | 1196 | Passerelle | [16_passerelle.fbx](models/01_rue/16_passerelle.fbx) |
 | 17 | Vieille voiture cabossée | 5,2 × 4,6 × 10,1 | 1960 | Carrosserie, Vitres, Phares, FeuxArriere, Roue_AvG, Roue_AvD, Roue_ArG, Roue_ArD | [17_vieille_voiture.fbx](models/02_vehicules/17_vieille_voiture.fbx) |
 | 18 | Camionnette utilitaire | 5,6 × 6,2 × 11,3 | 2212 | Carrosserie, Vitres, Phares, FeuxArriere, Roue_AvG, Roue_AvD, Roue_ArG, Roue_ArD | [18_camionnette.fbx](models/02_vehicules/18_camionnette.fbx) |

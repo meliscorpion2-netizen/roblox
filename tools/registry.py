@@ -1,7 +1,7 @@
 """Registre des modèles : chaque module expose MODELS = [(id, fonction), ...]."""
 import importlib
 
-MODULES = ["m_rue", "m_vehicules", "m_dechets", "m_marche", "m_chantier", "m_magasins", "m_magasins2", "m_quete", "m_slot", "m_pirate"]
+MODULES = ["m_rue", "m_vehicules", "m_dechets", "m_marche", "m_chantier", "m_magasins", "m_magasins2", "m_quete", "m_slot", "m_pirate", "m_deauville"]
 
 
 def all_models():

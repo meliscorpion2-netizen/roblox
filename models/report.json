@@ -623,6 +623,181 @@
   "notes": "Posée sur la chaussée ; trou noir (faux puits) à utiliser comme zone de téléportation",
   "ecart_avant_recalage": 0.159
  },
+ "121_casino": {
+  "titre": "Casino",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/121_casino.fbx",
+  "dims_studs": [
+   60,
+   24,
+   30
+  ],
+  "triangles": 4456,
+  "pieces": [
+   "Facade",
+   "Vitres",
+   "Coupoles",
+   "Entree"
+  ],
+  "en_jeu": null,
+  "notes": "Façade Belle Époque, coupoles, statues",
+  "ecart_avant_recalage": 0.042
+ },
+ "122_hotel_normandy": {
+  "titre": "Hôtel Normandy",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/122_hotel_normandy.fbx",
+  "dims_studs": [
+   70,
+   30,
+   30
+  ],
+  "triangles": 4004,
+  "pieces": [
+   "Murs",
+   "Colombages",
+   "Toits",
+   "Vitres"
+  ],
+  "en_jeu": null,
+  "notes": "Style anglo-normand, colombages vert sapin",
+  "ecart_avant_recalage": 0.111
+ },
+ "123_hotel_royal": {
+  "titre": "Hôtel Royal",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/123_hotel_royal.fbx",
+  "dims_studs": [
+   70,
+   28,
+   25
+  ],
+  "triangles": 4724,
+  "pieces": [
+   "Murs",
+   "Toits",
+   "Vitres",
+   "Balcons"
+  ],
+  "en_jeu": null,
+  "notes": "Palace blanc, toits d'ardoise bleue",
+  "ecart_avant_recalage": 0.136
+ },
+ "124_bains_pompeiens": {
+  "titre": "Bains Pompéiens",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/124_bains_pompeiens.fbx",
+  "dims_studs": [
+   40,
+   8,
+   12
+  ],
+  "triangles": 4960,
+  "pieces": [
+   "Colonnes",
+   "Mosaiques",
+   "Toit"
+  ],
+  "en_jeu": null,
+  "notes": "Colonnade, mosaïques bleu et or",
+  "ecart_avant_recalage": 0.04
+ },
+ "125_bar_du_soleil": {
+  "titre": "Bar du Soleil",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/125_bar_du_soleil.fbx",
+  "dims_studs": [
+   16,
+   7,
+   10
+  ],
+  "triangles": 1230,
+  "pieces": [
+   "Pavillon",
+   "Terrasse",
+   "Enseigne"
+  ],
+  "en_jeu": null,
+  "notes": "Pavillon de plage et terrasse",
+  "ecart_avant_recalage": 0.029
+ },
+ "126_gare_trouville_deauville": {
+  "titre": "Gare de Trouville-Deauville",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/126_gare_trouville_deauville.fbx",
+  "dims_studs": [
+   40,
+   16,
+   14
+  ],
+  "triangles": 1608,
+  "pieces": [
+   "Batiment",
+   "Horloge",
+   "Vitres"
+  ],
+  "en_jeu": null,
+  "notes": "Colombages, horloge centrale",
+  "ecart_avant_recalage": 0.125
+ },
+ "127_marche_couvert": {
+  "titre": "Marché couvert à colombages",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/127_marche_couvert.fbx",
+  "dims_studs": [
+   30,
+   10,
+   18
+  ],
+  "triangles": 4404,
+  "pieces": [
+   "Halle",
+   "Toit",
+   "Etals"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.145
+ },
+ "128_villa_strassburger": {
+  "titre": "Villa Strassburger",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/128_villa_strassburger.fbx",
+  "dims_studs": [
+   26,
+   20,
+   20
+  ],
+  "triangles": 2058,
+  "pieces": [
+   "Murs",
+   "Colombages",
+   "Tourelle",
+   "Toits"
+  ],
+  "en_jeu": null,
+  "notes": "Manoir normand à tourelle",
+  "ecart_avant_recalage": 0.131
+ },
+ "129_eglise_notre_dame": {
+  "titre": "Église Notre-Dame-des-Victoires",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/129_eglise_notre_dame.fbx",
+  "dims_studs": [
+   20,
+   30,
+   30
+  ],
+  "triangles": 1072,
+  "pieces": [
+   "Nef",
+   "Clocher",
+   "Vitraux"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.111
+ },
  "12_haut_parleur": {
   "titre": "Haut-parleur pavillon",
   "categorie": "01_rue",
@@ -640,6 +815,195 @@
   "notes": "",
   "ecart_avant_recalage": 0.102
  },
+ "130_tribune_hippodrome": {
+  "titre": "Tribune de l'hippodrome",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/130_tribune_hippodrome.fbx",
+  "dims_studs": [
+   50,
+   14,
+   14
+  ],
+  "triangles": 2764,
+  "pieces": [
+   "Tribune",
+   "Toit",
+   "Gradins"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.067
+ },
+ "131_villa_anglo_normande_a": {
+  "titre": "Villa anglo-normande A",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/131_villa_anglo_normande_a.fbx",
+  "dims_studs": [
+   16,
+   16,
+   14
+  ],
+  "triangles": 1802,
+  "pieces": [
+   "Murs",
+   "Colombages",
+   "Toit",
+   "Vitres"
+  ],
+  "en_jeu": null,
+  "notes": "2 étages, colombages",
+  "ecart_avant_recalage": 0.143
+ },
+ "132_villa_anglo_normande_b": {
+  "titre": "Villa anglo-normande B",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/132_villa_anglo_normande_b.fbx",
+  "dims_studs": [
+   16,
+   18,
+   14
+  ],
+  "triangles": 956,
+  "pieces": [
+   "Murs",
+   "Tourelle",
+   "Toit",
+   "Vitres"
+  ],
+  "en_jeu": null,
+  "notes": "Tourelle, toit de tuiles",
+  "ecart_avant_recalage": 0.045
+ },
+ "133_immeuble_boutique_luxe": {
+  "titre": "Immeuble à boutique de luxe",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/133_immeuble_boutique_luxe.fbx",
+  "dims_studs": [
+   14,
+   18,
+   12
+  ],
+  "triangles": 1710,
+  "pieces": [
+   "Murs",
+   "Vitrine",
+   "Auvent",
+   "Enseigne"
+  ],
+  "en_jeu": null,
+  "notes": "Sans marque ; enseigne vierge",
+  "ecart_avant_recalage": 0.134
+ },
+ "134_residence_balneaire": {
+  "titre": "Résidence balnéaire",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/134_residence_balneaire.fbx",
+  "dims_studs": [
+   14,
+   20,
+   12
+  ],
+  "triangles": 1218,
+  "pieces": [
+   "Murs",
+   "Balcons",
+   "Vitres"
+  ],
+  "en_jeu": null,
+  "notes": "Balcons blancs",
+  "ecart_avant_recalage": 0.132
+ },
+ "135_cafe_brasserie": {
+  "titre": "Café-brasserie avec terrasse",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/135_cafe_brasserie.fbx",
+  "dims_studs": [
+   14,
+   10,
+   12
+  ],
+  "triangles": 1146,
+  "pieces": [
+   "Murs",
+   "Auvent",
+   "Vitres",
+   "Enseigne"
+  ],
+  "en_jeu": null,
+  "notes": "Enseigne vierge",
+  "ecart_avant_recalage": 0.103
+ },
+ "136_module_planches": {
+  "titre": "Module des Planches",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/136_module_planches.fbx",
+  "dims_studs": [
+   8,
+   0.4,
+   4
+  ],
+  "triangles": 836,
+  "pieces": [
+   "Planches"
+  ],
+  "en_jeu": null,
+  "notes": "Promenade en bois, 8 studs",
+  "ecart_avant_recalage": 0.0
+ },
+ "137_cabine_plage": {
+  "titre": "Cabine de plage",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/137_cabine_plage.fbx",
+  "dims_studs": [
+   3,
+   4.5,
+   3
+  ],
+  "triangles": 244,
+  "pieces": [
+   "Cabine",
+   "Nom"
+  ],
+  "en_jeu": null,
+  "notes": "Panneau de nom vierge",
+  "ecart_avant_recalage": 0.0
+ },
+ "138_parasol_ouvert": {
+  "titre": "Parasol de Deauville ouvert",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/138_parasol_ouvert.fbx",
+  "dims_studs": [
+   6,
+   6,
+   6
+  ],
+  "triangles": 172,
+  "pieces": [
+   "Mat",
+   "Toile"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.014
+ },
+ "139_parasol_ferme": {
+  "titre": "Parasol de Deauville fermé",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/139_parasol_ferme.fbx",
+  "dims_studs": [
+   1,
+   6,
+   1
+  ],
+  "triangles": 220,
+  "pieces": [
+   "Mat",
+   "Toile"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.316
+ },
  "13_sacs_sable": {
   "titre": "Sacs de sable empilés",
   "categorie": "01_rue",
@@ -656,6 +1020,183 @@
   "en_jeu": null,
   "notes": "",
   "ecart_avant_recalage": 0.031
+ },
+ "140_transat": {
+  "titre": "Transat",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/140_transat.fbx",
+  "dims_studs": [
+   2,
+   1.5,
+   5
+  ],
+  "triangles": 138,
+  "pieces": [
+   "Transat"
+  ],
+  "en_jeu": null,
+  "notes": "Dossier côté +Z",
+  "ecart_avant_recalage": 0.042
+ },
+ "141_douche_plage": {
+  "titre": "Douche de plage",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/141_douche_plage.fbx",
+  "dims_studs": [
+   1.5,
+   7,
+   1.5
+  ],
+  "triangles": 232,
+  "pieces": [
+   "Douche"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.019
+ },
+ "142_poste_secours": {
+  "titre": "Poste de secours sur pilotis",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/142_poste_secours.fbx",
+  "dims_studs": [
+   6,
+   10,
+   6
+  ],
+  "triangles": 460,
+  "pieces": [
+   "Poste",
+   "Drapeau"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.176
+ },
+ "143_chateau_sable": {
+  "titre": "Château de sable",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/143_chateau_sable.fbx",
+  "dims_studs": [
+   3,
+   2,
+   3
+  ],
+  "triangles": 1232,
+  "pieces": [
+   "Chateau"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.207
+ },
+ "144_serviette_ballon": {
+  "titre": "Serviette et ballon de plage",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/144_serviette_ballon.fbx",
+  "dims_studs": [
+   3,
+   0.6,
+   5
+  ],
+  "triangles": 468,
+  "pieces": [
+   "Serviette",
+   "Ballon"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.123
+ },
+ "145_mouette": {
+  "titre": "Mouette posée",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/145_mouette.fbx",
+  "dims_studs": [
+   1,
+   1,
+   1.5
+  ],
+  "triangles": 412,
+  "pieces": [
+   "Mouette"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.378
+ },
+ "146_yacht_moteur": {
+  "titre": "Yacht à moteur",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/146_yacht_moteur.fbx",
+  "dims_studs": [
+   10,
+   8,
+   30
+  ],
+  "triangles": 524,
+  "pieces": [
+   "Coque",
+   "Cabine",
+   "Vitres"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.121
+ },
+ "147_voilier": {
+  "titre": "Voilier",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/147_voilier.fbx",
+  "dims_studs": [
+   8,
+   24,
+   20
+  ],
+  "triangles": 248,
+  "pieces": [
+   "Coque",
+   "Mat",
+   "Voiles"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.046
+ },
+ "148_ponton_modulaire": {
+  "titre": "Ponton modulaire",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/148_ponton_modulaire.fbx",
+  "dims_studs": [
+   8,
+   1,
+   4
+  ],
+  "triangles": 920,
+  "pieces": [
+   "Ponton"
+  ],
+  "en_jeu": null,
+  "notes": "8 studs",
+  "ecart_avant_recalage": 0.018
+ },
+ "149_phare_jetee": {
+  "titre": "Phare de jetée",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/149_phare_jetee.fbx",
+  "dims_studs": [
+   4,
+   18,
+   4
+  ],
+  "triangles": 720,
+  "pieces": [
+   "Tour",
+   "Lanterne"
+  ],
+  "en_jeu": null,
+  "notes": "Rouge et blanc",
+  "ecart_avant_recalage": 0.035
  },
  "14_cloture_grillagee": {
   "titre": "Clôture grillagée avec barbelés",
@@ -676,6 +1217,186 @@
   "notes": "Module de 8 studs",
   "ecart_avant_recalage": 0.07
  },
+ "150_cheval_jockey": {
+  "titre": "Cheval de course avec jockey",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/150_cheval_jockey.fbx",
+  "dims_studs": [
+   2,
+   6,
+   7
+  ],
+  "triangles": 1038,
+  "pieces": [
+   "Cheval",
+   "Jockey"
+  ],
+  "en_jeu": null,
+  "notes": "Au galop, tourné vers -Z",
+  "ecart_avant_recalage": 0.333
+ },
+ "151_barriere_piste": {
+  "titre": "Barrière de piste blanche",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/151_barriere_piste.fbx",
+  "dims_studs": [
+   8,
+   3,
+   0.3
+  ],
+  "triangles": 216,
+  "pieces": [
+   "Barriere"
+  ],
+  "en_jeu": null,
+  "notes": "Module de 8 studs",
+  "ecart_avant_recalage": 0.071
+ },
+ "152_lampadaire_belle_epoque": {
+  "titre": "Lampadaire Belle Époque",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/152_lampadaire_belle_epoque.fbx",
+  "dims_studs": [
+   1.4,
+   14,
+   1.4
+  ],
+  "triangles": 412,
+  "pieces": [
+   "Poteau",
+   "Lanterne"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.082
+ },
+ "153_banc_bois_fonte": {
+  "titre": "Banc en bois et fonte",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/153_banc_bois_fonte.fbx",
+  "dims_studs": [
+   5,
+   3,
+   2
+  ],
+  "triangles": 452,
+  "pieces": [
+   "Banc"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.102
+ },
+ "154_jardiniere_hortensias": {
+  "titre": "Jardinière d'hortensias",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/154_jardiniere_hortensias.fbx",
+  "dims_studs": [
+   4,
+   2.5,
+   2
+  ],
+  "triangles": 886,
+  "pieces": [
+   "Bac",
+   "Fleurs"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.067
+ },
+ "155_pommier_normand": {
+  "titre": "Pommier normand",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/155_pommier_normand.fbx",
+  "dims_studs": [
+   8,
+   10,
+   8
+  ],
+  "triangles": 1372,
+  "pieces": [
+   "Tronc",
+   "Feuillage",
+   "Pommes"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.183
+ },
+ "156_topiaire_buis": {
+  "titre": "Topiaire (buis en boule)",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/156_topiaire_buis.fbx",
+  "dims_studs": [
+   2.5,
+   4,
+   2.5
+  ],
+  "triangles": 372,
+  "pieces": [
+   "Pot",
+   "Buis"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.044
+ },
+ "157_fontaine": {
+  "titre": "Fontaine",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/157_fontaine.fbx",
+  "dims_studs": [
+   8,
+   6,
+   8
+  ],
+  "triangles": 732,
+  "pieces": [
+   "Bassin",
+   "Fontaine",
+   "Eau"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.02
+ },
+ "158_colonne_morris": {
+  "titre": "Colonne Morris",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/158_colonne_morris.fbx",
+  "dims_studs": [
+   3,
+   9,
+   3
+  ],
+  "triangles": 388,
+  "pieces": [
+   "Colonne",
+   "Affiches"
+  ],
+  "en_jeu": null,
+  "notes": "Affiches vierges",
+  "ecart_avant_recalage": 0.026
+ },
+ "159_table_parasol_terrasse": {
+  "titre": "Parasol et table de terrasse",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/159_table_parasol_terrasse.fbx",
+  "dims_studs": [
+   4,
+   6,
+   4
+  ],
+  "triangles": 336,
+  "pieces": [
+   "Table",
+   "Parasol"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.04
+ },
  "15_panneau_signalisation": {
   "titre": "Panneau de signalisation",
   "categorie": "01_rue",
@@ -693,6 +1414,134 @@
   "en_jeu": null,
   "notes": "",
   "ecart_avant_recalage": 0.094
+ },
+ "160_chaise_rotin": {
+  "titre": "Chaise de terrasse en rotin",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/160_chaise_rotin.fbx",
+  "dims_studs": [
+   1.5,
+   3,
+   1.5
+  ],
+  "triangles": 252,
+  "pieces": [
+   "Chaise"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.047
+ },
+ "161_cabriolet_retro": {
+  "titre": "Cabriolet rétro de luxe",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/161_cabriolet_retro.fbx",
+  "dims_studs": [
+   5,
+   4,
+   10
+  ],
+  "triangles": 1688,
+  "pieces": [
+   "Carrosserie",
+   "Vitres",
+   "Roues"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.184
+ },
+ "162_berline_luxe": {
+  "titre": "Berline de luxe",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/162_berline_luxe.fbx",
+  "dims_studs": [
+   5,
+   4.5,
+   11
+  ],
+  "triangles": 1304,
+  "pieces": [
+   "Carrosserie",
+   "Vitres",
+   "Roues"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.117
+ },
+ "163_table_roulette": {
+  "titre": "Table de roulette",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/163_table_roulette.fbx",
+  "dims_studs": [
+   6,
+   3.5,
+   10
+  ],
+  "triangles": 1320,
+  "pieces": [
+   "Table",
+   "Roue",
+   "Tapis"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.136
+ },
+ "164_table_blackjack": {
+  "titre": "Table de blackjack",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/164_table_blackjack.fbx",
+  "dims_studs": [
+   8,
+   3.5,
+   5
+  ],
+  "triangles": 528,
+  "pieces": [
+   "Table",
+   "Tapis"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.264
+ },
+ "165_lustre_cristal": {
+  "titre": "Lustre en cristal",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/165_lustre_cristal.fbx",
+  "dims_studs": [
+   5,
+   4,
+   5
+  ],
+  "triangles": 1460,
+  "pieces": [
+   "Lustre",
+   "Ampoules"
+  ],
+  "en_jeu": null,
+  "notes": "Accroché par le haut",
+  "ecart_avant_recalage": 0.067
+ },
+ "166_bar_marbre": {
+  "titre": "Bar chic en marbre",
+  "categorie": "10_deauville",
+  "fichier": "models/10_deauville/166_bar_marbre.fbx",
+  "dims_studs": [
+   12,
+   4,
+   2
+  ],
+  "triangles": 1176,
+  "pieces": [
+   "Comptoir",
+   "Etageres"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.105
  },
  "16_passerelle": {
   "titre": "Passerelle métallique",
