@@ -1,0 +1,85 @@
+{
+  "JackpotSpire": {
+    "parts": {
+      "Base": 1152,
+      "Skirt": 128,
+      "Spire": 1832,
+      "Crown": 644,
+      "NeonRings": 336
+    },
+    "triangles": 4092
+  },
+  "ConveyorSegment": {
+    "parts": {
+      "Belt": 136,
+      "Frame": 808,
+      "RailInner": 48,
+      "RailOuter": 96,
+      "Rollers": 576
+    },
+    "triangles": 1664
+  },
+  "CasinoTier1": {
+    "parts": {
+      "Floor": 800,
+      "Walls": 2231,
+      "SignBoard": 94,
+      "NeonStrip": 168,
+      "Door": 498,
+      "Bulbs": 576
+    },
+    "triangles": 4367
+  },
+  "PlotSign": {
+    "parts": {
+      "Display": 2,
+      "Accent": 170,
+      "Posts": 440,
+      "Decorations": 1088,
+      "Bulbs": 504
+    },
+    "triangles": 2204
+  },
+  "LuckyFruitsMachine": {
+    "parts": {
+      "Cabinet": 538,
+      "Screen": 301,
+      "Lever": 244,
+      "Topper": 328,
+      "Base": 42
+    },
+    "triangles": 1453
+  },
+  "OceanTreasureMachine": {
+    "parts": {
+      "Cabinet": 1256,
+      "Screen": 386,
+      "Lever": 386,
+      "Topper": 444,
+      "Base": 246
+    },
+    "triangles": 2718
+  },
+  "NeonFortuneMachine": {
+    "parts": {
+      "Cabinet": 200,
+      "Screen": 313,
+      "Lever": 318,
+      "Topper": 252,
+      "Base": 84,
+      "NeonStrips": 428
+    },
+    "triangles": 1595
+  },
+  "GoldenPharaohMachine": {
+    "parts": {
+      "Cabinet": 1656,
+      "Screen": 1040,
+      "Lever": 334,
+      "Topper": 322,
+      "Base": 204,
+      "Wings": 256
+    },
+    "triangles": 3812
+  }
+}
