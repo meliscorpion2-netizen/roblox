@@ -41,7 +41,10 @@ def build(only=None, previews=True):
         missing = set(only) - {e["name"] for e in entries}
         assert not missing, f"unknown model(s): {missing}"
     counts_path = os.path.join(OUT, "triangle_counts.json")
-    report = json.load(open(counts_path)) if os.path.exists(counts_path) else {}
+    try:
+        report = json.load(open(counts_path))
+    except Exception:          # missing, or being rewritten by a concurrent run
+        report = {}
     models = {}
     for e in entries:
         if only and e["name"] not in only:
@@ -62,8 +65,10 @@ def build(only=None, previews=True):
                os.path.join(PREV, "MachineSlotWithMachine.png"), size=(900, 900), eye=(-0.7, 0.55, -1.2), fit=1.1)
     known = {e["name"] for e in entries}
     report = {k: v for k, v in report.items() if k in known}
-    with open(counts_path, "w") as f:
+    tmp = counts_path + f".{os.getpid()}.tmp"
+    with open(tmp, "w") as f:
         json.dump(report, f, indent=2)
+    os.replace(tmp, counts_path)
     return models
 
 
