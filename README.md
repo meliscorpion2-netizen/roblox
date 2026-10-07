@@ -1,6 +1,6 @@
 # Props Roblox – quartier délabré
 
-166 objets low-poly (174 fichiers `.fbx` avec les variantes) pour un jeu Roblox satirique dans un quartier pauvre :
+178 objets low-poly (186 fichiers `.fbx` avec les variantes) pour un jeu Roblox satirique dans un quartier pauvre :
 mobilier urbain, véhicules, déchets, marché, chantier, décors de boutiques objets de la quête « x2 Luck Key » et symboles et borne de la machine à sous (100–113), quête du pirate et entrée des égouts (114–120). Style « simulateur » cartoon,
 formes arrondies, arêtes biseautées, couleurs vives mais salies, sans texture photo ni texte.
 
@@ -20,6 +20,7 @@ Tous les modèles sont générés par script avec Blender (module Python `bpy`),
 | Machine à sous (100–112) | Couleurs propres. `Yeux` du loup, `Gemme` (blanche, à recolorer en néon Mini/Minor/Major/Grand) et `Contour` du Bonus Token sont des pièces séparées à passer en Neon. |
 | Pirate (114–120) | `Lueur` de la planche flottée et de la moisissure : halos à passer en Neon transparent. Clé x5 en couleurs propres, « x5 » gravé à la demande. Égout ouvert (120) : posé à plat sur la chaussée, trou noir à utiliser comme zone de téléportation. |
 | Deauville (121–166) | Pack chic et propre (`models/10_deauville/`) : façades blanches, colombages vert sapin, ardoise bleu-gris, rayures marine et blanc ; aucune crasse, aucun logo. Enseignes, cabine et colonne Morris vierges. |
+| Jeu du loup (167–178) | `models/11_cochons/` : table de cartes façon atelier, 8 cochons (`Corps` commun + `Accessoire`), louveteau, grand méchant loup qui souffle (`Souffle` séparé), kiosque à pochettes (enseigne vierge). |
 | Enseignes | Aucun texte : panneaux, ardoises, menus et le panneau « EN PANNE » sont des surfaces vierges à habiller en jeu. |
 
 ## Import dans Roblox Studio
@@ -133,7 +134,19 @@ python3 tools/readme_table.py       # met à jour le tableau ci-dessous
 | 164 | Table de blackjack | 8 × 3,5 × 5 | 528 | Table, Tapis | [164_table_blackjack.fbx](models/10_deauville/164_table_blackjack.fbx) |
 | 165 | Lustre en cristal | 5 × 4 × 5 | 1460 | Lustre, Ampoules | [165_lustre_cristal.fbx](models/10_deauville/165_lustre_cristal.fbx) |
 | 166 | Bar chic en marbre | 12 × 4 × 2 | 1176 | Comptoir, Etageres | [166_bar_marbre.fbx](models/10_deauville/166_bar_marbre.fbx) |
+| 167 | Table de jeu du loup | 6 × 6 × 4 | 1780 | Table, Plateau, Loup, Ardoise, Paquet | [167_table_loup_cartes.fbx](models/11_cochons/167_table_loup_cartes.fbx) |
+| 168 | Cochon maçon | 2 × 2,5 × 2 | 1600 | Corps, Accessoire | [168_cochon_macon.fbx](models/11_cochons/168_cochon_macon.fbx) |
+| 169 | Cochon bûcheron | 2 × 2,5 × 2 | 1188 | Corps, Accessoire | [169_cochon_bucheron.fbx](models/11_cochons/169_cochon_bucheron.fbx) |
 | 16 | Passerelle métallique | 8 × 1 × 3 | 1196 | Passerelle | [16_passerelle.fbx](models/01_rue/16_passerelle.fbx) |
+| 170 | Cochon fermier | 2 × 2,5 × 2 | 1216 | Corps, Accessoire | [170_cochon_fermier.fbx](models/11_cochons/170_cochon_fermier.fbx) |
+| 171 | Cochon architecte | 2 × 2,5 × 2 | 1274 | Corps, Accessoire | [171_cochon_architecte.fbx](models/11_cochons/171_cochon_architecte.fbx) |
+| 172 | Cochon banquier | 2 × 2,5 × 2 | 1508 | Corps, Accessoire | [172_cochon_banquier.fbx](models/11_cochons/172_cochon_banquier.fbx) |
+| 173 | Cochon chanceux | 2 × 2,5 × 2 | 1356 | Corps, Accessoire | [173_cochon_chanceux.fbx](models/11_cochons/173_cochon_chanceux.fbx) |
+| 174 | Cochon costaud | 2 × 2,5 × 2 | 1516 | Corps, Accessoire | [174_cochon_costaud.fbx](models/11_cochons/174_cochon_costaud.fbx) |
+| 175 | Cochon magicien | 2 × 2,5 × 2 | 1272 | Corps, Accessoire | [175_cochon_magicien.fbx](models/11_cochons/175_cochon_magicien.fbx) |
+| 176 | Louveteau | 3 × 4 × 3 | 1076 | Corps | [176_louveteau.fbx](models/11_cochons/176_louveteau.fbx) |
+| 177 | Grand méchant loup qui souffle | 5 × 7 × 4 | 1896 | Corps, Souffle | [177_grand_mechant_loup_souffle.fbx](models/11_cochons/177_grand_mechant_loup_souffle.fbx) |
+| 178 | Kiosque à pochettes | 6 × 8 × 5 | 1386 | Kiosque, Pochettes, Enseigne | [178_kiosque_pochettes.fbx](models/11_cochons/178_kiosque_pochettes.fbx) |
 | 17 | Vieille voiture cabossée | 5,2 × 4,6 × 10,1 | 1960 | Carrosserie, Vitres, Phares, FeuxArriere, Roue_AvG, Roue_AvD, Roue_ArG, Roue_ArD | [17_vieille_voiture.fbx](models/02_vehicules/17_vieille_voiture.fbx) |
 | 18 | Camionnette utilitaire | 5,6 × 6,2 × 11,3 | 2212 | Carrosserie, Vitres, Phares, FeuxArriere, Roue_AvG, Roue_AvD, Roue_ArG, Roue_ArD | [18_camionnette.fbx](models/02_vehicules/18_camionnette.fbx) |
 | 19 | Petite citadine | 5 × 4,2 × 8,3 | 1740 | Carrosserie, Vitres, Phares, FeuxArriere, Roue_AvG, Roue_AvD, Roue_ArG, Roue_ArD | [19_citadine.fbx](models/02_vehicules/19_citadine.fbx) |

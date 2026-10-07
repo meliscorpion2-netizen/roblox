@@ -1543,6 +1543,63 @@
   "notes": "",
   "ecart_avant_recalage": 0.105
  },
+ "167_table_loup_cartes": {
+  "titre": "Table de jeu du loup",
+  "categorie": "11_cochons",
+  "fichier": "models/11_cochons/167_table_loup_cartes.fbx",
+  "dims_studs": [
+   6,
+   6,
+   4
+  ],
+  "triangles": 1780,
+  "pieces": [
+   "Table",
+   "Plateau",
+   "Loup",
+   "Ardoise",
+   "Paquet"
+  ],
+  "en_jeu": null,
+  "notes": "Bois et métal façon atelier ; pas de casino",
+  "ecart_avant_recalage": 0.081
+ },
+ "168_cochon_macon": {
+  "titre": "Cochon maçon",
+  "categorie": "11_cochons",
+  "fichier": "models/11_cochons/168_cochon_macon.fbx",
+  "dims_studs": [
+   2,
+   2.5,
+   2
+  ],
+  "triangles": 1600,
+  "pieces": [
+   "Corps",
+   "Accessoire"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.126
+ },
+ "169_cochon_bucheron": {
+  "titre": "Cochon bûcheron",
+  "categorie": "11_cochons",
+  "fichier": "models/11_cochons/169_cochon_bucheron.fbx",
+  "dims_studs": [
+   2,
+   2.5,
+   2
+  ],
+  "triangles": 1188,
+  "pieces": [
+   "Corps",
+   "Accessoire"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.267
+ },
  "16_passerelle": {
   "titre": "Passerelle métallique",
   "categorie": "01_rue",
@@ -1559,6 +1616,168 @@
   "en_jeu": null,
   "notes": "Module de 8 studs",
   "ecart_avant_recalage": 0.0
+ },
+ "170_cochon_fermier": {
+  "titre": "Cochon fermier",
+  "categorie": "11_cochons",
+  "fichier": "models/11_cochons/170_cochon_fermier.fbx",
+  "dims_studs": [
+   2,
+   2.5,
+   2
+  ],
+  "triangles": 1216,
+  "pieces": [
+   "Corps",
+   "Accessoire"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.049
+ },
+ "171_cochon_architecte": {
+  "titre": "Cochon architecte",
+  "categorie": "11_cochons",
+  "fichier": "models/11_cochons/171_cochon_architecte.fbx",
+  "dims_studs": [
+   2,
+   2.5,
+   2
+  ],
+  "triangles": 1274,
+  "pieces": [
+   "Corps",
+   "Accessoire"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.233
+ },
+ "172_cochon_banquier": {
+  "titre": "Cochon banquier",
+  "categorie": "11_cochons",
+  "fichier": "models/11_cochons/172_cochon_banquier.fbx",
+  "dims_studs": [
+   2,
+   2.5,
+   2
+  ],
+  "triangles": 1508,
+  "pieces": [
+   "Corps",
+   "Accessoire"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.12
+ },
+ "173_cochon_chanceux": {
+  "titre": "Cochon chanceux",
+  "categorie": "11_cochons",
+  "fichier": "models/11_cochons/173_cochon_chanceux.fbx",
+  "dims_studs": [
+   2,
+   2.5,
+   2
+  ],
+  "triangles": 1356,
+  "pieces": [
+   "Corps",
+   "Accessoire"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.267
+ },
+ "174_cochon_costaud": {
+  "titre": "Cochon costaud",
+  "categorie": "11_cochons",
+  "fichier": "models/11_cochons/174_cochon_costaud.fbx",
+  "dims_studs": [
+   2,
+   2.5,
+   2
+  ],
+  "triangles": 1516,
+  "pieces": [
+   "Corps",
+   "Accessoire"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.259
+ },
+ "175_cochon_magicien": {
+  "titre": "Cochon magicien",
+  "categorie": "11_cochons",
+  "fichier": "models/11_cochons/175_cochon_magicien.fbx",
+  "dims_studs": [
+   2,
+   2.5,
+   2
+  ],
+  "triangles": 1272,
+  "pieces": [
+   "Corps",
+   "Accessoire"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.199
+ },
+ "176_louveteau": {
+  "titre": "Louveteau",
+  "categorie": "11_cochons",
+  "fichier": "models/11_cochons/176_louveteau.fbx",
+  "dims_studs": [
+   3,
+   4,
+   3
+  ],
+  "triangles": 1076,
+  "pieces": [
+   "Corps"
+  ],
+  "en_jeu": null,
+  "notes": "Boss de la manche paille",
+  "ecart_avant_recalage": 0.058
+ },
+ "177_grand_mechant_loup_souffle": {
+  "titre": "Grand méchant loup qui souffle",
+  "categorie": "11_cochons",
+  "fichier": "models/11_cochons/177_grand_mechant_loup_souffle.fbx",
+  "dims_studs": [
+   5,
+   7,
+   4
+  ],
+  "triangles": 1896,
+  "pieces": [
+   "Corps",
+   "Souffle"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.291
+ },
+ "178_kiosque_pochettes": {
+  "titre": "Kiosque à pochettes",
+  "categorie": "11_cochons",
+  "fichier": "models/11_cochons/178_kiosque_pochettes.fbx",
+  "dims_studs": [
+   6,
+   8,
+   5
+  ],
+  "triangles": 1386,
+  "pieces": [
+   "Kiosque",
+   "Pochettes",
+   "Enseigne"
+  ],
+  "en_jeu": null,
+  "notes": "Enseigne vierge",
+  "ecart_avant_recalage": 0.091
  },
  "17_vieille_voiture": {
   "titre": "Vieille voiture cabossée",
