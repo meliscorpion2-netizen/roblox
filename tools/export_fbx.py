@@ -23,7 +23,7 @@ def reset():
     bpy.ops.wm.read_factory_settings(use_empty=True)
     s = bpy.context.scene
     s.unit_settings.system = "METRIC"
-    s.unit_settings.scale_length = 0.01     # 1 Blender unit -> 1 FBX centimetre -> 1 Roblox stud
+    s.unit_settings.scale_length = 1.0
 
 
 def convert(name):
@@ -38,8 +38,9 @@ def convert(name):
     bpy.ops.export_scene.fbx(
         filepath=out,
         object_types={"EMPTY", "MESH"},
-        apply_unit_scale=True,
-        global_scale=1.0,
+        apply_unit_scale=False,             # keep raw values: 1 FBX unit = 1 stud (UnitScaleFactor 1)
+        global_scale=0.01,                  # Blender writes FBX in cm (x100): bring it back to 1 unit = 1 stud
+        bake_space_transform=True,          # write Y-up / -Z-front coordinates straight into the geometry
         apply_scale_options="FBX_SCALE_NONE",
         axis_forward="-Z",
         axis_up="Y",

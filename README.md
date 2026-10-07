@@ -45,8 +45,10 @@ The renders in `previews/` include the spire with 16 conveyor segments around it
   - Lever is on the player's right side when they face the machine (model -X).
 
 ## Importing into Roblox Studio
-1. Open Avatar/Home → **Import 3D** and choose a `.glb`.
-2. In the import settings, set **File Dimensions / Scale Unit to "Studs"**, so 1 unit = 1 stud.
+Every model also exists as a **binary FBX** in `models/fbx/` (FBX 7.4, the palette texture embedded). Use these for a direct import into Roblox.
+
+1. Open Home/Avatar → **Import 3D** and choose a file from `models/fbx/` (or a `.glb`).
+2. The FBX files are 1 unit = 1 stud (UnitScaleFactor 1), with Y up and the front at −Z. If the preview size looks wrong, set **File Dimensions / Scale Unit to "Studs"**.
 3. Keep "Import as a single Model" on so each part becomes a named MeshPart, then set the neon parts to `Material = Neon`.
 
 ## Regenerating
@@ -55,6 +57,8 @@ The models are fully procedural. You need Python 3 with numpy, plus Pillow for t
 ```
 python3 tools/generate_casino_models.py   # writes models/*.glb and previews/*.png
 python3 tools/validate_glb.py             # checks part names, pivots and sizes
+pip install bpy && python3 tools/export_fbx.py   # converts the GLBs to models/fbx/*.fbx (Blender as a module)
+python3 tools/validate_fbx.py             # checks the FBX units, axes, part names, pivots and sizes
 ```
 
 To change a model, edit `tools/models_world.py` or `tools/models_machines.py`. The palette is in `tools/casino_geo.py`.

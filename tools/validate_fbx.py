@@ -90,8 +90,10 @@ for fn in sorted(os.listdir(os.path.join(ROOT, "models", "fbx"))):
     for uid, mm in models.items():
         nm = mm[1][1].split("\x00")[0]
         t = prop70(mm, "Lcl Translation") or [0, 0, 0]
+        if mm[1][2] != "Null" and (prop70(mm, "Lcl Rotation") or prop70(mm, "PreRotation") or prop70(mm, "Lcl Scaling")):
+            nm += f"(rot={prop70(mm, 'Lcl Rotation')},pre={prop70(mm, 'PreRotation')},scl={prop70(mm, 'Lcl Scaling')})"
         if mm[1][2] == "Null":
-            root = nm
+            root = nm + f" rot={prop70(mm, 'Lcl Rotation')} scl={prop70(mm, 'Lcl Scaling')} prerot={prop70(mm, 'PreRotation')}"
             continue
         gid = next(c[1] for c in conns if c[0] == "OO" and c[2] == uid and c[1] in geos)
         v = find(geos[gid][2], "Vertices")[0][1][0].reshape(-1, 3)
