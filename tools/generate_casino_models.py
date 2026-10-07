@@ -65,7 +65,7 @@ def build(only=None, previews=True):
     if previews and all(n in models for n in ("MachineSlot", "GoldenPharaohMachine")):
         from casino_geo import T
         render([(models["MachineSlot"], None), (models["GoldenPharaohMachine"], T(0, 1.1, 0))],
-               os.path.join(PREV, "MachineSlotWithMachine.png"), size=(900, 900), eye=(-0.7, 0.55, -1.2), fit=0.9)
+               os.path.join(PREV, "MachineSlotWithMachine.png"), size=(900, 900), eye=(-0.7, 0.55, -1.2), fit=1.1)
     with open(os.path.join(OUT, "triangle_counts.json"), "w") as f:
         json.dump(report, f, indent=2)
     return report

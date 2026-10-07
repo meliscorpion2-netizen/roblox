@@ -26,6 +26,11 @@ def reset():
     s.unit_settings.scale_length = 1.0
 
 
+def _lin_to_srgb(c):
+    c = max(0.0, min(1.0, c))
+    return 12.92 * c if c <= 0.0031308 else 1.055 * c ** (1 / 2.4) - 0.055
+
+
 def convert(name):
     reset()
     bpy.ops.import_scene.gltf(filepath=os.path.join(SRC, name + ".glb"), merge_vertices=False)
@@ -34,6 +39,26 @@ def convert(name):
             ob.data.name = ob.name          # mesh data carries the exact part name too
             for poly in ob.data.polygons:
                 poly.use_smooth = False
+    # Embedded palette: give it a .png name, otherwise importers unpack "<model>.fbm/CasinoPalette"
+    # without an extension and may not recognise the image type.
+    for img in bpy.data.images:
+        if not os.path.splitext(img.name)[1]:
+            img.name = img.name + ".png"
+            img.filepath_raw = "//" + img.name
+    for mat in bpy.data.materials:
+        if not mat.use_nodes:
+            continue
+        bsdf = next((n for n in mat.node_tree.nodes if n.type == "BSDF_PRINCIPLED"), None)
+        if bsdf is None:
+            continue
+        base = bsdf.inputs["Base Color"]
+        if base.is_linked:
+            # textured: neutral white diffuse so importers that multiply colour x texture keep the palette exact
+            base.default_value = (1.0, 1.0, 1.0, 1.0)
+        else:
+            # solid colour: glTF stores linear values; FBX DiffuseColor is read as display (sRGB) values
+            lin = base.default_value
+            base.default_value = tuple(_lin_to_srgb(c) for c in lin[:3]) + (1.0,)
     out = os.path.join(DST, name + ".fbx")
     bpy.ops.export_scene.fbx(
         filepath=out,

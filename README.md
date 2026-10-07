@@ -8,6 +8,7 @@ Eight low-poly models for a Roblox casino tycoon simulator. They all share one s
 | `ConveyorSegment.glb` | Belt, Frame, RailInner, RailOuter, Rollers | 1,664 |
 | `CasinoTier1.glb` | Floor, Walls, SignBoard, NeonStrip, Door, *Bulbs* | 4,367 |
 | `PlotSign.glb` | Display, Accent, Posts, Decorations, *Bulbs* | 2,204 |
+| `MachineSlot.glb` | PedestalBase, Pedestal, Pad | 276 |
 | `LuckyFruitsMachine.glb` (Common) | Cabinet, Screen, Lever, Topper, Base | 1,453 |
 | `OceanTreasureMachine.glb` (Rare) | Cabinet, Screen, Lever, Topper, Base | 2,718 |
 | `NeonFortuneMachine.glb` (Epic) | Cabinet, Screen, Lever, Topper, Base, NeonStrips | 1,595 |
@@ -24,6 +25,11 @@ The renders in `previews/` include the spire with 16 conveyor segments around it
   - Lever: the hub at its base, so you can animate it by rotating around X.
   - Topper (and Wings on the Pharaoh): the vertical centre axis at the top of the cabinet, so you can spin them around Y.
 - **Colours:** parts with several colours use a shared palette texture (`CasinoPalette`, flat colour cells with a very slight vertical gradient). Parts with a single colour have no texture, just a material colour, so you can recolour them in Roblox. This applies to PlotSign `Display` (white) and `Accent` (neutral white).
+- **Single-colour parts and their Studio Color (R,G,B):**
+  - PlotSign `Display` and `Accent`: 255,255,255.
+  - MachineSlot `Pedestal`: 158,164,181.
+  - MachineSlot `Pad`: 54,224,90.
+  - The FBX files store these as sRGB DiffuseColor values. If an import comes out plain grey, set `Color` to these values. They are also the parts you can tint per player or rarity.
 - **Glowing parts are separate meshes:** NeonRings, RailInner, RailOuter, NeonStrip, NeonStrips and Bulbs. Set their `Material` to `Neon` in Studio.
 
 ## Key dimensions
@@ -40,6 +46,9 @@ The renders in `previews/` include the spire with 16 conveyor segments around it
   - Floor top: y = 1.
   - The sign panel is a flat, blank quad.
 - **PlotSign:** 20 wide and about 14 tall. `Display` is a single flat quad facing -Z.
+- **MachineSlot:** a display pedestal for one slot machine.
+  - Pedestal: exactly 8 (X) × 7 (Z) × 1.1 (Y), centred on the pivot. `PedestalBase` is the dark grey bevelled block (0–0.75), whose small gold corner studs sit on its ledge and stay below the top. `Pedestal` is the lighter grey top slab, 7 × 6 at 0.75–1.1. Place the machine at y = 1.1.
+  - Pad: flat bright green, 7.5 × 3.4 × 0.2 with rounded corners, 0.4 studs in front (−Z) of the pedestal (z −3.9 to −7.3).
 - **Slot machines:** 6 × 5 × about 9 studs.
   - Screen faces -Z.
   - Lever is on the player's right side when they face the machine (model -X).

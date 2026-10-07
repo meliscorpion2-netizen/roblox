@@ -420,8 +420,9 @@ def machine_slot():
     base.add(box((-4.0, 0.0, -3.5), (4.0, 0.75, 3.5), "stone_dark", 0.12, skip=("-y",), top="stone_mid"))
     for sx in (-1, 1):
         for sz in (-1, 1):
-            base.add(lathe([(0.2, 0.0), (0.2, 0.04), (0.15, 0.06)], 8, "gold_dark"), T(sx * 3.7, 0.75, sz * 3.2))
-            base.add(dome(0.15, 8, 3, "gold"), T(sx * 3.7, 0.81, sz * 3.2))
+            # 6-sided ring (circumradius 0.18) stays inside the flat ledge (|x| <= 3.88, |z| <= 3.38)
+            base.add(lathe([(0.18, 0.0), (0.15, 0.04)], 6, "gold_dark"), T(sx * 3.68, 0.75, sz * 3.18))
+            base.add(dome(0.15, 6, 2, "gold"), T(sx * 3.68, 0.79, sz * 3.18))
 
     # Pedestal: lighter grey top slab 7 x 6, y 0.75 -> 1.1 (single colour, so it can be tinted per rarity)
     slab.add(box((-3.5, 0.75, -3.0), (3.5, 1.1, 3.0), "stone_light", 0.1, skip=("-y",)))
@@ -429,7 +430,12 @@ def machine_slot():
     # Pad: flat bright green rounded pad 7.5 (X) x 3.4 (Z) x 0.2, 0.4 studs in front (-Z) of the pedestal
     z_back = -3.5 - 0.4
     outline = [(x, y) for x, y in _rounded_rect_xy(-3.75, -z_back, 3.75, -z_back + 3.4, 0.7)]
-    pad.add(extrude(outline, 0.0, 0.2, "pad_green", front=False), RX(-90))
+    pad.add(extrude(outline, 0.0, 0.2, "pad_green", front=False, back=False), RX(-90))      # side walls
+    # flat top at y = 0.2, fanned from its centre (avoids long sliver triangles), no bottom face
+    top = [(x, 0.2, -y) for x, y in outline]
+    centre = (0.0, 0.2, z_back - 1.7)
+    for i in range(len(top)):
+        pad.geo.add([centre, top[i], top[(i + 1) % len(top)]], "pad_green", (0, 1, 0))
     return m
 
 

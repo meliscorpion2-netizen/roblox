@@ -782,8 +782,16 @@ def render(models_with_xf, path, size=(1000, 800), eye=(-1, 0.55, -1.25), target
             d2 = np.roll(np.roll(d, dy, 0), dx, 1)
             i2 = np.roll(np.roll(ids, dy, 0), dx, 1)
             rel_jump = np.abs(d - d2) / np.minimum(d, d2) > 0.012 * ss
-            edge |= rel_jump & ((d < 1e8) | (d2 < 1e8))
-            edge |= (ids != i2) & (ids >= 0) & (i2 >= 0)
+            e = rel_jump & ((d < 1e8) | (d2 < 1e8))
+            e |= (ids != i2) & (ids >= 0) & (i2 >= 0)
+            # np.roll wraps around: ignore the rows/columns that were rolled in from the opposite edge
+            if dy:
+                e[:dy, :] = False
+            if dx > 0:
+                e[:, :dx] = False
+            elif dx < 0:
+                e[:, dx:] = False
+            edge |= e
         img[edge] = img[edge] * 0.35 + np.array((0.08, 0.04, 0.16)) * 0.65
         alpha[edge] = 1.0
     if bg is not None:

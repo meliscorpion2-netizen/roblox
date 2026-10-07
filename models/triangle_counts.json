@@ -42,11 +42,11 @@
   },
   "MachineSlot": {
     "parts": {
-      "PedestalBase": 330,
+      "PedestalBase": 162,
       "Pedestal": 42,
-      "Pad": 70
+      "Pad": 72
     },
-    "triangles": 442
+    "triangles": 276
   },
   "LuckyFruitsMachine": {
     "parts": {
