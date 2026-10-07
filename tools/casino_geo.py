@@ -50,8 +50,7 @@ PALETTE = {
 }
 COLOR_NAMES = list(PALETTE)
 NEON_COLORS = {"neon_pink", "neon_cyan", "neon_magenta", "neon_purple", "bulb"}
-CELL = 8          # px per palette column
-TEX_H = 32
+CELL = 16         # px per palette cell
 
 
 def hex_rgb(h):
@@ -59,28 +58,59 @@ def hex_rgb(h):
     return np.array([int(h[i:i + 2], 16) for i in (0, 2, 4)], float) / 255.0
 
 
+def add_colors(colors, neon=()):
+    """Register extra palette colours (name -> '#RRGGBB'). Model modules call this at import time.
+    Names already present must keep the same value."""
+    for k, v in colors.items():
+        if k in PALETTE:
+            assert PALETTE[k].upper() == v.upper(), f"palette colour {k} redefined ({PALETTE[k]} vs {v})"
+            continue
+        PALETTE[k] = v
+        COLOR_NAMES.append(k)
+    NEON_COLORS.update(neon)
+
+
+PAL_COLS = 32     # palette grid: 32 cells per row, CELL x CELL px each
+
+
+def palette_size():
+    rows = (len(COLOR_NAMES) + PAL_COLS - 1) // PAL_COLS
+    h = 16
+    while h < rows * CELL:
+        h *= 2
+    return PAL_COLS * CELL, h
+
+
+def palette_uv(name, t=None):
+    """UV of a colour cell. t in [0,1] = relative height inside the part (1 = top, lighter); None = cell centre."""
+    w, h = palette_size()
+    i = COLOR_NAMES.index(name)
+    col, row = i % PAL_COLS, i // PAL_COLS
+    u = (col * CELL + CELL / 2) / w
+    if t is None:
+        v = (row * CELL + CELL / 2) / h
+    else:
+        v = (row * CELL + 2 + (CELL - 4) * (1 - t)) / h
+    return u, v
+
+
 def palette_png_bytes():
-    """Palette texture: one 8px column per colour, a very subtle vertical gradient
-    (lighter at the top, slightly darker at the bottom)."""
-    n = len(COLOR_NAMES)
-    w = 1
-    while w < n * CELL:
-        w *= 2
-    img = np.zeros((TEX_H, w, 3), np.uint8)
+    """Palette texture: a grid of flat colour cells (CELL px), each with a very subtle vertical
+    gradient (lighter at the top, slightly darker at the bottom). Max 512 x 512 px."""
+    w, h = palette_size()
+    img = np.zeros((h, w, 3), np.uint8)
     for i, name in enumerate(COLOR_NAMES):
         c = hex_rgb(PALETTE[name])
-        for row in range(TEX_H):
-            t = row / (TEX_H - 1)                      # 0 top .. 1 bottom
-            f = 1.06 - 0.14 * t
-            if name in NEON_COLORS:
-                f = 1.0
-            col = np.clip(c * f, 0, 1)
-            img[row, i * CELL:(i + 1) * CELL] = (col * 255).round()
-    raw = b"".join(b"\x00" + img[r].tobytes() for r in range(TEX_H))
+        col, row = i % PAL_COLS, i // PAL_COLS
+        for r in range(CELL):
+            t = r / (CELL - 1)                      # 0 top .. 1 bottom
+            f = 1.0 if name in NEON_COLORS else 1.06 - 0.14 * t
+            img[row * CELL + r, col * CELL:(col + 1) * CELL] = (np.clip(c * f, 0, 1) * 255).round()
+    raw = b"".join(b"\x00" + img[r].tobytes() for r in range(h))
 
     def chunk(tag, data):
         return struct.pack(">I", len(data)) + tag + data + struct.pack(">I", zlib.crc32(tag + data) & 0xFFFFFFFF)
-    return (b"\x89PNG\r\n\x1a\n" + chunk(b"IHDR", struct.pack(">IIBBBBB", w, TEX_H, 8, 2, 0, 0, 0))
+    return (b"\x89PNG\r\n\x1a\n" + chunk(b"IHDR", struct.pack(">IIBBBBB", w, h, 8, 2, 0, 0, 0))
             + chunk(b"IDAT", zlib.compress(raw, 9)) + chunk(b"IEND", b"")), w
 
 
@@ -641,21 +671,14 @@ def export_glb(model, path):
         ymin, ymax = ys.min(), ys.max()
         uv = np.zeros((n * 3, 2), np.float32)
         for i, c in enumerate(cols):
-            u = (COLOR_NAMES.index(c) * CELL + CELL / 2) / tex_w
             for k in range(3):
                 if part.gradient and not part.neon and ymax - ymin > 1e-6:
-                    t = (tris[i, k, 1] - ymin) / (ymax - ymin)
-                    v = 0.08 + 0.84 * (1 - t)
+                    uv[i * 3 + k] = palette_uv(c, (tris[i, k, 1] - ymin) / (ymax - ymin))
                 else:
-                    v = 0.5
-                uv[i * 3 + k] = (u, v)
-        used = set(cols)
-        solid = next(iter(used)) if len(used) == 1 else None
-        if solid is not None:
-            key = ("Neon_" if part.neon else "") + "".join(w.capitalize() for w in solid.split("_"))
-        else:
-            key = "CasinoPaletteNeon" if part.neon else "CasinoPalette"
-        mat = material(key, solid, part.neon)
+                    uv[i * 3 + k] = palette_uv(c)
+        # every part is textured with the shared palette (Roblox may ignore plain material colours)
+        key = "CasinoPaletteNeon" if part.neon else "CasinoPalette"
+        mat = material(key, None, part.neon)
         idx = np.arange(n * 3, dtype=np.uint32)
         a_pos = len(accessors)
         accessors.append({"bufferView": push(pos.tobytes(), 34962), "componentType": 5126, "count": n * 3, "type": "VEC3",

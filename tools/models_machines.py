@@ -597,3 +597,13 @@ def golden_pharaoh():
             w = extrude(poly, -0.07 + dz, 0.07, col, "gold_dark")
             wings.add(w, M(T(side * 0.85, ty + 0.68 + dy * 0.6, 0.1), RZ(side * 12)))
     return m
+
+
+BUILDERS = [
+    dict(name="LuckyFruitsMachine", fn=lucky_fruits, mirror=True, parts=["Cabinet", "Screen", "Lever", "Topper", "Base"]),
+    dict(name="OceanTreasureMachine", fn=ocean_treasure, mirror=True, parts=["Cabinet", "Screen", "Lever", "Topper", "Base"]),
+    dict(name="NeonFortuneMachine", fn=neon_fortune, mirror=True,
+         parts=["Cabinet", "Screen", "Lever", "Topper", "Base", "NeonStrips"]),
+    dict(name="GoldenPharaohMachine", fn=golden_pharaoh, mirror=True,
+         parts=["Cabinet", "Screen", "Lever", "Topper", "Base", "Wings"]),
+]

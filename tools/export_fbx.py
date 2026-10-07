@@ -15,8 +15,7 @@ import bpy
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, "models")
 DST = os.path.join(ROOT, "models", "fbx")
-NAMES = ["JackpotSpire", "ConveyorSegment", "CasinoTier1", "PlotSign", "MachineSlot", "LuckyFruitsMachine",
-         "OceanTreasureMachine", "NeonFortuneMachine", "GoldenPharaohMachine"]
+NAMES = sorted(f[:-4] for f in os.listdir(SRC) if f.endswith(".glb"))
 
 
 def reset():

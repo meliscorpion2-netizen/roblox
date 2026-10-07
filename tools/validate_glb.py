@@ -3,17 +3,11 @@ import json, os, struct, sys
 import numpy as np
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-EXPECT = {
-    "JackpotSpire": ["Spire", "Skirt", "Crown", "NeonRings", "Base"],
-    "ConveyorSegment": ["Belt", "Frame", "RailInner", "RailOuter", "Rollers"],
-    "CasinoTier1": ["Floor", "Walls", "SignBoard", "NeonStrip", "Door"],
-    "PlotSign": ["Display", "Accent", "Posts", "Decorations"],
-    "MachineSlot": ["PedestalBase", "Pedestal", "Pad"],
-    "LuckyFruitsMachine": ["Cabinet", "Screen", "Lever", "Topper", "Base"],
-    "OceanTreasureMachine": ["Cabinet", "Screen", "Lever", "Topper", "Base"],
-    "NeonFortuneMachine": ["Cabinet", "Screen", "Lever", "Topper", "Base", "NeonStrips"],
-    "GoldenPharaohMachine": ["Cabinet", "Screen", "Lever", "Topper", "Base", "Wings"],
-}
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import registry  # noqa: E402
+
+EXPECT = {e["name"]: e["parts"] for e in registry.collect()}
+ONLY = [a for a in sys.argv[1:] if not a.startswith("-")]
 
 
 def load(path):
@@ -35,10 +29,12 @@ def positions(js, binary, mesh_idx):
 
 ok = True
 for name, parts in EXPECT.items():
+    if ONLY and name not in ONLY:
+        continue
     js, binary = load(os.path.join(ROOT, "models", name + ".glb"))
     root = js["nodes"][js["scenes"][0]["nodes"][0]]
     names = [js["nodes"][c]["name"] for c in root["children"]]
-    missing = [p for p in parts if p not in names]
+    missing = [p for p in parts if p not in names] + [f"extra:{p}" for p in names if p not in parts]
     allpts, info = [], {}
     for c in root["children"]:
         n = js["nodes"][c]

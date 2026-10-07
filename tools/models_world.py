@@ -446,3 +446,17 @@ def _rounded_rect_xy(x0, y0, x1, y1, r, n=5):
             a = math.radians(a0 + 90.0 * k / n)
             pts.append((cx + r * math.cos(a), cy + r * math.sin(a)))
     return pts
+
+
+BUILDERS = [
+    dict(name="JackpotSpire", fn=jackpot_spire, parts=["Spire", "Skirt", "Crown", "NeonRings", "Base"],
+         view=dict(eye=(-1, 0.42, -1.4), fit=0.78)),
+    dict(name="ConveyorSegment", fn=conveyor_segment, parts=["Belt", "Frame", "RailInner", "RailOuter", "Rollers"],
+         view=dict(eye=(-0.55, 0.55, -1), fit=0.62)),
+    dict(name="CasinoTier1", fn=casino_tier1, parts=["Floor", "Walls", "SignBoard", "NeonStrip", "Door", "Bulbs"],
+         view=dict(eye=(-0.85, 0.75, -1.25), fit=0.72)),
+    dict(name="PlotSign", fn=plot_sign, parts=["Display", "Accent", "Posts", "Decorations", "Bulbs"],
+         view=dict(eye=(-0.55, 0.3, -1.3), fit=0.72)),
+    dict(name="MachineSlot", fn=machine_slot, parts=["PedestalBase", "Pedestal", "Pad"],
+         view=dict(eye=(-0.7, 0.75, -1.2), fit=0.95)),
+]
