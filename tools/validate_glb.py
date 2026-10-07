@@ -8,6 +8,7 @@ EXPECT = {
     "ConveyorSegment": ["Belt", "Frame", "RailInner", "RailOuter", "Rollers"],
     "CasinoTier1": ["Floor", "Walls", "SignBoard", "NeonStrip", "Door"],
     "PlotSign": ["Display", "Accent", "Posts", "Decorations"],
+    "MachineSlot": ["PedestalBase", "Pedestal", "Pad"],
     "LuckyFruitsMachine": ["Cabinet", "Screen", "Lever", "Topper", "Base"],
     "OceanTreasureMachine": ["Cabinet", "Screen", "Lever", "Topper", "Base"],
     "NeonFortuneMachine": ["Cabinet", "Screen", "Lever", "Topper", "Base", "NeonStrips"],
@@ -48,7 +49,7 @@ for name, parts in EXPECT.items():
     lo, hi = P.min(0), P.max(0)
     print(f"{name}: root='{root['name']}' parts={names}")
     print(f"   size X {hi[0]-lo[0]:.2f}  Y {hi[1]-lo[1]:.2f}  Z {hi[2]-lo[2]:.2f}   min {np.round(lo,2)}  max {np.round(hi,2)}")
-    for k in ("Lever", "Topper", "Wings", "Belt", "Skirt", "Spire", "Display"):
+    for k in ("Lever", "Topper", "Wings", "Belt", "Skirt", "Spire", "Display", "PedestalBase", "Pedestal", "Pad"):
         if k in info:
             print(f"   {k:8s} pivot {info[k][0]}  min {info[k][1]}  max {info[k][2]}")
     if missing or root["name"] != name:

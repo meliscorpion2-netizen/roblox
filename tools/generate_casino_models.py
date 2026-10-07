@@ -20,6 +20,7 @@ BUILDERS = [
     ("ConveyorSegment", W.conveyor_segment, False),
     ("CasinoTier1", W.casino_tier1, False),
     ("PlotSign", W.plot_sign, False),
+    ("MachineSlot", W.machine_slot, False),
     ("LuckyFruitsMachine", MM.lucky_fruits, True),
     ("OceanTreasureMachine", MM.ocean_treasure, True),
     ("NeonFortuneMachine", MM.neon_fortune, True),
@@ -30,6 +31,7 @@ VIEWS = {
     "ConveyorSegment": dict(eye=(-0.55, 0.55, -1), fit=0.62),
     "CasinoTier1": dict(eye=(-0.85, 0.75, -1.25), fit=0.72),
     "PlotSign": dict(eye=(-0.55, 0.3, -1.3), fit=0.72),
+    "MachineSlot": dict(eye=(-0.7, 0.75, -1.2), fit=0.95),
 }
 
 
@@ -60,6 +62,10 @@ def build(only=None, previews=True):
         line = [(models[n], T(10.5 - 7 * i, 0, 0)) for i, n in enumerate(
             ("LuckyFruitsMachine", "OceanTreasureMachine", "NeonFortuneMachine", "GoldenPharaohMachine"))]
         render(line, os.path.join(PREV, "SlotMachineLineup.png"), size=(1600, 700), eye=(-0.25, 0.3, -1), fit=0.5)
+    if previews and all(n in models for n in ("MachineSlot", "GoldenPharaohMachine")):
+        from casino_geo import T
+        render([(models["MachineSlot"], None), (models["GoldenPharaohMachine"], T(0, 1.1, 0))],
+               os.path.join(PREV, "MachineSlotWithMachine.png"), size=(900, 900), eye=(-0.7, 0.55, -1.2), fit=0.9)
     with open(os.path.join(OUT, "triangle_counts.json"), "w") as f:
         json.dump(report, f, indent=2)
     return report

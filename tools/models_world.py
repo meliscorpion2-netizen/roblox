@@ -404,3 +404,39 @@ def plot_sign():
         for x in (-7.75, 7.75):
             bulbs.add(dome(0.3, 6, 2, "bulb"), M(T(x, y, -0.7), RX(-90)))
     return m
+
+
+# =====================================================================================
+# MachineSlot - display pedestal for a slot machine + green floor pad in front
+# =====================================================================================
+def machine_slot():
+    m = Model("MachineSlot")
+    base = m.part("PedestalBase")
+    slab = m.part("Pedestal")
+    pad = m.part("Pad", gradient=False)
+
+    # PedestalBase: dark grey chunky beveled block, exactly 8 (X) x 7 (Z), y 0 -> 0.75,
+    # with small gold studs on the exposed ledge corners (they stay below the 1.1 top)
+    base.add(box((-4.0, 0.0, -3.5), (4.0, 0.75, 3.5), "stone_dark", 0.12, skip=("-y",), top="stone_mid"))
+    for sx in (-1, 1):
+        for sz in (-1, 1):
+            base.add(lathe([(0.2, 0.0), (0.2, 0.04), (0.15, 0.06)], 8, "gold_dark"), T(sx * 3.7, 0.75, sz * 3.2))
+            base.add(dome(0.15, 8, 3, "gold"), T(sx * 3.7, 0.81, sz * 3.2))
+
+    # Pedestal: lighter grey top slab 7 x 6, y 0.75 -> 1.1 (single colour, so it can be tinted per rarity)
+    slab.add(box((-3.5, 0.75, -3.0), (3.5, 1.1, 3.0), "stone_light", 0.1, skip=("-y",)))
+
+    # Pad: flat bright green rounded pad 7.5 (X) x 3.4 (Z) x 0.2, 0.4 studs in front (-Z) of the pedestal
+    z_back = -3.5 - 0.4
+    outline = [(x, y) for x, y in _rounded_rect_xy(-3.75, -z_back, 3.75, -z_back + 3.4, 0.7)]
+    pad.add(extrude(outline, 0.0, 0.2, "pad_green", front=False), RX(-90))
+    return m
+
+
+def _rounded_rect_xy(x0, y0, x1, y1, r, n=5):
+    pts = []
+    for cx, cy, a0 in ((x0 + r, y0 + r, 180), (x1 - r, y0 + r, 270), (x1 - r, y1 - r, 0), (x0 + r, y1 - r, 90)):
+        for k in range(n + 1):
+            a = math.radians(a0 + 90.0 * k / n)
+            pts.append((cx + r * math.cos(a), cy + r * math.sin(a)))
+    return pts

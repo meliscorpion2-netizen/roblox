@@ -40,6 +40,14 @@
     },
     "triangles": 2204
   },
+  "MachineSlot": {
+    "parts": {
+      "PedestalBase": 330,
+      "Pedestal": 42,
+      "Pad": 70
+    },
+    "triangles": 442
+  },
   "LuckyFruitsMachine": {
     "parts": {
       "Cabinet": 538,

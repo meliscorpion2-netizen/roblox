@@ -44,6 +44,9 @@ PALETTE = {
     # egypt
     "lapis": "#1F4FC4", "lapis_dark": "#13307E", "turquoise": "#2CC7B4", "sand": "#F2D39A",
     "egypt_night": "#10204F", "eye_white": "#FFF7E6",
+    # pedestal / plot
+    "stone_deep": "#2C2F3A", "stone_dark": "#474B59", "stone_mid": "#5A5F70", "stone_light": "#9EA4B5",
+    "stone_top": "#BCC2D1", "pad_green": "#36E05A",
 }
 COLOR_NAMES = list(PALETTE)
 NEON_COLORS = {"neon_pink", "neon_cyan", "neon_magenta", "neon_purple", "bulb"}
