@@ -1,6 +1,6 @@
 # Props Roblox – quartier délabré
 
-178 objets low-poly (186 fichiers `.fbx` avec les variantes) pour un jeu Roblox satirique dans un quartier pauvre :
+188 objets low-poly (196 fichiers `.fbx` avec les variantes) pour un jeu Roblox satirique dans un quartier pauvre :
 mobilier urbain, véhicules, déchets, marché, chantier, décors de boutiques objets de la quête « x2 Luck Key » et symboles et borne de la machine à sous (100–113), quête du pirate et entrée des égouts (114–120). Style « simulateur » cartoon,
 formes arrondies, arêtes biseautées, couleurs vives mais salies, sans texture photo ni texte.
 
@@ -21,6 +21,7 @@ Tous les modèles sont générés par script avec Blender (module Python `bpy`),
 | Pirate (114–120) | `Lueur` de la planche flottée et de la moisissure : halos à passer en Neon transparent. Clé x5 en couleurs propres, « x5 » gravé à la demande. Égout ouvert (120) : posé à plat sur la chaussée, trou noir à utiliser comme zone de téléportation. |
 | Deauville (121–166) | Pack chic et propre (`models/10_deauville/`) : façades blanches, colombages vert sapin, ardoise bleu-gris, rayures marine et blanc ; aucune crasse, aucun logo. Enseignes, cabine et colonne Morris vierges. |
 | Jeu du loup (167–178) | `models/11_cochons/` : table de cartes façon atelier, 8 cochons (`Corps` commun + `Accessoire`), louveteau, grand méchant loup qui souffle (`Souffle` séparé), kiosque à pochettes (enseigne vierge). |
+| Parcelle & allée (185–196) | `models/12_parcelle/` : casinos à 3 niveaux à façade ouverte vers −Z, enseignes et panneau de parcelle vierges. |
 | Enseignes | Aucun texte : panneaux, ardoises, menus et le panneau « EN PANNE » sont des surfaces vierges à habiller en jeu. |
 
 ## Import dans Roblox Studio
@@ -148,7 +149,17 @@ python3 tools/readme_table.py       # met à jour le tableau ci-dessous
 | 177 | Grand méchant loup qui souffle | 5 × 7 × 4 | 1896 | Corps, Souffle | [177_grand_mechant_loup_souffle.fbx](models/11_cochons/177_grand_mechant_loup_souffle.fbx) |
 | 178 | Kiosque à pochettes | 6 × 8 × 5 | 1386 | Kiosque, Pochettes, Enseigne | [178_kiosque_pochettes.fbx](models/11_cochons/178_kiosque_pochettes.fbx) |
 | 17 | Vieille voiture cabossée | 5,2 × 4,6 × 10,1 | 1960 | Carrosserie, Vitres, Phares, FeuxArriere, Roue_AvG, Roue_AvD, Roue_ArG, Roue_ArD | [17_vieille_voiture.fbx](models/02_vehicules/17_vieille_voiture.fbx) |
+| 185 | Sac à dos rapiécé | 2 × 2,5 × 1 | 792 | Sac | [185_sac_a_dos.fbx](models/12_parcelle/185_sac_a_dos.fbx) |
+| 186 | Caisse de pièces | 3 × 3 × 3 | 1488 | Caisse | [186_caisse_pieces.fbx](models/12_parcelle/186_caisse_pieces.fbx) |
+| 187 | Barque à moteur | 6 × 4 × 14 | 644 | Coque, Moteur | [187_barque_moteur.fbx](models/12_parcelle/187_barque_moteur.fbx) |
+| 188 | Petit cargo | 12 × 10 × 30 | 1976 | Coque, Cabine, Cargaison | [188_bateau_cargo.fbx](models/12_parcelle/188_bateau_cargo.fbx) |
 | 18 | Camionnette utilitaire | 5,6 × 6,2 × 11,3 | 2212 | Carrosserie, Vitres, Phares, FeuxArriere, Roue_AvG, Roue_AvD, Roue_ArG, Roue_ArD | [18_camionnette.fbx](models/02_vehicules/18_camionnette.fbx) |
+| 191 | Casino niveau 1 : baraque | 30 × 14 × 30 | 2696 | Murs, Toit, Enseigne | [191_casino_baraque.fbx](models/12_parcelle/191_casino_baraque.fbx) |
+| 192 | Casino niveau 2 : bâtiment en brique | 36 × 20 × 36 | 1686 | Murs, Toit, Enseigne | [192_casino_moyen.fbx](models/12_parcelle/192_casino_moyen.fbx) |
+| 193 | Casino niveau 3 : palace doré | 40 × 30 × 40 | 4296 | Murs, Toit, Enseigne | [193_casino_palace.fbx](models/12_parcelle/193_casino_palace.fbx) |
+| 194 | Panneau de parcelle | 6 × 5 × 1 | 340 | Panneau, Pied | [194_panneau_parcelle.fbx](models/12_parcelle/194_panneau_parcelle.fbx) |
+| 195 | Arche de l'allée | 20 × 14 × 3 | 1966 | Arche, Enseigne | [195_arche_allee.fbx](models/12_parcelle/195_arche_allee.fbx) |
+| 196 | Coffre des recettes | 3 × 3 × 3 | 1100 | Coffre, Porte | [196_coffre_recettes.fbx](models/12_parcelle/196_coffre_recettes.fbx) |
 | 19 | Petite citadine | 5 × 4,2 × 8,3 | 1740 | Carrosserie, Vitres, Phares, FeuxArriere, Roue_AvG, Roue_AvD, Roue_ArG, Roue_ArD | [19_citadine.fbx](models/02_vehicules/19_citadine.fbx) |
 | 20 | Camion porteur avec caisse | 6,9 × 8,8 × 20,4 | 3104 | Chassis, Cabine, Vitres, Caisse, PorteArriere, Phares, FeuxArriere, Roue_AvG, Roue_AvD, Roue_Ar1G, Roue_Ar1D, Roue_Ar2G, Roue_Ar2D | [20_camion_porteur.fbx](models/02_vehicules/20_camion_porteur.fbx) |
 | 21 | Épave de voiture brûlée | 4,8 × 4,6 × 10,1 | 976 | Epave | [21_epave_brulee.fbx](models/02_vehicules/21_epave_brulee.fbx) |

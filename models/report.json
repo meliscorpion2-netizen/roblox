@@ -1803,6 +1803,77 @@
   "notes": "",
   "ecart_avant_recalage": 0.016
  },
+ "185_sac_a_dos": {
+  "titre": "Sac à dos rapiécé",
+  "categorie": "12_parcelle",
+  "fichier": "models/12_parcelle/185_sac_a_dos.fbx",
+  "dims_studs": [
+   2,
+   2.5,
+   1
+  ],
+  "triangles": 792,
+  "pieces": [
+   "Sac"
+  ],
+  "en_jeu": null,
+  "notes": "Dos (bretelles) côté +Z",
+  "ecart_avant_recalage": 0.237
+ },
+ "186_caisse_pieces": {
+  "titre": "Caisse de pièces",
+  "categorie": "12_parcelle",
+  "fichier": "models/12_parcelle/186_caisse_pieces.fbx",
+  "dims_studs": [
+   3,
+   3,
+   3
+  ],
+  "triangles": 1488,
+  "pieces": [
+   "Caisse"
+  ],
+  "en_jeu": null,
+  "notes": "Atelier de la parcelle",
+  "ecart_avant_recalage": 0.027
+ },
+ "187_barque_moteur": {
+  "titre": "Barque à moteur",
+  "categorie": "12_parcelle",
+  "fichier": "models/12_parcelle/187_barque_moteur.fbx",
+  "dims_studs": [
+   6,
+   4,
+   14
+  ],
+  "triangles": 644,
+  "pieces": [
+   "Coque",
+   "Moteur"
+  ],
+  "en_jeu": null,
+  "notes": "Proue vers -Z, moteur à l'arrière",
+  "ecart_avant_recalage": 0.232
+ },
+ "188_bateau_cargo": {
+  "titre": "Petit cargo",
+  "categorie": "12_parcelle",
+  "fichier": "models/12_parcelle/188_bateau_cargo.fbx",
+  "dims_studs": [
+   12,
+   10,
+   30
+  ],
+  "triangles": 1976,
+  "pieces": [
+   "Coque",
+   "Cabine",
+   "Cargaison"
+  ],
+  "en_jeu": null,
+  "notes": "Proue vers -Z",
+  "ecart_avant_recalage": 0.034
+ },
  "18_camionnette": {
   "titre": "Camionnette utilitaire",
   "categorie": "02_vehicules",
@@ -1826,6 +1897,117 @@
   "en_jeu": null,
   "notes": "",
   "ecart_avant_recalage": 0.057
+ },
+ "191_casino_baraque": {
+  "titre": "Casino niveau 1 : baraque",
+  "categorie": "12_parcelle",
+  "fichier": "models/12_parcelle/191_casino_baraque.fbx",
+  "dims_studs": [
+   30,
+   14,
+   30
+  ],
+  "triangles": 2696,
+  "pieces": [
+   "Murs",
+   "Toit",
+   "Enseigne"
+  ],
+  "en_jeu": null,
+  "notes": "Façade ouverte vers -Z ; néon à moitié éteint",
+  "ecart_avant_recalage": 0.032
+ },
+ "192_casino_moyen": {
+  "titre": "Casino niveau 2 : bâtiment en brique",
+  "categorie": "12_parcelle",
+  "fichier": "models/12_parcelle/192_casino_moyen.fbx",
+  "dims_studs": [
+   36,
+   20,
+   36
+  ],
+  "triangles": 1686,
+  "pieces": [
+   "Murs",
+   "Toit",
+   "Enseigne"
+  ],
+  "en_jeu": null,
+  "notes": "Façade ouverte vers -Z",
+  "ecart_avant_recalage": 0.091
+ },
+ "193_casino_palace": {
+  "titre": "Casino niveau 3 : palace doré",
+  "categorie": "12_parcelle",
+  "fichier": "models/12_parcelle/193_casino_palace.fbx",
+  "dims_studs": [
+   40,
+   30,
+   40
+  ],
+  "triangles": 4296,
+  "pieces": [
+   "Murs",
+   "Toit",
+   "Enseigne"
+  ],
+  "en_jeu": null,
+  "notes": "Façade ouverte à colonnes vers -Z",
+  "ecart_avant_recalage": 0.008
+ },
+ "194_panneau_parcelle": {
+  "titre": "Panneau de parcelle",
+  "categorie": "12_parcelle",
+  "fichier": "models/12_parcelle/194_panneau_parcelle.fbx",
+  "dims_studs": [
+   6,
+   5,
+   1
+  ],
+  "triangles": 340,
+  "pieces": [
+   "Panneau",
+   "Pied"
+  ],
+  "en_jeu": null,
+  "notes": "Zone vierge au centre pour le nom du joueur",
+  "ecart_avant_recalage": 0.073
+ },
+ "195_arche_allee": {
+  "titre": "Arche de l'allée",
+  "categorie": "12_parcelle",
+  "fichier": "models/12_parcelle/195_arche_allee.fbx",
+  "dims_studs": [
+   20,
+   14,
+   3
+  ],
+  "triangles": 1966,
+  "pieces": [
+   "Arche",
+   "Enseigne"
+  ],
+  "en_jeu": null,
+  "notes": "Enseigne vierge (« ALLÉE DES CASINOS » en jeu)",
+  "ecart_avant_recalage": 0.032
+ },
+ "196_coffre_recettes": {
+  "titre": "Coffre des recettes",
+  "categorie": "12_parcelle",
+  "fichier": "models/12_parcelle/196_coffre_recettes.fbx",
+  "dims_studs": [
+   3,
+   3,
+   3
+  ],
+  "triangles": 1100,
+  "pieces": [
+   "Coffre",
+   "Porte"
+  ],
+  "en_jeu": null,
+  "notes": "Porte sur charnière côté gauche",
+  "ecart_avant_recalage": 0.072
  },
  "19_citadine": {
   "titre": "Petite citadine",
