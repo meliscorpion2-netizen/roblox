@@ -1,6 +1,6 @@
 # Props Roblox – quartier délabré
 
-188 objets low-poly (196 fichiers `.fbx` avec les variantes) pour un jeu Roblox satirique dans un quartier pauvre :
+194 objets low-poly (202 fichiers `.fbx` avec les variantes) pour un jeu Roblox satirique dans un quartier pauvre :
 mobilier urbain, véhicules, déchets, marché, chantier, décors de boutiques objets de la quête « x2 Luck Key » et symboles et borne de la machine à sous (100–113), quête du pirate et entrée des égouts (114–120). Style « simulateur » cartoon,
 formes arrondies, arêtes biseautées, couleurs vives mais salies, sans texture photo ni texte.
 
@@ -22,6 +22,7 @@ Tous les modèles sont générés par script avec Blender (module Python `bpy`),
 | Deauville (121–166) | Pack chic et propre (`models/10_deauville/`) : façades blanches, colombages vert sapin, ardoise bleu-gris, rayures marine et blanc ; aucune crasse, aucun logo. Enseignes, cabine et colonne Morris vierges. |
 | Jeu du loup (167–178) | `models/11_cochons/` : table de cartes façon atelier, 8 cochons (`Corps` commun + `Accessoire`), louveteau, grand méchant loup qui souffle (`Souffle` séparé), kiosque à pochettes (enseigne vierge). |
 | Parcelle & allée (185–196) | `models/12_parcelle/` : casinos à 3 niveaux à façade ouverte vers −Z, enseignes et panneau de parcelle vierges. |
+| Rayons (197–202) | `models/13_rayons/` : même rayonnage (`Rayon`) avec des `Articles` différents ; pancarte vierge. |
 | Enseignes | Aucun texte : panneaux, ardoises, menus et le panneau « EN PANNE » sont des surfaces vierges à habiller en jeu. |
 
 ## Import dans Roblox Studio
@@ -160,7 +161,13 @@ python3 tools/readme_table.py       # met à jour le tableau ci-dessous
 | 194 | Panneau de parcelle | 6 × 5 × 1 | 340 | Panneau, Pied | [194_panneau_parcelle.fbx](models/12_parcelle/194_panneau_parcelle.fbx) |
 | 195 | Arche de l'allée | 20 × 14 × 3 | 1966 | Arche, Enseigne | [195_arche_allee.fbx](models/12_parcelle/195_arche_allee.fbx) |
 | 196 | Coffre des recettes | 3 × 3 × 3 | 1100 | Coffre, Porte | [196_coffre_recettes.fbx](models/12_parcelle/196_coffre_recettes.fbx) |
+| 197 | Rayon des boîtiers | 10 × 8 × 3 | 2084 | Rayon, Articles | [197_rayon_boitiers.fbx](models/13_rayons/197_rayon_boitiers.fbx) |
+| 198 | Rayon des mécanismes à rouleaux | 10 × 8 × 3 | 4388 | Rayon, Articles | [198_rayon_mecanismes.fbx](models/13_rayons/198_rayon_mecanismes.fbx) |
+| 199 | Rayon des leviers | 10 × 8 × 3 | 3776 | Rayon, Articles | [199_rayon_leviers.fbx](models/13_rayons/199_rayon_leviers.fbx) |
 | 19 | Petite citadine | 5 × 4,2 × 8,3 | 1740 | Carrosserie, Vitres, Phares, FeuxArriere, Roue_AvG, Roue_AvD, Roue_ArG, Roue_ArD | [19_citadine.fbx](models/02_vehicules/19_citadine.fbx) |
+| 200 | Rayon des sièges | 10 × 8 × 3 | 3884 | Rayon, Articles | [200_rayon_sieges.fbx](models/13_rayons/200_rayon_sieges.fbx) |
+| 201 | Rayon des cartes électroniques | 10 × 8 × 3 | 4280 | Rayon, Articles | [201_rayon_cpu.fbx](models/13_rayons/201_rayon_cpu.fbx) |
+| 202 | Pancarte de rayon | 4 × 1,5 × 0,3 | 272 | Panneau | [202_panneau_rayon.fbx](models/13_rayons/202_panneau_rayon.fbx) |
 | 20 | Camion porteur avec caisse | 6,9 × 8,8 × 20,4 | 3104 | Chassis, Cabine, Vitres, Caisse, PorteArriere, Phares, FeuxArriere, Roue_AvG, Roue_AvD, Roue_Ar1G, Roue_Ar1D, Roue_Ar2G, Roue_Ar2D | [20_camion_porteur.fbx](models/02_vehicules/20_camion_porteur.fbx) |
 | 21 | Épave de voiture brûlée | 4,8 × 4,6 × 10,1 | 976 | Epave | [21_epave_brulee.fbx](models/02_vehicules/21_epave_brulee.fbx) |
 | 22a | Carton ouvert | 2,1 × 1,9 × 1,7 | 484 | Carton | [22a_carton_ouvert.fbx](models/03_dechets/22a_carton_ouvert.fbx) |
