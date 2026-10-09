@@ -2009,6 +2009,41 @@
   "notes": "Porte sur charnière côté gauche",
   "ecart_avant_recalage": 0.072
  },
+ "197_presentoir": {
+  "titre": "Présentoir à un étage",
+  "categorie": "13_magasin",
+  "fichier": "models/13_magasin/197_presentoir.fbx",
+  "dims_studs": [
+   5,
+   3,
+   4
+  ],
+  "triangles": 188,
+  "pieces": [
+   "Presentoir",
+   "Plateau"
+  ],
+  "en_jeu": null,
+  "notes": "Plateau vide et plat sur le dessus",
+  "ecart_avant_recalage": 0.003
+ },
+ "198_etiquette_prix": {
+  "titre": "Étiquette de prix",
+  "categorie": "13_magasin",
+  "fichier": "models/13_magasin/198_etiquette_prix.fbx",
+  "dims_studs": [
+   2,
+   1.2,
+   0.2
+  ],
+  "triangles": 96,
+  "pieces": [
+   "Etiquette"
+  ],
+  "en_jeu": null,
+  "notes": "Zone vierge pour le nom et le prix",
+  "ecart_avant_recalage": 0.0
+ },
  "19_citadine": {
   "titre": "Petite citadine",
   "categorie": "02_vehicules",
