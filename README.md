@@ -1,6 +1,6 @@
 # Props Roblox – quartier délabré
 
-194 objets low-poly (202 fichiers `.fbx` avec les variantes) pour un jeu Roblox satirique dans un quartier pauvre :
+196 objets low-poly (204 fichiers `.fbx` avec les variantes) pour un jeu Roblox satirique dans un quartier pauvre :
 mobilier urbain, véhicules, déchets, marché, chantier, décors de boutiques objets de la quête « x2 Luck Key » et symboles et borne de la machine à sous (100–113), quête du pirate et entrée des égouts (114–120). Style « simulateur » cartoon,
 formes arrondies, arêtes biseautées, couleurs vives mais salies, sans texture photo ni texte.
 
@@ -168,6 +168,8 @@ python3 tools/readme_table.py       # met à jour le tableau ci-dessous
 | 200 | Rayon des sièges | 10 × 8 × 3 | 3884 | Rayon, Articles | [200_rayon_sieges.fbx](models/13_rayons/200_rayon_sieges.fbx) |
 | 201 | Rayon des cartes électroniques | 10 × 8 × 3 | 4280 | Rayon, Articles | [201_rayon_cpu.fbx](models/13_rayons/201_rayon_cpu.fbx) |
 | 202 | Pancarte de rayon | 4 × 1,5 × 0,3 | 272 | Panneau | [202_panneau_rayon.fbx](models/13_rayons/202_panneau_rayon.fbx) |
+| 203 | Présentoir à un étage | 5 × 3 × 4 | 188 | Presentoir, Plateau | [203_presentoir.fbx](models/13_rayons/203_presentoir.fbx) |
+| 204 | Étiquette de prix | 2 × 1,2 × 0,2 | 96 | Etiquette | [204_etiquette_prix.fbx](models/13_rayons/204_etiquette_prix.fbx) |
 | 20 | Camion porteur avec caisse | 6,9 × 8,8 × 20,4 | 3104 | Chassis, Cabine, Vitres, Caisse, PorteArriere, Phares, FeuxArriere, Roue_AvG, Roue_AvD, Roue_Ar1G, Roue_Ar1D, Roue_Ar2G, Roue_Ar2D | [20_camion_porteur.fbx](models/02_vehicules/20_camion_porteur.fbx) |
 | 21 | Épave de voiture brûlée | 4,8 × 4,6 × 10,1 | 976 | Epave | [21_epave_brulee.fbx](models/02_vehicules/21_epave_brulee.fbx) |
 | 22a | Carton ouvert | 2,1 × 1,9 × 1,7 | 484 | Carton | [22a_carton_ouvert.fbx](models/03_dechets/22a_carton_ouvert.fbx) |

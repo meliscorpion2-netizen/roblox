@@ -2140,6 +2140,41 @@
   "notes": "Zone vierge pour le nom du rayon",
   "ecart_avant_recalage": 0.2
  },
+ "203_presentoir": {
+  "titre": "Présentoir à un étage",
+  "categorie": "13_rayons",
+  "fichier": "models/13_rayons/203_presentoir.fbx",
+  "dims_studs": [
+   5,
+   3,
+   4
+  ],
+  "triangles": 188,
+  "pieces": [
+   "Presentoir",
+   "Plateau"
+  ],
+  "en_jeu": null,
+  "notes": "Plateau vide et plat sur le dessus",
+  "ecart_avant_recalage": 0.003
+ },
+ "204_etiquette_prix": {
+  "titre": "Étiquette de prix",
+  "categorie": "13_rayons",
+  "fichier": "models/13_rayons/204_etiquette_prix.fbx",
+  "dims_studs": [
+   2,
+   1.2,
+   0.2
+  ],
+  "triangles": 96,
+  "pieces": [
+   "Etiquette"
+  ],
+  "en_jeu": null,
+  "notes": "Zone vierge pour le nom et le prix",
+  "ecart_avant_recalage": 0.0
+ },
  "20_camion_porteur": {
   "titre": "Camion porteur avec caisse",
   "categorie": "02_vehicules",
