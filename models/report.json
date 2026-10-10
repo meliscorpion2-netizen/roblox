@@ -2408,6 +2408,98 @@
   "notes": "",
   "ecart_avant_recalage": 0.004
  },
+ "385_radeau_epave": {
+  "titre": "Radeau disloqué",
+  "categorie": "14_evenements",
+  "fichier": "models/14_evenements/385_radeau_epave.fbx",
+  "dims_studs": [
+   14,
+   4,
+   12
+  ],
+  "triangles": 1148,
+  "pieces": [
+   "Planches",
+   "Mat",
+   "Voile",
+   "Tonneaux"
+  ],
+  "en_jeu": null,
+  "notes": "Planches écartées, mât cassé, voile déchirée",
+  "ecart_avant_recalage": 0.243
+ },
+ "386_rocher_recif": {
+  "titre": "Rochers de récif",
+  "categorie": "14_evenements",
+  "fichier": "models/14_evenements/386_rocher_recif.fbx",
+  "dims_studs": [
+   16,
+   6,
+   12
+  ],
+  "triangles": 1052,
+  "pieces": [
+   "Rochers",
+   "Algues"
+  ],
+  "en_jeu": null,
+  "notes": "À fleur d'eau",
+  "ecart_avant_recalage": 0.06
+ },
+ "387_debris_plage": {
+  "titre": "Débris de plage",
+  "categorie": "14_evenements",
+  "fichier": "models/14_evenements/387_debris_plage.fbx",
+  "dims_studs": [
+   10,
+   1,
+   10
+  ],
+  "triangles": 432,
+  "pieces": [
+   "Planches",
+   "Cordes",
+   "Tonneau"
+  ],
+  "en_jeu": null,
+  "notes": "À poser sur le sable",
+  "ecart_avant_recalage": 0.408
+ },
+ "388_tornade": {
+  "titre": "Tornade",
+  "categorie": "14_evenements",
+  "fichier": "models/14_evenements/388_tornade.fbx",
+  "dims_studs": [
+   30,
+   70,
+   30
+  ],
+  "triangles": 1224,
+  "pieces": [
+   "Entonnoir",
+   "Debris"
+  ],
+  "en_jeu": null,
+  "notes": "Entonnoir et débris séparés",
+  "ecart_avant_recalage": 0.061
+ },
+ "389_nuage_orage": {
+  "titre": "Nuage d'orage",
+  "categorie": "14_evenements",
+  "fichier": "models/14_evenements/389_nuage_orage.fbx",
+  "dims_studs": [
+   60,
+   15,
+   40
+  ],
+  "triangles": 1844,
+  "pieces": [
+   "Nuage"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.149
+ },
  "38_fut_raye": {
   "titre": "Fût rayé rouge et blanc",
   "categorie": "05_chantier",
@@ -2426,6 +2518,186 @@
   "notes": "",
   "ecart_avant_recalage": 0.032
  },
+ "390_soleil_canicule": {
+  "titre": "Soleil caniculaire",
+  "categorie": "14_evenements",
+  "fichier": "models/14_evenements/390_soleil_canicule.fbx",
+  "dims_studs": [
+   20,
+   20,
+   4
+  ],
+  "triangles": 688,
+  "pieces": [
+   "Soleil",
+   "Rayons"
+  ],
+  "en_jeu": null,
+  "notes": "Face vers -Z, lunettes de soleil",
+  "ecart_avant_recalage": 0.345
+ },
+ "391_thermometre_geant": {
+  "titre": "Thermomètre géant",
+  "categorie": "14_evenements",
+  "fichier": "models/14_evenements/391_thermometre_geant.fbx",
+  "dims_studs": [
+   4,
+   16,
+   2
+  ],
+  "triangles": 516,
+  "pieces": [
+   "Thermometre",
+   "Liquide"
+  ],
+  "en_jeu": null,
+  "notes": "Liquide séparé, pivot en bas : étirer en Y pour le faire monter",
+  "ecart_avant_recalage": 0.024
+ },
+ "392_fissure_sol": {
+  "titre": "Fissure de séisme",
+  "categorie": "14_evenements",
+  "fichier": "models/14_evenements/392_fissure_sol.fbx",
+  "dims_studs": [
+   20,
+   1,
+   6
+  ],
+  "triangles": 572,
+  "pieces": [
+   "Fissure",
+   "Rochers"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.217
+ },
+ "393_meteorite": {
+  "titre": "Météorite",
+  "categorie": "14_evenements",
+  "fichier": "models/14_evenements/393_meteorite.fbx",
+  "dims_studs": [
+   8,
+   8,
+   8
+  ],
+  "triangles": 636,
+  "pieces": [
+   "Roche",
+   "Lave"
+  ],
+  "en_jeu": null,
+  "notes": "Roche et lave séparées",
+  "ecart_avant_recalage": 0.046
+ },
+ "394_cratere": {
+  "titre": "Cratère d'impact",
+  "categorie": "14_evenements",
+  "fichier": "models/14_evenements/394_cratere.fbx",
+  "dims_studs": [
+   20,
+   3,
+   20
+  ],
+  "triangles": 1352,
+  "pieces": [
+   "Cratere",
+   "Rochers"
+  ],
+  "en_jeu": null,
+  "notes": "Fumant",
+  "ecart_avant_recalage": 0.339
+ },
+ "395_vague_geante": {
+  "titre": "Vague géante",
+  "categorie": "14_evenements",
+  "fichier": "models/14_evenements/395_vague_geante.fbx",
+  "dims_studs": [
+   60,
+   30,
+   15
+  ],
+  "triangles": 2512,
+  "pieces": [
+   "Vague",
+   "Ecume"
+  ],
+  "en_jeu": null,
+  "notes": "Déferle vers -Z",
+  "ecart_avant_recalage": 0.137
+ },
+ "396_bloc_glace": {
+  "titre": "Bloc de glace",
+  "categorie": "14_evenements",
+  "fichier": "models/14_evenements/396_bloc_glace.fbx",
+  "dims_studs": [
+   8,
+   6,
+   8
+  ],
+  "triangles": 236,
+  "pieces": [
+   "Glace",
+   "Givre"
+  ],
+  "en_jeu": null,
+  "notes": "Glace et givre séparés",
+  "ecart_avant_recalage": 0.078
+ },
+ "397_arc_en_ciel": {
+  "titre": "Arc-en-ciel",
+  "categorie": "14_evenements",
+  "fichier": "models/14_evenements/397_arc_en_ciel.fbx",
+  "dims_studs": [
+   60,
+   30,
+   4
+  ],
+  "triangles": 2448,
+  "pieces": [
+   "Arc"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.086
+ },
+ "398_sirene_alerte": {
+  "titre": "Sirène d'alerte",
+  "categorie": "14_evenements",
+  "fichier": "models/14_evenements/398_sirene_alerte.fbx",
+  "dims_studs": [
+   4,
+   10,
+   4
+  ],
+  "triangles": 600,
+  "pieces": [
+   "Poteau",
+   "Sirene",
+   "Gyrophare"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.212
+ },
+ "399_ecran_meteo": {
+  "titre": "Écran d'annonce météo",
+  "categorie": "14_evenements",
+  "fichier": "models/14_evenements/399_ecran_meteo.fbx",
+  "dims_studs": [
+   12,
+   10,
+   2
+  ],
+  "triangles": 580,
+  "pieces": [
+   "Pieds",
+   "Ecran"
+  ],
+  "en_jeu": null,
+  "notes": "Écran vierge",
+  "ecart_avant_recalage": 0.0
+ },
  "39_toilettes_chantier": {
   "titre": "Toilettes de chantier",
   "categorie": "05_chantier",
@@ -2443,6 +2715,163 @@
   "en_jeu": null,
   "notes": "",
   "ecart_avant_recalage": 0.023
+ },
+ "400_cristaux_glace": {
+  "titre": "Couronne de cristaux de glace",
+  "categorie": "14_evenements",
+  "fichier": "models/14_evenements/400_cristaux_glace.fbx",
+  "dims_studs": [
+   6,
+   3,
+   6
+  ],
+  "triangles": 280,
+  "pieces": [
+   "Cristaux"
+  ],
+  "en_jeu": null,
+  "notes": "Centre libre pour la machine",
+  "ecart_avant_recalage": 0.063
+ },
+ "401_couronne_or": {
+  "titre": "Couronne dorée",
+  "categorie": "14_evenements",
+  "fichier": "models/14_evenements/401_couronne_or.fbx",
+  "dims_studs": [
+   3,
+   2,
+   3
+  ],
+  "triangles": 768,
+  "pieces": [
+   "Couronne"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.062
+ },
+ "402_eclairs_metal": {
+  "titre": "Éclairs (mutation électrique)",
+  "categorie": "14_evenements",
+  "fichier": "models/14_evenements/402_eclairs_metal.fbx",
+  "dims_studs": [
+   5,
+   5,
+   1
+  ],
+  "triangles": 48,
+  "pieces": [
+   "Eclairs"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.25
+ },
+ "403_roue_fortune": {
+  "titre": "Roue de la fortune complète",
+  "categorie": "14_evenements",
+  "fichier": "models/14_evenements/403_roue_fortune.fbx",
+  "dims_studs": [
+   8,
+   12,
+   5
+  ],
+  "triangles": 2528,
+  "pieces": [
+   "Socle",
+   "Roue",
+   "Lumiere",
+   "Pointeur",
+   "Pupitre"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.065
+ },
+ "404_piece_roue_socle": {
+  "titre": "Roue : socle seul",
+  "categorie": "14_evenements",
+  "fichier": "models/14_evenements/404_piece_roue_socle.fbx",
+  "dims_studs": [
+   8,
+   3,
+   5
+  ],
+  "triangles": 204,
+  "pieces": [
+   "Socle"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.02
+ },
+ "405_piece_roue_roue": {
+  "titre": "Roue : roue seule",
+  "categorie": "14_evenements",
+  "fichier": "models/14_evenements/405_piece_roue_roue.fbx",
+  "dims_studs": [
+   7,
+   7,
+   1
+  ],
+  "triangles": 896,
+  "pieces": [
+   "Roue"
+  ],
+  "en_jeu": null,
+  "notes": "Pivot au centre de la base ; axe de rotation au centre du disque",
+  "ecart_avant_recalage": 0.201
+ },
+ "406_piece_roue_pointeur": {
+  "titre": "Roue : pointeur seul",
+  "categorie": "14_evenements",
+  "fichier": "models/14_evenements/406_piece_roue_pointeur.fbx",
+  "dims_studs": [
+   1,
+   2,
+   1
+  ],
+  "triangles": 80,
+  "pieces": [
+   "Pointeur"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.379
+ },
+ "407_piece_roue_pupitre": {
+  "titre": "Roue : pupitre seul",
+  "categorie": "14_evenements",
+  "fichier": "models/14_evenements/407_piece_roue_pupitre.fbx",
+  "dims_studs": [
+   2,
+   4,
+   2
+  ],
+  "triangles": 168,
+  "pieces": [
+   "Pupitre"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.026
+ },
+ "408_piece_roue_lumiere": {
+  "titre": "Roue : couronne d'ampoules seule",
+  "categorie": "14_evenements",
+  "fichier": "models/14_evenements/408_piece_roue_lumiere.fbx",
+  "dims_studs": [
+   8,
+   8,
+   1
+  ],
+  "triangles": 1056,
+  "pieces": [
+   "Lumiere"
+  ],
+  "en_jeu": null,
+  "notes": "",
+  "ecart_avant_recalage": 0.175
  },
  "40_bungalow_chantier": {
   "titre": "Bungalow de chantier",

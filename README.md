@@ -1,6 +1,6 @@
 # Props Roblox – quartier délabré
 
-190 objets low-poly (198 fichiers `.fbx` avec les variantes) pour un jeu Roblox satirique dans un quartier pauvre :
+214 objets low-poly (222 fichiers `.fbx` avec les variantes) pour un jeu Roblox satirique dans un quartier pauvre :
 mobilier urbain, véhicules, déchets, marché, chantier, décors de boutiques objets de la quête « x2 Luck Key » et symboles et borne de la machine à sous (100–113), quête du pirate et entrée des égouts (114–120). Style « simulateur » cartoon,
 formes arrondies, arêtes biseautées, couleurs vives mais salies, sans texture photo ni texte.
 
@@ -22,6 +22,7 @@ Tous les modèles sont générés par script avec Blender (module Python `bpy`),
 | Deauville (121–166) | Pack chic et propre (`models/10_deauville/`) : façades blanches, colombages vert sapin, ardoise bleu-gris, rayures marine et blanc ; aucune crasse, aucun logo. Enseignes, cabine et colonne Morris vierges. |
 | Jeu du loup (167–178) | `models/11_cochons/` : table de cartes façon atelier, 8 cochons (`Corps` commun + `Accessoire`), louveteau, grand méchant loup qui souffle (`Souffle` séparé), kiosque à pochettes (enseigne vierge). |
 | Parcelle & allée (185–196) | `models/12_parcelle/` : casinos à 3 niveaux à façade ouverte vers −Z, enseignes et panneau de parcelle vierges. |
+| Événements (385–408) | `models/14_evenements/` : naufrage, météo, mutations, roue de la fortune complète + pièces détachées. `Liquide` du thermomètre pivoté en bas ; `Roue` pivotée sur son axe. |
 | Enseignes | Aucun texte : panneaux, ardoises, menus et le panneau « EN PANNE » sont des surfaces vierges à habiller en jeu. |
 
 ## Import dans Roblox Studio
@@ -182,8 +183,32 @@ python3 tools/readme_table.py       # met à jour le tableau ci-dessous
 | 35 | Cagette en bois vide | 2,4 × 1,6 × 2,4 | 736 | Cagette | [35_cagette_vide.fbx](models/04_marche/35_cagette_vide.fbx) |
 | 36 | Cagette de fleurs pleine | 2,4 × 2 × 2,4 | 2638 | Cagette, Fleurs | [36_cagette_fleurs.fbx](models/04_marche/36_cagette_fleurs.fbx) |
 | 37 | Cône de chantier | 1,2 × 2 × 1,2 | 196 | Cone | [37_cone_chantier.fbx](models/05_chantier/37_cone_chantier.fbx) |
+| 385 | Radeau disloqué | 14 × 4 × 12 | 1148 | Planches, Mat, Voile, Tonneaux | [385_radeau_epave.fbx](models/14_evenements/385_radeau_epave.fbx) |
+| 386 | Rochers de récif | 16 × 6 × 12 | 1052 | Rochers, Algues | [386_rocher_recif.fbx](models/14_evenements/386_rocher_recif.fbx) |
+| 387 | Débris de plage | 10 × 1 × 10 | 432 | Planches, Cordes, Tonneau | [387_debris_plage.fbx](models/14_evenements/387_debris_plage.fbx) |
+| 388 | Tornade | 30 × 70 × 30 | 1224 | Entonnoir, Debris | [388_tornade.fbx](models/14_evenements/388_tornade.fbx) |
+| 389 | Nuage d'orage | 60 × 15 × 40 | 1844 | Nuage | [389_nuage_orage.fbx](models/14_evenements/389_nuage_orage.fbx) |
 | 38 | Fût rayé rouge et blanc | 2 × 3 × 2 | 1096 | Fut, Lampe | [38_fut_raye.fbx](models/05_chantier/38_fut_raye.fbx) |
+| 390 | Soleil caniculaire | 20 × 20 × 4 | 688 | Soleil, Rayons | [390_soleil_canicule.fbx](models/14_evenements/390_soleil_canicule.fbx) |
+| 391 | Thermomètre géant | 4 × 16 × 2 | 516 | Thermometre, Liquide | [391_thermometre_geant.fbx](models/14_evenements/391_thermometre_geant.fbx) |
+| 392 | Fissure de séisme | 20 × 1 × 6 | 572 | Fissure, Rochers | [392_fissure_sol.fbx](models/14_evenements/392_fissure_sol.fbx) |
+| 393 | Météorite | 8 × 8 × 8 | 636 | Roche, Lave | [393_meteorite.fbx](models/14_evenements/393_meteorite.fbx) |
+| 394 | Cratère d'impact | 20 × 3 × 20 | 1352 | Cratere, Rochers | [394_cratere.fbx](models/14_evenements/394_cratere.fbx) |
+| 395 | Vague géante | 60 × 30 × 15 | 2512 | Vague, Ecume | [395_vague_geante.fbx](models/14_evenements/395_vague_geante.fbx) |
+| 396 | Bloc de glace | 8 × 6 × 8 | 236 | Glace, Givre | [396_bloc_glace.fbx](models/14_evenements/396_bloc_glace.fbx) |
+| 397 | Arc-en-ciel | 60 × 30 × 4 | 2448 | Arc | [397_arc_en_ciel.fbx](models/14_evenements/397_arc_en_ciel.fbx) |
+| 398 | Sirène d'alerte | 4 × 10 × 4 | 600 | Poteau, Sirene, Gyrophare | [398_sirene_alerte.fbx](models/14_evenements/398_sirene_alerte.fbx) |
+| 399 | Écran d'annonce météo | 12 × 10 × 2 | 580 | Pieds, Ecran | [399_ecran_meteo.fbx](models/14_evenements/399_ecran_meteo.fbx) |
 | 39 | Toilettes de chantier | 3,4 × 7 × 3,4 | 1256 | Cabine, Porte | [39_toilettes_chantier.fbx](models/05_chantier/39_toilettes_chantier.fbx) |
+| 400 | Couronne de cristaux de glace | 6 × 3 × 6 | 280 | Cristaux | [400_cristaux_glace.fbx](models/14_evenements/400_cristaux_glace.fbx) |
+| 401 | Couronne dorée | 3 × 2 × 3 | 768 | Couronne | [401_couronne_or.fbx](models/14_evenements/401_couronne_or.fbx) |
+| 402 | Éclairs (mutation électrique) | 5 × 5 × 1 | 48 | Eclairs | [402_eclairs_metal.fbx](models/14_evenements/402_eclairs_metal.fbx) |
+| 403 | Roue de la fortune complète | 8 × 12 × 5 | 2528 | Socle, Roue, Lumiere, Pointeur, Pupitre | [403_roue_fortune.fbx](models/14_evenements/403_roue_fortune.fbx) |
+| 404 | Roue : socle seul | 8 × 3 × 5 | 204 | Socle | [404_piece_roue_socle.fbx](models/14_evenements/404_piece_roue_socle.fbx) |
+| 405 | Roue : roue seule | 7 × 7 × 1 | 896 | Roue | [405_piece_roue_roue.fbx](models/14_evenements/405_piece_roue_roue.fbx) |
+| 406 | Roue : pointeur seul | 1 × 2 × 1 | 80 | Pointeur | [406_piece_roue_pointeur.fbx](models/14_evenements/406_piece_roue_pointeur.fbx) |
+| 407 | Roue : pupitre seul | 2 × 4 × 2 | 168 | Pupitre | [407_piece_roue_pupitre.fbx](models/14_evenements/407_piece_roue_pupitre.fbx) |
+| 408 | Roue : couronne d'ampoules seule | 8 × 8 × 1 | 1056 | Lumiere | [408_piece_roue_lumiere.fbx](models/14_evenements/408_piece_roue_lumiere.fbx) |
 | 40 | Bungalow de chantier | 14 × 7 × 6 | 2884 | Bungalow, Vitres, Porte, Lampe | [40_bungalow_chantier.fbx](models/05_chantier/40_bungalow_chantier.fbx) |
 | 41 | Palette | 4 × 0,5 × 4 | 912 | Palette | [41_palette.fbx](models/05_chantier/41_palette.fbx) |
 | 42 | Gros tuyau béton/acier | 16 × 1 × 1 | 524 | Tuyau | [42_gros_tuyau.fbx](models/05_chantier/42_gros_tuyau.fbx) |
